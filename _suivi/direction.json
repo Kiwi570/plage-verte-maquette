@@ -1,0 +1,13 @@
+{
+  "nom": "Prairie et pouzzolane",
+  "client": "Camping La Plage Verte",
+  "ambiance": "calm, bright and warm",
+  "palette": "fresh meadow greens, deep fir green, warm cream and a touch of volcanic red-orange",
+  "lumiere": "soft low early-summer sunlight with long gentle shadows",
+  "matieres": "dewy grass, weathered wood, wool and dark volcanic stone",
+  "saison": "an early summer morning",
+  "lieu": "the green volcanic uplands of central France",
+  "sujet": "a lush mountain meadow at the foot of grassy volcanic ridges",
+  "polices": { "titres": "Epilogue 800", "texte": "Figtree" },
+  "couleurs": { "fond": "#F5F2E8", "bandes": "#E3E8D2", "sapin": "#1F3B2D", "accent": "#C4532F", "texte": "#1C2620" }
+}

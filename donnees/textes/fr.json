@@ -1,0 +1,385 @@
+{
+  "commun": {
+    "navigation": "Navigation principale",
+    "menu": "Menu",
+    "fermer": "Fermer",
+    "langueAutre": "English version",
+    "actionEntete": "Demander un séjour",
+    "appeler": "Appeler",
+    "sommaire": "Le camping",
+    "confort": "Pratique",
+    "retourHaut": "Retour en haut",
+    "maquette": "Maquette : les formulaires sont simulés, rien n'est envoyé.",
+    "evitement": "Aller au contenu",
+    "mentionIa": "Illustration générée",
+    "pause": "Pause",
+    "lecture": "Lecture",
+    "introLigne": "Camping nature au Mont-Dore",
+    "classement": "Camping 3 étoiles",
+    "mentions": "Mentions légales",
+    "confidentialite": "Politique de confidentialité",
+    "aCompleter": "à compléter",
+    "paiements": "Espèces, chèque, carte bancaire, virement et Chèques-Vacances. Bons Vacaf acceptés.",
+    "paiementsTitre": "Paiement",
+    "ancv": "Chèques-Vacances ANCV acceptés",
+    "vacaf": "Bons Vacaf acceptés",
+    "telFixe": "Accueil",
+    "telMobile": "Mobile",
+    "ecrire": "Écrire",
+    "adresseLigne1": "83 route de La Tour d'Auvergne",
+    "adresseLigne2": "63240 Le Mont-Dore",
+    "proprietaires": "Colette et Laurent",
+    "fin": {
+      "surtitre": "Saison prochaine",
+      "titre": "Votre coin de prairie <em>vous attend</em>",
+      "texte": "Colette et Laurent répondent rapidement à chaque demande : dites-leur vos dates, votre façon de dormir et combien vous serez.",
+      "action": "Demander un séjour",
+      "appeler": "Appeler le 04 73 65 04 30"
+    },
+    "saison": {
+      "avant": "Ouverture le {date}",
+      "pendant": "Ouvert · {libelle} jusqu'au {date}",
+      "apres": "Saison {annee} terminée · dates {suivante} à venir"
+    },
+    "joindre": "Nous joindre",
+    "mentionsLigne": "Mentions légales : à compléter · Politique de confidentialité : à compléter"
+  },
+  "pages": {
+    "accueil": {
+      "titre": "Camping La Plage Verte : camping nature au Mont-Dore, au pied du Sancy",
+      "description": "Camping 3 étoiles au Mont-Dore : 84 emplacements dans 25 000 m² de prairie, cabanes, mobil-homes, gîte et appartements, spa, à 5 minutes des thermes.",
+      "nav": "Accueil",
+      "partageAlt": "La Plage Verte, camping nature au Mont-Dore, vu du ciel",
+      "accroche": "Camping nature au Mont-Dore"
+    },
+    "emplacements": {
+      "titre": "Emplacements de camping au Mont-Dore : La Plage Verte",
+      "description": "84 emplacements engazonnés de 80 à 200 m², électricité 6 ou 10 A, aire de service camping-car, forfait curiste et navette thermale gratuite.",
+      "nav": "Emplacements",
+      "partageAlt": "La prairie du camping La Plage Verte et les crêtes du Sancy",
+      "accroche": "Planter sa tente dans la prairie"
+    },
+    "locations": {
+      "titre": "Cabanes, mobil-homes et gîte au Mont-Dore : La Plage Verte",
+      "description": "Cabanes de 20 m², mobil-homes Éco, Confort et Premium, gîte de 1894 et appartements : capacités, couchages et tarifs 2026.",
+      "nav": "Locations",
+      "partageAlt": "Une cabane du camping La Plage Verte face aux sommets",
+      "accroche": "Cabanes, mobil-homes et gîte"
+    },
+    "reserver": {
+      "titre": "Demander un séjour : camping La Plage Verte",
+      "description": "Demandez vos dates pour un emplacement, une cabane, un mobil-home, le gîte ou un séjour de groupe : Colette et Laurent vous répondent.",
+      "nav": "Réserver",
+      "partageAlt": "Demande de séjour au camping La Plage Verte",
+      "accroche": "Demander un séjour"
+    },
+    "contact": {
+      "titre": "Contact et accès : camping La Plage Verte, Le Mont-Dore",
+      "description": "83 route de La Tour d'Auvergne, Le Mont-Dore. Téléphone, e-mail, horaires de l'accueil et accès au camping.",
+      "nav": "Contact",
+      "partageAlt": "Plan d'accès du camping La Plage Verte",
+      "accroche": "Nous trouver"
+    },
+    "404": {
+      "titre": "Page introuvable : La Plage Verte",
+      "description": "Cette page n'existe pas ou plus.",
+      "nav": "Page introuvable",
+      "partageAlt": "Page introuvable",
+      "accroche": "Page introuvable"
+    }
+  },
+  "accueil": {
+    "hero": {
+      "titre1": "Camping <em>nature</em>",
+      "titre2": "au Mont-Dore",
+      "texte": "Une évasion au cœur des volcans d'Auvergne : 25 000 m² de prairie au pied des crêtes du Sancy, à 5 minutes des thermes.",
+      "action": "Demander un séjour",
+      "secondaire": "Voir les hébergements",
+      "cachet": "Camping",
+      "cachetLieu": "Le Mont-Dore"
+    },
+    "bienvenue": {
+      "surtitre": "Bienvenue",
+      "titre": "Les vraies vacances, <em>c'est ici</em>",
+      "texte": "Colette et Laurent vous accueillent dans un camping convivial et familial, à 3 km du village, au pied des crêtes du Sancy : le point de départ de nombreuses randonnées.",
+      "texte2": "Touristes, curistes, randonneurs, grimpeurs, golfeurs ou camping-caristes : chacun y trouve son coin de prairie.",
+      "calinette": "Calinette vous le confirme : les animaux sont acceptés au camping.",
+      "accueil": "Le bâtiment de l'accueil."
+    },
+    "dormir": {
+      "surtitre": "Hébergements",
+      "titre": "Quatre façons <em>de dormir</em>",
+      "texte": "100 emplacements de camping et locatifs, au soleil ou à l'ombre.",
+      "emplacements": "Emplacements",
+      "emplacementsTexte": "84 emplacements engazonnés de 80 à 200 m², électricité 6 ou 10 A.",
+      "emplacementsPrix": "5,50 € par personne et par nuit",
+      "cabanes": "Cabanes",
+      "cabanesTexte": "2 cabanes en bois de 20 m², pour 1 à 3 personnes.",
+      "cabanesPrix": "dès 65 € la nuit",
+      "mobilhomes": "Mobil-homes",
+      "mobilhomesTexte": "16 mobil-homes avec terrasse, de 1 à 6 personnes.",
+      "mobilhomesPrix": "dès 440 € la semaine",
+      "gite": "Gîte et appartements",
+      "giteTexte": "Une ferme de 1894 et deux appartements, jardin et parking privé.",
+      "gitePrix": "dès 360 € la semaine",
+      "voir": "Voir le détail"
+    },
+    "pres": {
+      "surtitre": "Sur place",
+      "titre": "Le camping <em>de près</em>",
+      "texte": "<span class=\"si-souris\">Continuez à descendre : la rangée défile avec vous.</span><span class=\"si-tactile\">Faites glisser : tout ce qui est là quand vous arrivez.</span>",
+      "region": "Photos du camping, à faire défiler",
+      "c1": "L'accueil",
+      "c1t": "Ouvert de 9 h à 12 h et de 14 h à 19 h en haute saison.",
+      "c2": "Le barnum",
+      "c2t": "Tables et chaises en libre accès, pour les repas à l'abri.",
+      "c3": "Les mobil-homes",
+      "c3t": "16 mobil-homes avec terrasse, au soleil ou à l'ombre.",
+      "c4": "La laverie",
+      "c4t": "Lave-linge, sèche-linge et lave-vaisselle en libre-service.",
+      "c5": "Les sanitaires",
+      "c5t": "2 blocs, dont 1 accessible aux personnes à mobilité réduite."
+    },
+    "spa": {
+      "mot1": "Spa",
+      "mot2": "& sauna",
+      "titre": "L'espace bien-être",
+      "texte": "Ouvert de 9 h 30 à 19 h. Spa extérieur en accès libre et gratuit ; sauna sur réservation, 5 € par personne les 30 minutes.",
+      "texte2": "Réservé aux plus de 16 ans séjournant au camping.",
+      "photo": "Le spa du camping, sur sa terrasse fleurie."
+    },
+    "matin": {
+      "surtitre": "Le matin",
+      "titre": "Pain et viennoiseries <em>cuits sur place</em>",
+      "texte": "En saison, Laurent et Colette vendent chaque matin au point « petit déj » des pains et des viennoiseries cuits sur place.",
+      "servicesTitre": "Et toute la journée"
+    },
+    "sancy": {
+      "surtitre": "Alentours",
+      "titre": "Partez à la découverte <em>du Sancy</em>",
+      "texte": "Au cœur du parc naturel des Volcans d'Auvergne, le camping est un point de départ pour découvrir Le Mont-Dore et le massif du Sancy. Choisissez votre façon de partir.",
+      "onglets": "Quatre façons de découvrir le Sancy",
+      "lien": "Le programme sur sancy.com",
+      "lienAria": "Le programme de l'office de tourisme du Sancy (nouvel onglet)"
+    },
+    "engagements": {
+      "surtitre": "Camping responsable",
+      "titre": "Le Sancy, <em>un environnement sauvage à protéger</em>",
+      "texte": "Depuis sa création, le camping s'engage pour préserver le cadre naturel qui l'entoure.",
+      "photo": "Rosée du matin sur l'herbe"
+    },
+    "saison": {
+      "surtitre": "Saison 2026",
+      "titre": "Quand <em>venir</em>",
+      "texte": "Arrivées à partir de 14 h, départs avant 12 h. Accueil de 9 h à 12 h et de 14 h à 19 h en haute saison.",
+      "aujourdhui": "Aujourd'hui",
+      "suite": "Les dates de la saison 2027 seront annoncées par le camping. Vous pouvez déjà demander vos dates.",
+      "mois": "Avr.,Mai,Juin,Juil.,Août,Sept.,Oct.,Nov.",
+      "moisCourts": "A,M,J,J,A,S,O,N"
+    }
+  },
+  "emplacements": {
+    "hero": {
+      "surtitre": "84 emplacements",
+      "titre": "Planter sa tente <em>dans la prairie</em>",
+      "texte": "Engazonnés et arborés, au soleil ou à l'ombre, de 80 à 200 m² : pour la tente, la caravane, le van ou le camping-car.",
+      "action": "Demander un emplacement",
+      "info": "Arrivée dès 14 h · départ avant 12 h"
+    },
+    "detail": {
+      "surtitre": "Votre emplacement",
+      "titre": "De la place, <em>de l'herbe</em>",
+      "l1": "84 emplacements engazonnés et arborés",
+      "l2": "De 80 à 200 m², 100 m² en moyenne",
+      "l3": "Électricité 6 A ou 10 A",
+      "l4": "Aire de service camping-car : vidange et point d'eau",
+      "l5": "Animaux acceptés",
+      "photo": "Une allée du camping entre les emplacements."
+    },
+    "calcul": {
+      "surtitre": "Tarifs 2026",
+      "titre": "Combien coûte <em>une nuit</em> ?",
+      "texte": "Les redevances de la grille 2026, par nuit. Ajustez votre séjour : le total se calcule tout seul.",
+      "abri": "Votre abri",
+      "electricite": "Électricité",
+      "nuits": "Nombre de nuits",
+      "majeurs": "dont personnes de plus de 18 ans",
+      "parNuit": "Par nuit",
+      "taxes": "Taxes de séjour",
+      "total": "Total estimé",
+      "pourNuits": "pour {n} nuit(s)",
+      "note": "Estimation d'après la grille 2026 (taxe de séjour 0,60 € et taxe départementale 0,06 € par nuit et par personne de plus de 18 ans). Le camping confirme le prix exact.",
+      "action": "Demander ce séjour",
+      "moins": "Retirer",
+      "plus": "Ajouter",
+      "autres": "Autres tarifs",
+      "region": "Calculateur du prix d'une nuit"
+    },
+    "cure": {
+      "surtitre": "Curistes",
+      "titre": "Le forfait <em>cure</em>",
+      "texte": "Pour une cure ou un séjour d'au moins 3 semaines : tarifs préférentiels, dès 427 € pour 2 personnes avec électricité 6 A.",
+      "navette": "Navette gratuite vers les thermes, du lundi au samedi",
+      "aller": "Départ du camping",
+      "allerH": "8 h 15",
+      "retour": "Dernier départ des thermes",
+      "retourH": "12 h 15",
+      "camping": "Camping",
+      "thermes": "Thermes",
+      "duree": "5 min",
+      "action": "Demander un forfait curiste"
+    },
+    "equipements": {
+      "surtitre": "Équipements",
+      "titre": "Tout le confort <em>du camp</em>",
+      "l1": "2 blocs sanitaires : douches, lavabos en cabines, éviers, WC",
+      "l2": "1 bloc accessible aux personnes à mobilité réduite, douche-WC avec rampe",
+      "l3": "Laverie : lave-linge 6 €, sèche-linge 5 €, lave-vaisselle 2 €",
+      "l4": "Barnum avec tables et chaises",
+      "l5": "Aires de jeux pour les enfants",
+      "l6": "Wi-Fi gratuit et borne de recharge pour véhicules électriques"
+    },
+    "groupes": {
+      "surtitre": "Groupes",
+      "titre": "Un camping nature <em>pour votre groupe</em>",
+      "texte": "Grands emplacements à la surface adaptée à votre demande, cabanes et mobil-homes ; barnum en libre accès, pain frais et viennoiseries le matin, lave-vaisselle et machine à laver.",
+      "preciser": "Pour votre devis, précisez :",
+      "p1": "le nombre de petites tentes et de marabouts",
+      "p2": "la surface ou le nombre d'emplacements",
+      "p3": "le nombre de véhicules",
+      "p4": "le nombre de branchements électriques",
+      "action": "Demander un devis groupe",
+      "photo": "Le barnum, prêt pour les repas de groupe."
+    }
+  },
+  "locations": {
+    "hero": {
+      "surtitre": "Locations",
+      "titre": "Cabanes, <span class=\"insecable\">mobil-homes</span> <em>et gîte</em>",
+      "texte": "Du nid de 20 m² pour deux à la ferme de 1894 pour cinq, chacun avec l'accès à tous les services du camping.",
+      "action": "Demander une location",
+      "legende": "Vue depuis les cabanes."
+    },
+    "filtre": {
+      "titre": "Vous êtes combien ?",
+      "tous": "Tous",
+      "cabane": "Cabanes",
+      "mobilhome": "Mobil-homes",
+      "gite": "Gîte et appartements",
+      "personnes": "Nombre de personnes",
+      "type": "Type de logement",
+      "aucun": "Aucun logement pour autant de personnes : pensez au séjour de groupe.",
+      "resultat": "{n} logement(s) pour vous",
+      "jusqua": "jusqu'à {n} pers."
+    },
+    "fiche": {
+      "surface": "Surface",
+      "capacite": "Capacité",
+      "couchage": "Couchage",
+      "personnes": "{min} à {max} personnes",
+      "action": "Demander ce logement",
+      "autrePhoto": "Autre photo"
+    },
+    "fourni": {
+      "surtitre": "Bon à savoir",
+      "titre": "Ce qui vous <em>attend</em>",
+      "fournisTitre": "Fournis",
+      "fournis": "Oreillers, couettes, couvertures, alèses et protège-matelas.",
+      "apporterTitre": "À apporter",
+      "apporter": "Linge de lit, linge de toilette et produits d'entretien.",
+      "animauxTitre": "Animaux",
+      "animaux": "Chiens et chats acceptés, mais ni sur les lits ni sur les banquettes."
+    }
+  },
+  "reserver": {
+    "hero": {
+      "surtitre": "Réservation",
+      "titre": "Demander <em>un séjour</em>",
+      "texte": "Pas de réservation en ligne au camping : Colette et Laurent répondent rapidement à chaque demande.",
+      "note": "Maquette : cette demande est simulée, rien n'est envoyé.",
+      "commencer": "Commencer ma demande"
+    },
+    "form": {
+      "e1": "Hébergement",
+      "e1t": "Comment voulez-vous dormir ?",
+      "e2": "Séjour",
+      "e2t": "Vos dates et votre groupe",
+      "e3": "Coordonnées",
+      "e3t": "Comment vous répondre ?",
+      "e4": "Récapitulatif",
+      "e4t": "Tout est juste ?",
+      "recap": "Le récapitulatif de votre demande s'affiche ici.",
+      "arrivee": "Date d'arrivée",
+      "depart": "Date de départ",
+      "personnes": "Personnes de plus de 7 ans",
+      "enfants": "Enfants de moins de 7 ans",
+      "animaux": "Animaux",
+      "cure": "C'est un séjour de cure",
+      "commentaires": "Commentaires",
+      "commentairesAide": "Le logement souhaité, vos besoins particuliers, pour un groupe : tentes, marabouts, véhicules, branchements.",
+      "prenom": "Prénom",
+      "nom": "Nom",
+      "tel": "Téléphone",
+      "email": "E-mail",
+      "adresse": "Adresse postale",
+      "accord": "J'accepte que ces informations servent uniquement à répondre à ma demande.",
+      "donnees": "Vos données servent uniquement à répondre à votre demande. Politique de confidentialité : à compléter.",
+      "obligatoires": "Les champs marqués d'un astérisque sont obligatoires.",
+      "retour": "Retour",
+      "continuer": "Continuer",
+      "revenir": "Revenir au récapitulatif",
+      "envoyer": "Envoyer la demande",
+      "merci": "Merci, votre demande est prête",
+      "simule": "Maquette : rien n'a été envoyé. Sur le site réel, Colette et Laurent recevront votre demande.",
+      "recommencer": "Nouvelle demande"
+    },
+    "savoir": {
+      "titre": "Bon à <em>savoir</em>",
+      "horaires": "Arrivées à partir de 14 h, départs avant 12 h.",
+      "accueil": "Accueil de 9 h à 12 h et de 14 h à 19 h en haute saison.",
+      "fourni": "En location : oreillers, couettes et couvertures fournis, linge de lit à apporter."
+    }
+  },
+  "contact": {
+    "hero": {
+      "surtitre": "Contact et accès",
+      "titre": "Nous <em>trouver</em>",
+      "texte": "À 3 km du village et 5 minutes des thermes, au pied des crêtes du Sancy.",
+      "action": "Appeler l'accueil",
+      "carteTitre": "Plan d'accès simplifié",
+      "carteNote": "Schéma, pas à l'échelle.",
+      "village": "Le Mont-Dore",
+      "villageDetail": "centre-ville et thermes",
+      "capucin": "Le Capucin",
+      "capucinDetail": "site de grimpe",
+      "sancy": "Crêtes du Sancy",
+      "camping": "La Plage Verte",
+      "d1": "3 km · 5 min",
+      "d2": "2 km"
+    },
+    "coord": {
+      "surtitre": "Coordonnées",
+      "titre": "Colette et Laurent <em>vous répondent</em>",
+      "texte": "Une question sur un emplacement, une cure ou un séjour de groupe : appelez l'accueil ou écrivez. Calinette vous le confirme, les animaux sont acceptés.",
+      "horairesTitre": "Accueil",
+      "horaires": "De 9 h à 12 h et de 14 h à 19 h en haute saison.",
+      "adresseTitre": "Adresse"
+    },
+    "question": {
+      "titre": "Une <em>question</em> ?",
+      "texte": "Pour une demande de dates, passez plutôt par la page Réserver.",
+      "nom": "Votre nom",
+      "email": "Votre e-mail",
+      "message": "Votre message",
+      "envoyer": "Envoyer",
+      "donnees": "Vos données servent uniquement à vous répondre. Politique de confidentialité : à compléter."
+    }
+  },
+  "introuvable": {
+    "surtitre": "Erreur 404",
+    "titre": "Cet emplacement <em>n'existe pas</em>",
+    "texte": "La page que vous cherchez a dû replier sa tente. Les autres vous attendent dans la prairie.",
+    "retour": "Revenir à l'accueil",
+    "reserver": "Demander un séjour"
+  }
+}

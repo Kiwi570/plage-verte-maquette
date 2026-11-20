@@ -1,0 +1,8 @@
+{
+  "annee": 2026,
+  "periodes": [
+    { "id": "mh", "libelle": "Mobil-homes", "debut": "2026-04-26", "fin": "2026-10-11" },
+    { "id": "camping", "libelle": "Emplacements et cabanes", "debut": "2026-05-07", "fin": "2026-09-13" }
+  ],
+  "source": "Dates de la grille tarifaire 2026"
+}

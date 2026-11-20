@@ -1,0 +1,103 @@
+{
+  "client": "Camping La Plage Verte",
+  "activite": "hébergement",
+  "direction": "Prairie et pouzzolane",
+  "date": "2026-11-20T16:41:33.647Z",
+  "images": [
+    {
+      "nom": "spa-vapeur",
+      "fichier": "spa-vapeur.png",
+      "page": "accueil",
+      "emplacement": "Bien-être : image qui s'ouvre en plein écran",
+      "role": "section-fond",
+      "format": "3:2",
+      "grok": "1168×784",
+      "priorite": "Indispensable",
+      "gabarit": "section-fond",
+      "pieges": [],
+      "consigne": "Close-up of the surface of warm bubbling water in an outdoor hot tub in the cool early morning, soft steam rising and drifting through the frame, tiny bubbles catching the low sunlight, blurred green hills and a dewy meadow far behind, nobody, no visible tub rim, no brand, no candles, no towels. Landscape composition, aspect ratio 3:2, quiet uncluttered area in the upper half for a title. Contemporary editorial hospitality photography, quiet and slow, calm, bright and warm mood, palette of fresh meadow greens, deep fir green, warm cream and a touch of volcanic red-orange, soft low early-summer sunlight with long gentle shadows, tactile dewy grass, weathered wood, wool and dark volcanic stone, set in the green volcanic uplands of central France on an early summer morning, medium-format look, subtle 35mm film grain, generous negative space, realistic, high detail. No guests, no staff, no bed with someone in it, no famous landmark, no postcard cliché, no room presented as the real establishment, no signage. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "crete-aube",
+      "fichier": "crete-aube.png",
+      "page": "accueil",
+      "emplacement": "Le Sancy : grand bandeau d'ouverture de la section",
+      "role": "section-fond",
+      "format": "3:2",
+      "grok": "1168×784",
+      "priorite": "Indispensable",
+      "gabarit": "lieu",
+      "pieges": [
+        "paysage qui dérive"
+      ],
+      "consigne": "Landscape around the stay at first light: grassy rounded volcanic ridges at sunrise above a soft sea of clouds, a tiny lone hiker silhouette far away on the ridge path, back turned, long shadows, large calm sky in the upper half, gentle mist, no buildings, no roads, no vehicles, an atmospheric mood image, not a portrait of the real establishment. Landscape composition, aspect ratio 3:2, quiet uncluttered area in the upper half for a title. Contemporary editorial hospitality photography, quiet and slow, calm, bright and warm mood, palette of fresh meadow greens, deep fir green, warm cream and a touch of volcanic red-orange, soft low early-summer sunlight with long gentle shadows, tactile dewy grass, weathered wood, wool and dark volcanic stone, set in the green volcanic uplands of central France on an early summer morning, medium-format look, subtle 35mm film grain, generous negative space, realistic, high detail. No guests, no staff, no bed with someone in it, no famous landmark, no postcard cliché, no room presented as the real establishment, no signage. The green volcanic uplands of central France landscape only, described by its real features: no tea plantation, no rice terraces, no high mountains, no tropical vegetation, no power lines, no pylons, no modern buildings. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "matin-cafe",
+      "fichier": "matin-cafe.png",
+      "page": "accueil",
+      "emplacement": "Le matin : photo à côté du point petit-déj",
+      "role": "carte-service",
+      "format": "4:5",
+      "grok": "784×1168",
+      "priorite": "Indispensable",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "An enamel camping mug of steaming coffee on a weathered wooden picnic table at sunrise, dew on the grass around, soft mist over distant green volcanic hills, warm low sun from the side, nobody, no brand, no food. Vertical composition, aspect ratio 4:5, main subject well inside the central area with generous margins on every side, so the image can be cropped. Contemporary editorial hospitality photography, quiet and slow, calm, bright and warm mood, palette of fresh meadow greens, deep fir green, warm cream and a touch of volcanic red-orange, soft low early-summer sunlight with long gentle shadows, tactile dewy grass, weathered wood, wool and dark volcanic stone, set in the green volcanic uplands of central France on an early summer morning, medium-format look, subtle 35mm film grain, generous negative space, realistic, high detail. No guests, no staff, no bed with someone in it, no famous landmark, no postcard cliché, no room presented as the real establishment, no signage. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "rosee",
+      "fichier": "rosee.png",
+      "page": "accueil",
+      "emplacement": "Engagements durables : image de la section",
+      "role": "section-fond",
+      "format": "3:2",
+      "grok": "1168×784",
+      "priorite": "Conseillée",
+      "gabarit": "texture",
+      "pieges": [],
+      "consigne": "Macro of dew drops on fresh grass blades backlit by early morning sun, shallow depth of field, soft green and gold bokeh. Landscape composition, aspect ratio 3:2, quiet uncluttered area in the upper half for a title. Contemporary editorial hospitality photography, quiet and slow, calm, bright and warm mood, palette of fresh meadow greens, deep fir green, warm cream and a touch of volcanic red-orange, soft low early-summer sunlight with long gentle shadows, tactile dewy grass, weathered wood, wool and dark volcanic stone, set in the green volcanic uplands of central France on an early summer morning, medium-format look, subtle 35mm film grain, generous negative space, realistic, high detail. No guests, no staff, no bed with someone in it, no famous landmark, no postcard cliché, no room presented as the real establishment, no signage. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "reserver-prairie",
+      "fichier": "reserver-prairie.png",
+      "page": "reserver",
+      "emplacement": "Réserver : image d'ouverture à côté du formulaire",
+      "role": "ouverture",
+      "format": "16:9",
+      "grok": "1168×784",
+      "priorite": "Indispensable",
+      "gabarit": "lieu",
+      "pieges": [
+        "paysage qui dérive"
+      ],
+      "consigne": "Landscape around the stay at first light: a lone empty wooden picnic table in a lush meadow full of wildflowers in warm morning light, long soft shadows, gentle green volcanic hills in the distance, a large calm sky on the left, gentle mist, no buildings, no roads, no vehicles, an atmospheric mood image, not a portrait of the real establishment. Wide horizontal composition, aspect ratio 16:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, generous empty space on the left third of the frame for a title. Contemporary editorial hospitality photography, quiet and slow, calm, bright and warm mood, palette of fresh meadow greens, deep fir green, warm cream and a touch of volcanic red-orange, soft low early-summer sunlight with long gentle shadows, tactile dewy grass, weathered wood, wool and dark volcanic stone, set in the green volcanic uplands of central France on an early summer morning, medium-format look, subtle 35mm film grain, generous negative space, realistic, high detail. No guests, no staff, no bed with someone in it, no famous landmark, no postcard cliché, no room presented as the real establishment, no signage. The green volcanic uplands of central France landscape only, described by its real features: no tea plantation, no rice terraces, no high mountains, no tropical vegetation, no power lines, no pylons, no modern buildings. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "linge-fourni",
+      "fichier": "linge-fourni.png",
+      "page": "locations",
+      "emplacement": "Ce qui est fourni : oreillers, couettes, couvertures",
+      "role": "carte-service",
+      "format": "4:5",
+      "grok": "784×1168",
+      "priorite": "Conseillée",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "Still life of a neatly folded white duvet, two plump pillows and a soft green wool blanket stacked on a light wooden bench against a pale wooden wall, soft morning light from a small window, calm and immaculate, nobody, no bed sheets. Vertical composition, aspect ratio 4:5, main subject well inside the central area with generous margins on every side, so the image can be cropped. Contemporary editorial hospitality photography, quiet and slow, calm, bright and warm mood, palette of fresh meadow greens, deep fir green, warm cream and a touch of volcanic red-orange, soft low early-summer sunlight with long gentle shadows, tactile dewy grass, weathered wood, wool and dark volcanic stone, set in the green volcanic uplands of central France on an early summer morning, medium-format look, subtle 35mm film grain, generous negative space, realistic, high detail. No guests, no staff, no bed with someone in it, no famous landmark, no postcard cliché, no room presented as the real establishment, no signage. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "page-404",
+      "fichier": "404-sardine.png",
+      "page": "404",
+      "emplacement": "Page introuvable",
+      "role": "404",
+      "format": "16:9",
+      "grok": "1168×784",
+      "priorite": "Conseillée",
+      "gabarit": "404",
+      "pieges": [],
+      "consigne": "A single bent metal tent peg and a loose guy rope lying alone in tall wet grass, morning dew, soft light, a gentle touch of humour, nobody, no tent. Wide horizontal composition, aspect ratio 16:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, quiet uncluttered area in the upper half for a title. Contemporary editorial hospitality photography, quiet and slow, calm, bright and warm mood, palette of fresh meadow greens, deep fir green, warm cream and a touch of volcanic red-orange, soft low early-summer sunlight with long gentle shadows, tactile dewy grass, weathered wood, wool and dark volcanic stone, set in the green volcanic uplands of central France on an early summer morning, medium-format look, subtle 35mm film grain, generous negative space, realistic, high detail. No guests, no staff, no bed with someone in it, no famous landmark, no postcard cliché, no room presented as the real establishment, no signage. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    }
+  ]
+}

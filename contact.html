@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="fr" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact et accès : camping La Plage Verte, Le Mont-Dore</title>
+<meta name="description" content="83 route de La Tour d&#39;Auvergne, Le Mont-Dore. Téléphone, e-mail, horaires de l&#39;accueil et accès au camping.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://plage-verte-maquette.vercel.app/contact">
+<style>:root{--fond:#F5F2E8;--texte:#1C2620;--voile-fond:#1F3B2D;--ouverture-fond:#1F3B2D;--menu-fond:#1F3B2D}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/epilogue-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/figtree-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#F5F2E8">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="La Plage Verte">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Contact et accès : camping La Plage Verte, Le Mont-Dore">
+<meta property="og:description" content="83 route de La Tour d&#39;Auvergne, Le Mont-Dore. Téléphone, e-mail, horaires de l&#39;accueil et accès au camping.">
+<meta property="og:url" content="https://plage-verte-maquette.vercel.app/contact">
+<meta property="og:image" content="https://plage-verte-maquette.vercel.app/assets/partage/contact-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Plan d&#39;accès du camping La Plage Verte">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Campground","name":"Camping La Plage Verte","url":"https://plage-verte-maquette.vercel.app/","telephone":"+33473650430","email":"campinglaplageverte@orange.fr","address":{"@type":"PostalAddress","streetAddress":"83 route de La Tour d'Auvergne","postalCode":"63240","addressLocality":"Le Mont-Dore","addressCountry":"FR"},"starRating":{"@type":"Rating","ratingValue":"3"},"petsAllowed":true,"paymentAccepted":"Espèces, chèque, carte bancaire, virement, Chèques-Vacances","amenityFeature":[{"@type":"LocationFeatureSpecification","name":"Wi-Fi gratuit","value":true},{"@type":"LocationFeatureSpecification","name":"Spa extérieur","value":true},{"@type":"LocationFeatureSpecification","name":"Sauna","value":true},{"@type":"LocationFeatureSpecification","name":"Navette thermale gratuite","value":true},{"@type":"LocationFeatureSpecification","name":"Borne de recharge pour véhicules électriques","value":true}],"description":"Camping nature classé 3 étoiles au Mont-Dore, au pied des crêtes du Sancy : 84 emplacements, cabanes, mobil-homes, un gîte et deux appartements."}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="vague" aria-hidden="true"><svg class="voile-vague voile-vague--haut" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 120 C 240 20 480 20 720 70 S 1200 130 1440 40 V 120 H 0 Z"/></svg><svg class="voile-vague voile-vague--bas" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 C 240 100 480 100 720 50 S 1200 -10 1440 80 V 0 H 0 Z"/></svg><div class="voile-contenu"><img src="/assets/images/logo-clair.svg" alt="" width="56" height="56"><span data-voile-libelle>Contact</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <svg class="ouverture-crete" viewBox="0 0 1000 260" preserveAspectRatio="none" aria-hidden="true"><path d="M0 200 L70 176 L130 188 L190 150 L250 160 L310 120 L360 136 L420 84 L470 108 L520 62 L575 118 L640 104 L700 138 L770 112 L840 152 L910 140 L1000 162" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg>
+  <span class="ouverture-soleil" data-ouverture-objet></span>
+  <p class="ouverture-nom">La Plage Verte</p>
+  <p class="ouverture-ligne">Camping nature au Mont-Dore</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil">
+      <img src="/assets/images/logo.svg" alt="" width="40" height="40"><span>La Plage Verte</span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/emplacements" data-libelle="Emplacements">Emplacements</a></li><li><a href="/locations" data-libelle="Locations">Locations</a></li><li><a href="/contact" data-libelle="Contact" aria-current="page">Contact</a></li><li><a href="/reserver" data-libelle="Réserver">Réserver</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton" href="/reserver" data-libelle="Réserver">Demander un séjour</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/emplacements" class="menu-lien" data-libelle="Emplacements">Emplacements</a></li><li style="--i:2"><a href="/locations" class="menu-lien" data-libelle="Locations">Locations</a></li><li style="--i:3"><a href="/contact" class="menu-lien" data-libelle="Contact" aria-current="page">Contact</a></li><li style="--i:4"><a href="/reserver" class="menu-lien" data-libelle="Réserver">Réserver</a></li></ul>
+  <p><a class="bouton" href="tel:+33473650430">Appeler 04 73 65 04 30</a></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="ouv-carte" id="debut">
+  <div class="conteneur ouv-carte-grille">
+    <div class="ouv-carte-texte">
+      <p class="surtitre">Contact et accès</p>
+      <h1 class="ouv-titre-int" data-anime="lignes">Nous <em>trouver</em></h1>
+      <p class="masque-ecran-tres-bas" data-anime>À 3 km du village et 5 minutes des thermes, au pied des crêtes du Sancy.</p>
+      <address class="ouv-adresse" data-info-cle data-anime>83 route de La Tour d&#39;Auvergne<br>63240 Le Mont-Dore</address>
+      <p class="ouv-actions-int" data-anime><a class="bouton" href="tel:+33473650430" data-action-principale>Appeler l&#39;accueil · 04 73 65 04 30</a></p>
+    </div>
+    <figure class="carte-acces" data-iris-centre data-visuel>
+      <svg viewBox="0 0 800 560" role="img" aria-labelledby="carte-titre carte-desc" data-effet="carte-acces">
+        <title id="carte-titre">Plan d&#39;accès simplifié</title>
+        <desc id="carte-desc">La Plage Verte : 3 km · 5 min Le Mont-Dore ; 2 km Le Capucin.</desc>
+        <rect width="800" height="560" rx="28" class="carte-fond"/>
+        <path class="carte-courbe" d="M40 150 C 200 120, 360 170, 520 130 S 720 110, 770 140"/>
+        <path class="carte-courbe" d="M30 230 C 180 210, 330 260, 500 220 S 700 200, 780 230"/>
+        <g transform="translate(0 440) scale(.8 .42)"><g class="carte-crete-groupe"><path class="carte-crete-fond" d="M0 200 L70 176 L130 188 L190 150 L250 160 L310 120 L360 136 L420 84 L470 108 L520 62 L575 118 L640 104 L700 138 L770 112 L840 152 L910 140 L1000 162 L1000 260 L0 260Z"/><path class="carte-crete" d="M0 200 L70 176 L130 188 L190 150 L250 160 L310 120 L360 136 L420 84 L470 108 L520 62 L575 118 L640 104 L700 138 L770 112 L840 152 L910 140 L1000 162" vector-effect="non-scaling-stroke"/></g></g>
+        <text class="carte-texte carte-texte--doux" x="560" y="530">Crêtes du Sancy</text>
+        <path class="carte-route-fond" d="M160 300 C 260 300, 330 250, 430 260 S 590 300, 650 250"/>
+        <path class="carte-route" data-carte-trace d="M160 300 C 260 300, 330 250, 430 260 S 590 300, 650 250" pathLength="1"/>
+        <path class="carte-sentier" data-carte-trace d="M160 300 C 170 350, 220 380, 255 410" pathLength="1"/>
+        <g class="carte-point carte-point--camping" data-carte-point transform="translate(160 300)"><circle r="26"/><circle r="9" class="carte-coeur"/></g>
+        <text class="carte-texte carte-texte--fort" x="160" y="250" text-anchor="middle" data-carte-point>La Plage Verte</text>
+        <g class="carte-point" data-carte-point transform="translate(650 250)"><circle r="14"/></g>
+        <text class="carte-texte" x="650" y="210" text-anchor="middle" data-carte-point>Le Mont-Dore</text>
+        <text class="carte-texte carte-texte--doux" x="650" y="292" text-anchor="middle" data-carte-point>centre-ville et thermes</text>
+        <g class="carte-pic" data-carte-point transform="translate(262 420)"><path d="M-22 18 L0 -22 L22 18Z"/></g>
+        <text class="carte-texte" x="300" y="430" data-carte-point>Le Capucin</text>
+        <text class="carte-texte carte-texte--doux" x="300" y="456" data-carte-point>site de grimpe</text>
+        <text class="carte-distance" x="430" y="236" text-anchor="middle" data-carte-point>3 km · 5 min</text>
+        <text class="carte-distance" x="150" y="370" text-anchor="middle" data-carte-point>2 km</text>
+      </svg>
+      <figcaption class="media-legende">Schéma, pas à l&#39;échelle.</figcaption>
+    </figure>
+  </div>
+</section>
+<section class="coord" id="coordonnees">
+  <div class="conteneur coord-grille">
+    <div class="coord-photos">
+      <figure class="media coord-accueil" data-anime="rideau" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/accueil-1000.webp" srcset="/assets/images/accueil-480.webp 480w, /assets/images/accueil-640.webp 640w, /assets/images/accueil-1000.webp 1000w" sizes="(max-width: 760px) 100vw, 34vw" alt="Le bâtiment de l&#39;accueil." width="1000" height="750" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <figure class="media coord-calinette" data-fx="parallaxe" data-fx-force="10" style="--cadrage:42% 40%">
+  <picture>
+    <img src="/assets/images/calinette-640.webp" srcset="/assets/images/calinette-480.webp 480w, /assets/images/calinette-640.webp 640w" sizes="(max-width: 760px) 40vw, 14vw" alt="Calinette vous le confirme : les animaux sont acceptés au camping." width="640" height="800" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    </div>
+    <div>
+      <p class="surtitre">Coordonnées</p>
+      <h2 data-anime="lignes">Colette et Laurent <em>vous répondent</em></h2>
+      <p data-anime>Une question sur un emplacement, une cure ou un séjour de groupe : appelez l&#39;accueil ou écrivez. Calinette vous le confirme, les animaux sont acceptés.</p>
+      <dl class="coord-liste" data-anime="cascade">
+        <div><dt>Accueil</dt><dd><a href="tel:+33473650430">04 73 65 04 30</a></dd></div>
+        <div><dt>Mobile</dt><dd><a href="tel:+33679259593">06 79 25 95 93</a></dd></div>
+        <div><dt>Écrire</dt><dd><a href="mailto:campinglaplageverte@orange.fr">campinglaplageverte@orange.fr</a></dd></div>
+        <div><dt>Accueil</dt><dd>De 9 h à 12 h et de 14 h à 19 h en haute saison.</dd></div>
+        <div><dt>Adresse</dt><dd>83 route de La Tour d&#39;Auvergne, 63240 Le Mont-Dore</dd></div>
+        <div><dt>Paiement</dt><dd>Espèces, chèque, carte bancaire, virement et Chèques-Vacances. Bons Vacaf acceptés.</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+<section class="question" id="question">
+  <div class="conteneur question-grille">
+    <div>
+      <h2 data-anime="lignes">Une <em>question</em> ?</h2>
+      <p data-anime>Pour une demande de dates, passez plutôt par la page Réserver. <a href="/reserver" data-libelle="Réserver">Réserver</a></p>
+    </div>
+    <form data-formulaire class="formulaire" action="#" novalidate data-anime data-visuel>
+      <div class="champ"><label for="q-nom">Votre nom</label><input id="q-nom" name="nom" autocomplete="name" required></div>
+      <div class="champ"><label for="q-email">Votre e-mail</label><input id="q-email" name="email" type="email" autocomplete="email" required></div>
+      <div class="champ champ--large"><label for="q-message">Votre message</label><textarea id="q-message" name="message" rows="4" required></textarea></div>
+      <p class="mention-donnees">Vos données servent uniquement à vous répondre. Politique de confidentialité : à compléter.</p>
+      <button type="submit" class="bouton">Envoyer</button>
+      <p data-message-envoi role="status" tabindex="-1" hidden></p>
+    </form>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <p class="pied-logo"><img src="/assets/images/logo-clair.svg" alt="" width="48" height="48"><span>La Plage Verte</span></p>
+      <p>Camping 3 étoiles · Camping nature au Mont-Dore</p>
+      <p>83 route de La Tour d&#39;Auvergne<br>63240 Le Mont-Dore</p>
+    </div>
+    <div>
+      <p class="pied-titre">Nous joindre</p>
+      <p>Accueil <a href="tel:+33473650430">04 73 65 04 30</a><br>Mobile <a href="tel:+33679259593">06 79 25 95 93</a><br><a href="mailto:campinglaplageverte@orange.fr">campinglaplageverte@orange.fr</a></p>
+    </div>
+    <nav aria-label="Le camping">
+      <p class="pied-titre">Le camping</p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/emplacements" data-libelle="Emplacements">Emplacements</a></li><li><a href="/locations" data-libelle="Locations">Locations</a></li><li><a href="/contact" data-libelle="Contact" aria-current="page">Contact</a></li><li><a href="/reserver" data-libelle="Réserver">Réserver</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titre">Paiement</p>
+      <p class="pied-logos"><img src="/assets/images/logo-ancv-240.webp" alt="Chèques-Vacances ANCV acceptés" width="80" height="59" loading="lazy"><img src="/assets/images/logo-vacaf-240.webp" alt="Bons Vacaf acceptés" width="78" height="59" loading="lazy"></p>
+      <p class="pied-petit">Espèces, chèque, carte bancaire, virement et Chèques-Vacances. Bons Vacaf acceptés.</p>
+    </div>
+  </div>
+  <div class="conteneur pied-bas">
+    <p>Mentions légales : à compléter · Politique de confidentialité : à compléter</p>
+    <p>Maquette : les formulaires sont simulés, rien n&#39;est envoyé.</p>
+    <p><a href="#haut" data-sans-transition>Retour en haut</a> · © La Plage Verte</p>
+  </div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33473650430">Appeler</a>
+  <a class="bouton" href="/reserver" data-libelle="Réserver">Demander un séjour</a>
+</div>
+</body>
+</html>

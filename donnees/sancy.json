@@ -1,0 +1,6 @@
+[
+  { "id": "contemplatifs", "titre": "Contemplatifs", "image": "sancy-vallee", "texte": "Lacs volcaniques, cascades, puy de Sancy et pic du Capucin, sylvatorium, et le GR30 qui passe par les crêtes.", "liste": ["Lacs volcaniques", "Cascades", "Puy de Sancy", "Pic du Capucin", "Sylvatorium", "GR30"] },
+  { "id": "sportifs", "titre": "Sportifs", "image": "sancy-tyrolienne", "texte": "Tyrolienne à virages, sites d'escalade, parcours dans les arbres et luge d'été. Le Capucin est à 2 km du camping.", "liste": ["Tyrolienne à virages", "Escalade", "Parcours dans les arbres", "Luge d'été"] },
+  { "id": "curieux", "titre": "Curieux", "image": "sancy-thermes", "texte": "Château, église romane et architecture thermale. Les thermes du Mont-Dore sont à 5 minutes, avec la navette gratuite du camping.", "liste": ["Château", "Église romane", "Architecture thermale", "Thermes à 5 min"] },
+  { "id": "gastronomes", "titre": "Gastronomes", "image": "sancy-caves", "texte": "La route des fromages AOP d'Auvergne, les caves d'affinage de Saint-Nectaire, et la truffade.", "liste": ["Route des fromages AOP", "Caves d'affinage de Saint-Nectaire", "Truffade"] }
+]

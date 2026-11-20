@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="fr" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cabanes, mobil-homes et gîte au Mont-Dore : La Plage Verte</title>
+<meta name="description" content="Cabanes de 20 m², mobil-homes Éco, Confort et Premium, gîte de 1894 et appartements : capacités, couchages et tarifs 2026.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://plage-verte-maquette.vercel.app/locations">
+<style>:root{--fond:#F5F2E8;--texte:#1C2620;--voile-fond:#1F3B2D;--ouverture-fond:#1F3B2D;--menu-fond:#1F3B2D}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/epilogue-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/figtree-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#F5F2E8">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="La Plage Verte">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Cabanes, mobil-homes et gîte au Mont-Dore : La Plage Verte">
+<meta property="og:description" content="Cabanes de 20 m², mobil-homes Éco, Confort et Premium, gîte de 1894 et appartements : capacités, couchages et tarifs 2026.">
+<meta property="og:url" content="https://plage-verte-maquette.vercel.app/locations">
+<meta property="og:image" content="https://plage-verte-maquette.vercel.app/assets/partage/locations-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Une cabane du camping La Plage Verte face aux sommets">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Campground","name":"Camping La Plage Verte","url":"https://plage-verte-maquette.vercel.app/","telephone":"+33473650430","email":"campinglaplageverte@orange.fr","address":{"@type":"PostalAddress","streetAddress":"83 route de La Tour d'Auvergne","postalCode":"63240","addressLocality":"Le Mont-Dore","addressCountry":"FR"},"starRating":{"@type":"Rating","ratingValue":"3"},"petsAllowed":true,"paymentAccepted":"Espèces, chèque, carte bancaire, virement, Chèques-Vacances","amenityFeature":[{"@type":"LocationFeatureSpecification","name":"Wi-Fi gratuit","value":true},{"@type":"LocationFeatureSpecification","name":"Spa extérieur","value":true},{"@type":"LocationFeatureSpecification","name":"Sauna","value":true},{"@type":"LocationFeatureSpecification","name":"Navette thermale gratuite","value":true},{"@type":"LocationFeatureSpecification","name":"Borne de recharge pour véhicules électriques","value":true}],"description":"Camping nature classé 3 étoiles au Mont-Dore, au pied des crêtes du Sancy : 84 emplacements, cabanes, mobil-homes, un gîte et deux appartements."}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="vague" aria-hidden="true"><svg class="voile-vague voile-vague--haut" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 120 C 240 20 480 20 720 70 S 1200 130 1440 40 V 120 H 0 Z"/></svg><svg class="voile-vague voile-vague--bas" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 C 240 100 480 100 720 50 S 1200 -10 1440 80 V 0 H 0 Z"/></svg><div class="voile-contenu"><img src="/assets/images/logo-clair.svg" alt="" width="56" height="56"><span data-voile-libelle>Locations</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <svg class="ouverture-crete" viewBox="0 0 1000 260" preserveAspectRatio="none" aria-hidden="true"><path d="M0 200 L70 176 L130 188 L190 150 L250 160 L310 120 L360 136 L420 84 L470 108 L520 62 L575 118 L640 104 L700 138 L770 112 L840 152 L910 140 L1000 162" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg>
+  <span class="ouverture-soleil" data-ouverture-objet></span>
+  <p class="ouverture-nom">La Plage Verte</p>
+  <p class="ouverture-ligne">Camping nature au Mont-Dore</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil">
+      <img src="/assets/images/logo.svg" alt="" width="40" height="40"><span>La Plage Verte</span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/emplacements" data-libelle="Emplacements">Emplacements</a></li><li><a href="/locations" data-libelle="Locations" aria-current="page">Locations</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li><li><a href="/reserver" data-libelle="Réserver">Réserver</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton" href="/reserver" data-libelle="Réserver">Demander un séjour</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/emplacements" class="menu-lien" data-libelle="Emplacements">Emplacements</a></li><li style="--i:2"><a href="/locations" class="menu-lien" data-libelle="Locations" aria-current="page">Locations</a></li><li style="--i:3"><a href="/contact" class="menu-lien" data-libelle="Contact">Contact</a></li><li style="--i:4"><a href="/reserver" class="menu-lien" data-libelle="Réserver">Réserver</a></li></ul>
+  <p><a class="bouton" href="tel:+33473650430">Appeler 04 73 65 04 30</a></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="ouv-bandeau" id="debut">
+  <div class="conteneur ouv-bandeau-tete">
+    <p class="surtitre">Locations</p>
+    <h1 class="ouv-titre-geant" data-anime="lignes">Cabanes, <span class="insecable">mobil-homes</span> <em>et gîte</em></h1>
+    <div class="ouv-bandeau-bas">
+      <p class="masque-ecran-tres-bas" data-anime>Du nid de 20 m² pour deux à la ferme de 1894 pour cinq, chacun avec l&#39;accès à tous les services du camping.</p>
+      <p class="ouv-actions-int" data-anime><a href="/reserver?hebergement=mobil-home" class="bouton" data-libelle="Réserver" data-action-principale data-survol="magnetique">Demander une location</a></p>
+      <p class="ouv-info-int" data-info-cle data-anime data-saison='{"annee":2026,"periodes":[{"libelle":"Mobil-homes","debut":"2026-04-26","fin":"2026-10-11"}],"textes":{"avant":"Ouverture le {date}","pendant":"Ouvert · {libelle} jusqu&#39;au {date}","apres":"Saison {annee} terminée · dates {suivante} à venir"}}'><svg class="icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="16" height="10" rx="1.5"/><path d="M18 11h4v6h-4M6 17v2M14 17v2M6 10h4v3H6z"/></svg><span data-saison-texte>Saison 2026 terminée · dates 2027 à venir</span></p>
+    </div>
+  </div>
+  <figure class="media ouv-bandeau-media" data-iris-centre data-effet="bandeau" style="--cadrage:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/cabane-capucin-mobile-640.webp 640w" sizes="100vw">
+    <img src="/assets/images/cabane-capucin-1280.webp" srcset="/assets/images/cabane-capucin-640.webp 640w, /assets/images/cabane-capucin-1280.webp 1280w, /assets/images/cabane-capucin-1920.webp 1920w" sizes="100vw" alt="Une cabane du camping La Plage Verte face aux sommets" width="1280" height="720" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="media-legende">Vue depuis les cabanes.</figcaption>
+</figure>
+</section>
+<section class="logements" id="logements">
+  <div class="conteneur">
+    <div class="filtre" data-filtre data-modele-resultat="{n} logement(s) pour vous">
+      <h2 data-anime="lignes">Vous êtes combien ?</h2>
+      <div class="filtre-rangee" role="group" aria-label="Nombre de personnes">
+        <button type="button" class="filtre-n" data-personnes="1" aria-pressed="false">1</button><button type="button" class="filtre-n" data-personnes="2" aria-pressed="false">2</button><button type="button" class="filtre-n" data-personnes="3" aria-pressed="false">3</button><button type="button" class="filtre-n" data-personnes="4" aria-pressed="false">4</button><button type="button" class="filtre-n" data-personnes="5" aria-pressed="false">5</button><button type="button" class="filtre-n" data-personnes="6" aria-pressed="false">6</button>
+      </div>
+      <div class="filtre-rangee" role="group" aria-label="Type de logement">
+        <button type="button" class="puce-bouton" data-type="tous" aria-pressed="true">Tous</button><button type="button" class="puce-bouton" data-type="cabane" aria-pressed="false">Cabanes</button><button type="button" class="puce-bouton" data-type="mobil-home" aria-pressed="false">Mobil-homes</button><button type="button" class="puce-bouton" data-type="gite" aria-pressed="false">Gîte et appartements</button>
+      </div>
+      <p class="filtre-resultat" role="status" data-filtre-resultat>6 logement(s) pour vous</p>
+      <p class="filtre-vide" data-filtre-vide hidden>Aucun logement pour autant de personnes : pensez au séjour de groupe. <a href="/reserver?hebergement=groupe" data-libelle="Réserver">Demander un devis groupe</a></p>
+    </div>
+    <ul class="fiches" data-fiches>
+      <li class="fiche" id="cabane" data-type="cabane" data-max="3">
+        <div class="fiche-photos">
+          <figure class="media fiche-media" data-fx="parallaxe" data-fx-force="6" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/cabane-carte-640.webp" srcset="/assets/images/cabane-carte-480.webp 480w, /assets/images/cabane-carte-640.webp 640w" sizes="(max-width: 760px) 100vw, 30vw" alt="Les cabanes" width="640" height="800" loading="lazy" decoding="async">
+  </picture>
+</figure>
+          <figure class="media fiche-media-2" style="--cadrage:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/cabane-capucin-mobile-640.webp 640w" sizes="(max-width: 760px) 40vw, 14vw">
+    <img src="/assets/images/cabane-capucin-1280.webp" srcset="/assets/images/cabane-capucin-640.webp 640w, /assets/images/cabane-capucin-1280.webp 1280w, /assets/images/cabane-capucin-1920.webp 1920w" sizes="(max-width: 760px) 40vw, 14vw" alt="Les cabanes : autre photo" width="1280" height="720" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        </div>
+        <div class="fiche-corps">
+          <p class="fiche-type"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 12 4l9 7M5 10v10h14V10M10 20v-5h4v5"/></svg><span>jusqu&#39;à 3 pers.</span></p>
+          <h3>Les cabanes</h3>
+          <p class="fiche-sur">2 cabanes en bois</p>
+          <dl class="fiche-specs">
+            <div><dt>Surface</dt><dd>20 m²</dd></div>
+            <div><dt>Capacité</dt><dd>1 à 3 personnes</dd></div>
+            <div><dt>Couchage</dt><dd>1 clic-clac 130 × 190 cm et 1 banquette-lit 80 × 190 cm</dd></div>
+          </dl>
+          <ul class="coches coches--petit"><li>Puits de lumière et chauffage électrique</li><li>Coin cuisine : réfrigérateur, réchaud à gaz, micro-ondes, cafetière, vaisselle pour 3</li><li>Salon de jardin sur 180 m² d&#39;herbe, au soleil ou à l&#39;ombre</li></ul>
+          <table class="fiche-prix"><tbody><tr><th scope="row">Nuitée</th><td data-prix>dès 65 €</td></tr><tr><th scope="row">Semaine</th><td data-prix>dès 350 €</td></tr><tr><th scope="row">Cure ou 3 semaines</th><td data-prix>dès 750 €</td></tr></tbody></table>
+          <p class="fiche-note">Tarifs 2026, basse saison, 1 à 2 personnes. Draps non fournis.</p>
+          <a href="/reserver?hebergement=cabane&amp;logement=cabane" class="bouton" data-libelle="Réserver">Demander ce logement</a>
+        </div>
+      </li><li class="fiche" id="mh-eco" data-type="mobil-home" data-max="4">
+        <div class="fiche-photos">
+          <figure class="media fiche-media" data-fx="parallaxe" data-fx-force="6" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/mh-chambre-2-640.webp" srcset="/assets/images/mh-chambre-2-480.webp 480w, /assets/images/mh-chambre-2-640.webp 640w" sizes="(max-width: 760px) 100vw, 30vw" alt="Mobil-home Éco" width="640" height="427" loading="lazy" decoding="async">
+  </picture>
+</figure>
+          <figure class="media fiche-media-2" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/mh-exterieur-640.webp" srcset="/assets/images/mh-exterieur-480.webp 480w, /assets/images/mh-exterieur-640.webp 640w" sizes="(max-width: 760px) 40vw, 14vw" alt="Mobil-home Éco : autre photo" width="640" height="427" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        </div>
+        <div class="fiche-corps">
+          <p class="fiche-type"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="16" height="10" rx="1.5"/><path d="M18 11h4v6h-4M6 17v2M14 17v2M6 10h4v3H6z"/></svg><span>jusqu&#39;à 4 pers.</span></p>
+          <h3>Mobil-home Éco</h3>
+          <p class="fiche-sur">2 chambres</p>
+          <dl class="fiche-specs">
+            <div><dt>Surface</dt><dd>29 m²</dd></div>
+            <div><dt>Capacité</dt><dd>1 à 4 personnes</dd></div>
+            <div><dt>Couchage</dt><dd>1 lit 140 × 190 cm et 2 lits 80 × 190 cm</dd></div>
+          </dl>
+          <ul class="coches coches--petit"><li>Salle d&#39;eau avec douche et lavabo, WC séparé</li><li>Kitchenette</li><li>Terrasse</li></ul>
+          <table class="fiche-prix"><tbody><tr><th scope="row">Semaine</th><td data-prix>dès 440 €</td></tr><tr><th scope="row">Cure</th><td data-prix>dès 990 €</td></tr></tbody></table>
+          <p class="fiche-note">Tarifs 2026, selon le nombre de personnes.</p>
+          <a href="/reserver?hebergement=mobil-home&amp;logement=mh-eco" class="bouton" data-libelle="Réserver">Demander ce logement</a>
+        </div>
+      </li><li class="fiche" id="mh-confort" data-type="mobil-home" data-max="6">
+        <div class="fiche-photos">
+          <figure class="media fiche-media" data-fx="parallaxe" data-fx-force="6" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/mh-sejour-1000.webp" srcset="/assets/images/mh-sejour-480.webp 480w, /assets/images/mh-sejour-640.webp 640w, /assets/images/mh-sejour-1000.webp 1000w" sizes="(max-width: 760px) 100vw, 30vw" alt="Mobil-homes Confort" width="1000" height="666" loading="lazy" decoding="async">
+  </picture>
+</figure>
+          <figure class="media fiche-media-2" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/mh-chambre-1000.webp" srcset="/assets/images/mh-chambre-480.webp 480w, /assets/images/mh-chambre-640.webp 640w, /assets/images/mh-chambre-1000.webp 1000w" sizes="(max-width: 760px) 40vw, 14vw" alt="Mobil-homes Confort : autre photo" width="1000" height="667" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        </div>
+        <div class="fiche-corps">
+          <p class="fiche-type"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="16" height="10" rx="1.5"/><path d="M18 11h4v6h-4M6 17v2M14 17v2M6 10h4v3H6z"/></svg><span>jusqu&#39;à 6 pers.</span></p>
+          <h3>Mobil-homes Confort</h3>
+          <p class="fiche-sur">2 ou 3 chambres · Riviera, Super Titania, Savanah, Pacifique</p>
+          <dl class="fiche-specs">
+            <div><dt>Surface</dt><dd>25 à 32 m²</dd></div>
+            <div><dt>Capacité</dt><dd>1 à 6 personnes</dd></div>
+            <div><dt>Couchage</dt><dd>1 lit 140 × 190 cm et 2 ou 4 lits 80 × 190 cm</dd></div>
+          </dl>
+          <ul class="coches coches--petit"><li>Salle d&#39;eau avec douche et lavabo, WC séparé</li><li>Kitchenette</li><li>Terrasse</li></ul>
+          <table class="fiche-prix"><tbody><tr><th scope="row">Semaine</th><td data-prix>dès 490 €</td></tr><tr><th scope="row">Cure</th><td data-prix>dès 1 090 €</td></tr></tbody></table>
+          <p class="fiche-note">Tarifs 2026, selon le nombre de personnes.</p>
+          <a href="/reserver?hebergement=mobil-home&amp;logement=mh-confort" class="bouton" data-libelle="Réserver">Demander ce logement</a>
+        </div>
+      </li><li class="fiche" id="mh-premium" data-type="mobil-home" data-max="4">
+        <div class="fiche-photos">
+          <figure class="media fiche-media" data-fx="parallaxe" data-fx-force="6" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/mobil-home-terrasse-640.webp" srcset="/assets/images/mobil-home-terrasse-480.webp 480w, /assets/images/mobil-home-terrasse-640.webp 640w" sizes="(max-width: 760px) 100vw, 30vw" alt="Mobil-home Premium" width="640" height="800" loading="lazy" decoding="async">
+  </picture>
+</figure>
+          <figure class="media fiche-media-2" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/mh-sejour-1000.webp" srcset="/assets/images/mh-sejour-480.webp 480w, /assets/images/mh-sejour-640.webp 640w, /assets/images/mh-sejour-1000.webp 1000w" sizes="(max-width: 760px) 40vw, 14vw" alt="Mobil-home Premium : autre photo" width="1000" height="666" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        </div>
+        <div class="fiche-corps">
+          <p class="fiche-type"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="16" height="10" rx="1.5"/><path d="M18 11h4v6h-4M6 17v2M14 17v2M6 10h4v3H6z"/></svg><span>jusqu&#39;à 4 pers.</span></p>
+          <h3>Mobil-home Premium</h3>
+          <p class="fiche-sur">2 chambres, 2 salles d&#39;eau</p>
+          <dl class="fiche-specs">
+            <div><dt>Surface</dt><dd>33 m²</dd></div>
+            <div><dt>Capacité</dt><dd>1 à 4 personnes</dd></div>
+            <div><dt>Couchage</dt><dd>1 lit 140 × 190 cm et 2 lits 80 × 190 cm</dd></div>
+          </dl>
+          <ul class="coches coches--petit"><li>2 salles d&#39;eau, chacune avec son WC</li><li>Kitchenette</li><li>Terrasse</li></ul>
+          <table class="fiche-prix"><tbody><tr><th scope="row">Semaine</th><td data-prix>dès 550 €</td></tr><tr><th scope="row">Cure</th><td data-prix>dès 1 210 €</td></tr></tbody></table>
+          <p class="fiche-note">Tarifs 2026, selon le nombre de personnes.</p>
+          <a href="/reserver?hebergement=mobil-home&amp;logement=mh-premium" class="bouton" data-libelle="Réserver">Demander ce logement</a>
+        </div>
+      </li><li class="fiche" id="gite" data-type="gite" data-max="5">
+        <div class="fiche-photos">
+          <figure class="media fiche-media" data-fx="parallaxe" data-fx-force="6" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/gite-ferme-640.webp" srcset="/assets/images/gite-ferme-480.webp 480w, /assets/images/gite-ferme-640.webp 640w" sizes="(max-width: 760px) 100vw, 30vw" alt="Gîte « Le Cantou d&#39;Émile »" width="640" height="800" loading="lazy" decoding="async">
+  </picture>
+</figure>
+          <figure class="media fiche-media-2" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/gite-sejour-1000.webp" srcset="/assets/images/gite-sejour-480.webp 480w, /assets/images/gite-sejour-640.webp 640w, /assets/images/gite-sejour-1000.webp 1000w" sizes="(max-width: 760px) 40vw, 14vw" alt="Gîte « Le Cantou d&#39;Émile » : autre photo" width="1000" height="667" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        </div>
+        <div class="fiche-corps">
+          <p class="fiche-type"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20V10l6-5 6 5v10M15 10l3-3 3 3v10M7 20v-5h4v5M2 20h20"/></svg><span>jusqu&#39;à 5 pers.</span></p>
+          <h3>Gîte « Le Cantou d&#39;Émile »</h3>
+          <p class="fiche-sur">Gîtes de France 3 épis · ferme auvergnate de 1894</p>
+          <dl class="fiche-specs">
+            <div><dt>Surface</dt><dd>90 m²</dd></div>
+            <div><dt>Capacité</dt><dd>1 à 5 personnes</dd></div>
+            <div><dt>Couchage</dt><dd>1 lit 140 × 190 cm et 3 lits 90 × 190 cm</dd></div>
+          </dl>
+          <ul class="coches coches--petit"><li>2 chambres, salle d&#39;eau, WC indépendant</li><li>Cuisine et séjour, matériaux naturels</li><li>Jardin et stationnement privé</li></ul>
+          <table class="fiche-prix"><tbody><tr><th scope="row">Semaine</th><td data-prix>dès 590 €</td></tr><tr><th scope="row">Cure</th><td data-prix>dès 1 190 €</td></tr></tbody></table>
+          <p class="fiche-note">Tarifs 2026. Non accessible aux personnes en situation de handicap.</p>
+          <a href="/reserver?hebergement=gite&amp;logement=gite" class="bouton" data-libelle="Réserver">Demander ce logement</a>
+        </div>
+      </li><li class="fiche" id="appartements" data-type="gite" data-max="6">
+        <div class="fiche-photos">
+          <figure class="media fiche-media" data-fx="parallaxe" data-fx-force="6" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/appart-cuisine-1000.webp" srcset="/assets/images/appart-cuisine-480.webp 480w, /assets/images/appart-cuisine-640.webp 640w, /assets/images/appart-cuisine-1000.webp 1000w" sizes="(max-width: 760px) 100vw, 30vw" alt="Appartements « Les Champs Fleuris »" width="1000" height="667" loading="lazy" decoding="async">
+  </picture>
+</figure>
+          <figure class="media fiche-media-2" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/gite-cuisine-1000.webp" srcset="/assets/images/gite-cuisine-480.webp 480w, /assets/images/gite-cuisine-640.webp 640w, /assets/images/gite-cuisine-1000.webp 1000w" sizes="(max-width: 760px) 40vw, 14vw" alt="Appartements « Les Champs Fleuris » : autre photo" width="1000" height="667" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        </div>
+        <div class="fiche-corps">
+          <p class="fiche-type"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20V10l6-5 6 5v10M15 10l3-3 3 3v10M7 20v-5h4v5M2 20h20"/></svg><span>jusqu&#39;à 6 pers.</span></p>
+          <h3>Appartements « Les Champs Fleuris »</h3>
+          <p class="fiche-sur">2 appartements F2 classés 2 étoiles</p>
+          <dl class="fiche-specs">
+            <div><dt>Surface</dt><dd>35 à 45 m²</dd></div>
+            <div><dt>Capacité</dt><dd>1 à 6 personnes</dd></div>
+            <div><dt>Couchage</dt><dd>2 à 3 lits 140 × 190 cm</dd></div>
+          </dl>
+          <ul class="coches coches--petit"><li>1 à 2 chambres, salle d&#39;eau (douche ou baignoire sabot), WC indépendant</li><li>Cuisine avec coin repas ; salon au 2e étage</li><li>Jardin et stationnement privé</li></ul>
+          <table class="fiche-prix"><tbody><tr><th scope="row">Semaine</th><td data-prix>dès 360 €</td></tr><tr><th scope="row">Cure</th><td data-prix>dès 920 €</td></tr></tbody></table>
+          <p class="fiche-note">Tarifs 2026. Non accessibles aux personnes en situation de handicap.</p>
+          <a href="/reserver?hebergement=gite&amp;logement=appartements" class="bouton" data-libelle="Réserver">Demander ce logement</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+<section class="fourni" id="fourni">
+  <div class="conteneur fourni-grille">
+    <figure class="media fourni-media" data-grok data-fx="zoom" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/linge-fourni-784.webp" srcset="/assets/images/grok/linge-fourni-480.webp 480w, /assets/images/grok/linge-fourni-640.webp 640w, /assets/images/grok/linge-fourni-784.webp 784w" sizes="(max-width: 760px) 100vw, 36vw" alt="Oreillers, couettes, couvertures, alèses et protège-matelas." width="784" height="980" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+    <div>
+      <p class="surtitre">Bon à savoir</p>
+      <h2 data-anime="lignes">Ce qui vous <em>attend</em></h2>
+      <dl class="fourni-liste" data-anime="cascade">
+        <div><dt>Fournis</dt><dd>Oreillers, couettes, couvertures, alèses et protège-matelas.</dd></div>
+        <div><dt>À apporter</dt><dd>Linge de lit, linge de toilette et produits d&#39;entretien.</dd></div>
+        <div><dt>Animaux</dt><dd>Chiens et chats acceptés, mais ni sur les lits ni sur les banquettes.</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+<section class="fin-appel" id="appel">
+  <div class="fin-ciel" aria-hidden="true">
+    <span class="fin-soleil" data-effet="soleil"></span>
+    <svg class="fin-crete" viewBox="0 0 1000 260" preserveAspectRatio="none" data-effet="crete" data-visuel><path class="fin-crete-fond" d="M0 200 L70 176 L130 188 L190 150 L250 160 L310 120 L360 136 L420 84 L470 108 L520 62 L575 118 L640 104 L700 138 L770 112 L840 152 L910 140 L1000 162 L1000 260 L0 260Z"/><path class="fin-crete-trait" d="M0 200 L70 176 L130 188 L190 150 L250 160 L310 120 L360 136 L420 84 L470 108 L520 62 L575 118 L640 104 L700 138 L770 112 L840 152 L910 140 L1000 162" fill="none" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke" pathLength="1"/></svg>
+  </div>
+  <div class="conteneur fin-appel-texte">
+    <p class="surtitre">Saison prochaine</p>
+    <h2 data-anime="lignes">Votre coin de prairie <em>vous attend</em></h2>
+    <p data-anime>Colette et Laurent répondent rapidement à chaque demande : dites-leur vos dates, votre façon de dormir et combien vous serez.</p>
+    <p class="fin-actions" data-anime>
+      <a href="/reserver?hebergement=mobil-home" class="bouton bouton--clair" data-libelle="Réserver" data-survol="magnetique">Demander un séjour</a>
+      <a class="bouton bouton--contour" href="tel:+33473650430">Appeler le 04 73 65 04 30</a>
+    </p>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <p class="pied-logo"><img src="/assets/images/logo-clair.svg" alt="" width="48" height="48"><span>La Plage Verte</span></p>
+      <p>Camping 3 étoiles · Camping nature au Mont-Dore</p>
+      <p>83 route de La Tour d&#39;Auvergne<br>63240 Le Mont-Dore</p>
+    </div>
+    <div>
+      <p class="pied-titre">Nous joindre</p>
+      <p>Accueil <a href="tel:+33473650430">04 73 65 04 30</a><br>Mobile <a href="tel:+33679259593">06 79 25 95 93</a><br><a href="mailto:campinglaplageverte@orange.fr">campinglaplageverte@orange.fr</a></p>
+    </div>
+    <nav aria-label="Le camping">
+      <p class="pied-titre">Le camping</p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/emplacements" data-libelle="Emplacements">Emplacements</a></li><li><a href="/locations" data-libelle="Locations" aria-current="page">Locations</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li><li><a href="/reserver" data-libelle="Réserver">Réserver</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titre">Paiement</p>
+      <p class="pied-logos"><img src="/assets/images/logo-ancv-240.webp" alt="Chèques-Vacances ANCV acceptés" width="80" height="59" loading="lazy"><img src="/assets/images/logo-vacaf-240.webp" alt="Bons Vacaf acceptés" width="78" height="59" loading="lazy"></p>
+      <p class="pied-petit">Espèces, chèque, carte bancaire, virement et Chèques-Vacances. Bons Vacaf acceptés.</p>
+    </div>
+  </div>
+  <div class="conteneur pied-bas">
+    <p>Mentions légales : à compléter · Politique de confidentialité : à compléter</p>
+    <p>Maquette : les formulaires sont simulés, rien n&#39;est envoyé.</p>
+    <p><a href="#haut" data-sans-transition>Retour en haut</a> · © La Plage Verte</p>
+  </div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33473650430">Appeler</a>
+  <a class="bouton" href="/reserver" data-libelle="Réserver">Demander un séjour</a>
+</div>
+</body>
+</html>

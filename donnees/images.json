@@ -1,0 +1,2499 @@
+{
+  "logo-sombre": {
+    "nom": "logo-sombre",
+    "source": "recu/logo-plage-verte.png",
+    "role": "logo",
+    "alt": "La Plage Verte",
+    "grok": false,
+    "mention": null,
+    "beaute": null,
+    "empreinte": "4d0a003f43e306c1",
+    "ratio": null,
+    "largeurs": [
+      240,
+      480
+    ],
+    "mobile": null,
+    "cadrage": null,
+    "sujet": null,
+    "zones_calmes": null,
+    "zone_texte": null,
+    "recadrage": null,
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "logo-sombre-240.webp",
+      "logo-sombre-480.webp"
+    ],
+    "poids": {
+      "logo-sombre-240.webp": 6520,
+      "logo-sombre-480.webp": 8360
+    },
+    "media": "c.media({ nom: 'logo-sombre', alt: \"La Plage Verte\", sizes: '240px' })"
+  },
+  "aerienne": {
+    "nom": "aerienne",
+    "source": "recu/vue-aerienne-camping.jpg",
+    "role": "ouverture",
+    "alt": "Le camping vu du ciel : mobil-homes et emplacements entre les haies, au milieu des prairies, crêtes boisées à l'horizon",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "ecc82d4462d56396",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "50% 43%"
+    },
+    "cadrage": "46% 36%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.41,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.3,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.11,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.11,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": "bas",
+    "recadrage": {
+      "left": 0,
+      "top": 240,
+      "width": 2000,
+      "height": 1125,
+      "source": [
+        2000,
+        1500
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "aerienne-640.webp",
+      "aerienne-1280.webp",
+      "aerienne-1920.webp",
+      "aerienne-mobile-640.webp",
+      "aerienne-mobile-1080.webp"
+    ],
+    "poids": {
+      "aerienne-640.webp": 28050,
+      "aerienne-1280.webp": 87330,
+      "aerienne-1920.webp": 161354,
+      "aerienne-mobile-640.webp": 63508,
+      "aerienne-mobile-1080.webp": 124698
+    },
+    "media": "c.media({ nom: 'aerienne', alt: \"Le camping vu du ciel : mobil-homes et emplacements entre les haies, au milieu des prairies, crêtes boisées à l'horizon\", cadrage: '46% 36%', cadrageMobile: '50% 43%', sizes: '100vw', priorite: true })"
+  },
+  "prairie": {
+    "nom": "prairie",
+    "source": "recu/plage-verte.jpg",
+    "role": "ouverture",
+    "alt": "La prairie du camping sous le ciel bleu, arbres, vans et bâtiment d'accueil, crêtes du Sancy derrière",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "9be09eb7a59a0c3d",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640
+      ],
+      "cadrage": "50% 51%"
+    },
+    "cadrage": "50% 51%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 93.3
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.38,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.03,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.03,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": "haut",
+    "recadrage": {
+      "left": 159,
+      "top": 0,
+      "width": 1643,
+      "height": 924,
+      "source": [
+        2000,
+        924
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "version téléphone sans 1080 px (source trop petite)",
+      "agrandie 1,17 fois (source de 1643 px après recadrage)"
+    ],
+    "fichiers": [
+      "prairie-640.webp",
+      "prairie-1280.webp",
+      "prairie-1920.webp",
+      "prairie-mobile-640.webp"
+    ],
+    "poids": {
+      "prairie-640.webp": 51548,
+      "prairie-1280.webp": 218600,
+      "prairie-1920.webp": 300690,
+      "prairie-mobile-640.webp": 129128
+    },
+    "media": "c.media({ nom: 'prairie', alt: \"La prairie du camping sous le ciel bleu, arbres, vans et bâtiment d'accueil, crêtes du Sancy derrière\", cadrage: '50% 51%', cadrageMobile: '50% 51%', sizes: '100vw', priorite: true })"
+  },
+  "cabane-capucin": {
+    "nom": "cabane-capucin",
+    "source": "recu/vue-cabane-puy-gros.jpg",
+    "role": "ouverture",
+    "alt": "Une cabane en bois du camping, un bouleau, la prairie et les sommets au loin",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "f6b4b4abc94d7bde",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640
+      ],
+      "cadrage": "50% 55%"
+    },
+    "cadrage": "54% 55%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 96.2,
+      "h": 93.3
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.03,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 357,
+      "top": 0,
+      "width": 1643,
+      "height": 924,
+      "source": [
+        2000,
+        924
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "version téléphone sans 1080 px (source trop petite)",
+      "agrandie 1,17 fois (source de 1643 px après recadrage)"
+    ],
+    "fichiers": [
+      "cabane-capucin-640.webp",
+      "cabane-capucin-1280.webp",
+      "cabane-capucin-1920.webp",
+      "cabane-capucin-mobile-640.webp"
+    ],
+    "poids": {
+      "cabane-capucin-640.webp": 65874,
+      "cabane-capucin-1280.webp": 239838,
+      "cabane-capucin-1920.webp": 297896,
+      "cabane-capucin-mobile-640.webp": 123224
+    },
+    "media": "c.media({ nom: 'cabane-capucin', alt: \"Une cabane en bois du camping, un bouleau, la prairie et les sommets au loin\", cadrage: '54% 55%', cadrageMobile: '50% 55%', sizes: '100vw', priorite: true })"
+  },
+  "emplacements": {
+    "nom": "emplacements",
+    "source": "recu/vue-emplacements.jpg",
+    "role": "carte-service",
+    "alt": "Allée du camping entre les emplacements ombragés, tente et voitures",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "60122b2ab0c1deed",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640
+    ],
+    "mobile": null,
+    "cadrage": "50% 30%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 68.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.55,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.03,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 270,
+      "top": 0,
+      "width": 546,
+      "height": 683,
+      "source": [
+        1024,
+        683
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1024 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,17 fois (source de 546 px après recadrage)"
+    ],
+    "fichiers": [
+      "emplacements-480.webp",
+      "emplacements-640.webp"
+    ],
+    "poids": {
+      "emplacements-480.webp": 75980,
+      "emplacements-640.webp": 112704
+    },
+    "media": "c.media({ nom: 'emplacements', alt: \"Allée du camping entre les emplacements ombragés, tente et voitures\", cadrage: '50% 30%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '4 / 5' })"
+  },
+  "cabane-carte": {
+    "nom": "cabane-carte",
+    "source": "recu/vue-cabane-puy-gros.jpg",
+    "role": "carte-service",
+    "alt": "Cabane en bois au bord de la prairie",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "ef340b9f570bc55b",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640
+    ],
+    "mobile": null,
+    "cadrage": "50% 55%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 93.3
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.03,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 1031,
+      "top": 0,
+      "width": 739,
+      "height": 924,
+      "source": [
+        2000,
+        924
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "recadrage fort : 37 % de l'image gardée"
+    ],
+    "fichiers": [
+      "cabane-carte-480.webp",
+      "cabane-carte-640.webp"
+    ],
+    "poids": {
+      "cabane-carte-480.webp": 56798,
+      "cabane-carte-640.webp": 87456
+    },
+    "media": "c.media({ nom: 'cabane-carte', alt: \"Cabane en bois au bord de la prairie\", cadrage: '50% 55%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '4 / 5' })"
+  },
+  "mobil-home-terrasse": {
+    "nom": "mobil-home-terrasse",
+    "source": "recu/tarifs-2026-6.jpg",
+    "role": "carte-service",
+    "alt": "Terrasse en bois d'un mobil-home avec table, chaises et parasol",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "3e6799c158da1915",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640
+    ],
+    "mobile": null,
+    "cadrage": "50% 49%",
+    "sujet": {
+      "x": 0,
+      "y": 4.5,
+      "l": 100,
+      "h": 90.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 229,
+      "top": 0,
+      "width": 854,
+      "height": 1068,
+      "source": [
+        1600,
+        1068
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "mobil-home-terrasse-480.webp",
+      "mobil-home-terrasse-640.webp"
+    ],
+    "poids": {
+      "mobil-home-terrasse-480.webp": 48934,
+      "mobil-home-terrasse-640.webp": 74614
+    },
+    "media": "c.media({ nom: 'mobil-home-terrasse', alt: \"Terrasse en bois d'un mobil-home avec table, chaises et parasol\", cadrage: '50% 49%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '4 / 5' })"
+  },
+  "gite-ferme": {
+    "nom": "gite-ferme",
+    "source": "recu/gite-cantou-emile-appartements-3.jpg",
+    "role": "carte-service",
+    "alt": "Le gîte Cantou d'Émile, ferme auvergnate en pierre au toit d'ardoise, barrière blanche",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "4e0a59ec9e441f00",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640
+    ],
+    "mobile": null,
+    "cadrage": "50% 38%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 95.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.18,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.06,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.04,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 416,
+      "top": 0,
+      "width": 960,
+      "height": 1200,
+      "source": [
+        1600,
+        1200
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "gite-ferme-480.webp",
+      "gite-ferme-640.webp"
+    ],
+    "poids": {
+      "gite-ferme-480.webp": 34822,
+      "gite-ferme-640.webp": 56906
+    },
+    "media": "c.media({ nom: 'gite-ferme', alt: \"Le gîte Cantou d'Émile, ferme auvergnate en pierre au toit d'ardoise, barrière blanche\", cadrage: '50% 38%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '4 / 5' })"
+  },
+  "calinette": {
+    "nom": "calinette",
+    "source": "recu/calinette-accueil-animal-camping.jpg",
+    "role": "portrait",
+    "alt": "Calinette, la chienne du camping, assise dans l'herbe",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "cdcdd40cda4c8e26",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640
+    ],
+    "mobile": null,
+    "cadrage": "52% 55%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 125,
+      "width": 1500,
+      "height": 1875,
+      "source": [
+        1500,
+        2000
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "calinette-480.webp",
+      "calinette-640.webp"
+    ],
+    "poids": {
+      "calinette-480.webp": 133204,
+      "calinette-640.webp": 224374
+    },
+    "media": "c.media({ nom: 'calinette', alt: \"Calinette, la chienne du camping, assise dans l'herbe\", cadrage: '52% 55%', sizes: '(max-width: 760px) 100vw, 40vw', ratio: '4 / 5' })"
+  },
+  "accueil": {
+    "nom": "accueil",
+    "source": "recu/accueil-camping.jpg",
+    "role": "galerie",
+    "alt": "Le bâtiment d'accueil fleuri du camping, au bout de l'allée",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "39ed4a39de1ad897",
+    "ratio": "4:3",
+    "largeurs": [
+      480,
+      640,
+      1000
+    ],
+    "mobile": null,
+    "cadrage": "50% 34%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 77.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.48,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.07,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 143,
+      "top": 0,
+      "width": 1020,
+      "height": 765,
+      "source": [
+        1360,
+        765
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "accueil-480.webp",
+      "accueil-640.webp",
+      "accueil-1000.webp"
+    ],
+    "poids": {
+      "accueil-480.webp": 34776,
+      "accueil-640.webp": 63488,
+      "accueil-1000.webp": 159378
+    },
+    "media": "c.media({ nom: 'accueil', alt: \"Le bâtiment d'accueil fleuri du camping, au bout de l'allée\", cadrage: '50% 34%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "barnum": {
+    "nom": "barnum",
+    "source": "recu/barnum-plage-verte-sejour.jpg",
+    "role": "galerie",
+    "alt": "Le barnum du camping avec ses tables et ses chaises, ouvert sur la prairie",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "b1326e7a7f8eebeb",
+    "ratio": "4:3",
+    "largeurs": [
+      480,
+      640,
+      1000
+    ],
+    "mobile": null,
+    "cadrage": "52% 44%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 2000,
+      "height": 1500,
+      "source": [
+        2000,
+        1500
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "barnum-480.webp",
+      "barnum-640.webp",
+      "barnum-1000.webp"
+    ],
+    "poids": {
+      "barnum-480.webp": 40564,
+      "barnum-640.webp": 71094,
+      "barnum-1000.webp": 174136
+    },
+    "media": "c.media({ nom: 'barnum', alt: \"Le barnum du camping avec ses tables et ses chaises, ouvert sur la prairie\", cadrage: '52% 44%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "spa": {
+    "nom": "spa",
+    "source": "recu/equipements-bien-etre-spa.jpg",
+    "role": "galerie",
+    "alt": "Le spa extérieur sur sa terrasse en bois fleurie, à côté de la maison",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "84a2f091520c6005",
+    "ratio": "4:3",
+    "largeurs": [
+      480,
+      640,
+      1000
+    ],
+    "mobile": null,
+    "cadrage": "52% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 4.2,
+      "l": 100,
+      "h": 91.7
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 2000,
+      "height": 1500,
+      "source": [
+        2000,
+        1500
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "spa-480.webp",
+      "spa-640.webp",
+      "spa-1000.webp"
+    ],
+    "poids": {
+      "spa-480.webp": 37894,
+      "spa-640.webp": 65508,
+      "spa-1000.webp": 146340
+    },
+    "media": "c.media({ nom: 'spa', alt: \"Le spa extérieur sur sa terrasse en bois fleurie, à côté de la maison\", cadrage: '52% 50%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "laverie": {
+    "nom": "laverie",
+    "source": "recu/lavoir-plage-verte.jpg",
+    "role": "galerie",
+    "alt": "La laverie : deux lave-linge et les bacs à vaisselle",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "768bf02add083981",
+    "ratio": "4:3",
+    "largeurs": [
+      480,
+      640,
+      1000
+    ],
+    "mobile": null,
+    "cadrage": "49% 45%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.04,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 2000,
+      "height": 1500,
+      "source": [
+        2000,
+        1500
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "laverie-480.webp",
+      "laverie-640.webp",
+      "laverie-1000.webp"
+    ],
+    "poids": {
+      "laverie-480.webp": 20760,
+      "laverie-640.webp": 33536,
+      "laverie-1000.webp": 72528
+    },
+    "media": "c.media({ nom: 'laverie', alt: \"La laverie : deux lave-linge et les bacs à vaisselle\", cadrage: '49% 45%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "sanitaires": {
+    "nom": "sanitaires",
+    "source": "recu/commun2.jpg",
+    "role": "galerie",
+    "alt": "Le couloir lumineux d'un bloc sanitaire, portes orange",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "4a1f5414ad54e4af",
+    "ratio": "3:4",
+    "largeurs": [
+      480,
+      640
+    ],
+    "mobile": null,
+    "cadrage": "42% 62%",
+    "sujet": {
+      "x": 0,
+      "y": 1.5,
+      "l": 95.5,
+      "h": 98.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.45,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.35,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 223,
+      "width": 1333,
+      "height": 1777,
+      "source": [
+        1333,
+        2000
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "sanitaires-480.webp",
+      "sanitaires-640.webp"
+    ],
+    "poids": {
+      "sanitaires-480.webp": 30492,
+      "sanitaires-640.webp": 43402
+    },
+    "media": "c.media({ nom: 'sanitaires', alt: \"Le couloir lumineux d'un bloc sanitaire, portes orange\", cadrage: '42% 62%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 4' })"
+  },
+  "douche": {
+    "nom": "douche",
+    "source": "recu/douche-camping.jpg",
+    "role": "galerie",
+    "alt": "Une cabine de douche d'un bloc sanitaire",
+    "grok": false,
+    "mention": null,
+    "beaute": 2,
+    "empreinte": "85eab4be0bd24845",
+    "ratio": "3:4",
+    "largeurs": [
+      480,
+      640
+    ],
+    "mobile": null,
+    "cadrage": "51% 62%",
+    "sujet": {
+      "x": 4.5,
+      "y": 0,
+      "l": 90.9,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.33,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.31,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.15,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.14,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 221,
+      "width": 1334,
+      "height": 1779,
+      "source": [
+        1334,
+        2000
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "douche-480.webp",
+      "douche-640.webp"
+    ],
+    "poids": {
+      "douche-480.webp": 14782,
+      "douche-640.webp": 22150
+    },
+    "media": "c.media({ nom: 'douche', alt: \"Une cabine de douche d'un bloc sanitaire\", cadrage: '51% 62%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 4' })"
+  },
+  "sancy-vallee": {
+    "nom": "sancy-vallee",
+    "source": "recu/partez-decouverte-sancy-2.jpg",
+    "role": "galerie",
+    "alt": "La vallée du Mont-Dore vue d'en haut, fleurs sauvages au premier plan et sommets du Sancy",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "ae9585ce5cb58d07",
+    "ratio": "4:3",
+    "largeurs": [
+      480,
+      640,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "50% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 95.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.36,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.02,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.01,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 67,
+      "top": 0,
+      "width": 1067,
+      "height": 800,
+      "source": [
+        1200,
+        800
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1200 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "sancy-vallee-480.webp",
+      "sancy-vallee-640.webp",
+      "sancy-vallee-800.webp"
+    ],
+    "poids": {
+      "sancy-vallee-480.webp": 36768,
+      "sancy-vallee-640.webp": 61664,
+      "sancy-vallee-800.webp": 93086
+    },
+    "media": "c.media({ nom: 'sancy-vallee', alt: \"La vallée du Mont-Dore vue d'en haut, fleurs sauvages au premier plan et sommets du Sancy\", sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "sancy-tyrolienne": {
+    "nom": "sancy-tyrolienne",
+    "source": "recu/partez-decouverte-sancy-3.jpg",
+    "role": "galerie",
+    "alt": "Une personne file sur une tyrolienne au-dessus de la forêt",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "2de90e03e64d4716",
+    "ratio": "4:3",
+    "largeurs": [
+      480,
+      640,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "51% 52%",
+    "sujet": {
+      "x": 0,
+      "y": 9.1,
+      "l": 100,
+      "h": 86.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.02,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 133,
+      "top": 0,
+      "width": 1067,
+      "height": 800,
+      "source": [
+        1200,
+        800
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1200 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "sancy-tyrolienne-480.webp",
+      "sancy-tyrolienne-640.webp",
+      "sancy-tyrolienne-800.webp"
+    ],
+    "poids": {
+      "sancy-tyrolienne-480.webp": 57960,
+      "sancy-tyrolienne-640.webp": 89094,
+      "sancy-tyrolienne-800.webp": 122214
+    },
+    "media": "c.media({ nom: 'sancy-tyrolienne', alt: \"Une personne file sur une tyrolienne au-dessus de la forêt\", cadrage: '51% 52%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "sancy-thermes": {
+    "nom": "sancy-thermes",
+    "source": "recu/partez-decouverte-sancy.jpg",
+    "role": "galerie",
+    "alt": "Une salle des thermes du Mont-Dore, carrelage et fontaine octogonale",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "e4f1f426d257d37c",
+    "ratio": "4:3",
+    "largeurs": [
+      480,
+      640,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "50% 56%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 95.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 67,
+      "top": 0,
+      "width": 1067,
+      "height": 800,
+      "source": [
+        1200,
+        800
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1200 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "sancy-thermes-480.webp",
+      "sancy-thermes-640.webp",
+      "sancy-thermes-800.webp"
+    ],
+    "poids": {
+      "sancy-thermes-480.webp": 52418,
+      "sancy-thermes-640.webp": 85604,
+      "sancy-thermes-800.webp": 123990
+    },
+    "media": "c.media({ nom: 'sancy-thermes', alt: \"Une salle des thermes du Mont-Dore, carrelage et fontaine octogonale\", cadrage: '50% 56%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "sancy-caves": {
+    "nom": "sancy-caves",
+    "source": "recu/partez-decouverte-sancy-4.jpg",
+    "role": "galerie",
+    "alt": "Fromages de Saint-Nectaire à l'affinage sur des planches de cave",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "ef462fab8ce69f51",
+    "ratio": "4:3",
+    "largeurs": [
+      480,
+      640,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "50% 54%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 95.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 78,
+      "top": 0,
+      "width": 1020,
+      "height": 765,
+      "source": [
+        1200,
+        765
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1200 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "sancy-caves-480.webp",
+      "sancy-caves-640.webp",
+      "sancy-caves-800.webp"
+    ],
+    "poids": {
+      "sancy-caves-480.webp": 30208,
+      "sancy-caves-640.webp": 45544,
+      "sancy-caves-800.webp": 62834
+    },
+    "media": "c.media({ nom: 'sancy-caves', alt: \"Fromages de Saint-Nectaire à l'affinage sur des planches de cave\", cadrage: '50% 54%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 3' })"
+  },
+  "gite-sejour": {
+    "nom": "gite-sejour",
+    "source": "recu/gite-cantou-emile-appartements-4.jpg",
+    "role": "galerie",
+    "alt": "Le séjour du gîte : cheminée en pierre, poutres, table et canapé",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "f7cfbdbe09ab4ea6",
+    "ratio": "3:2",
+    "largeurs": [
+      480,
+      640,
+      1000
+    ],
+    "mobile": null,
+    "cadrage": "50% 47%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 95.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.1,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1500,
+      "height": 1000,
+      "source": [
+        1500,
+        1000
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "gite-sejour-480.webp",
+      "gite-sejour-640.webp",
+      "gite-sejour-1000.webp"
+    ],
+    "poids": {
+      "gite-sejour-480.webp": 28676,
+      "gite-sejour-640.webp": 45978,
+      "gite-sejour-1000.webp": 97374
+    },
+    "media": "c.media({ nom: 'gite-sejour', alt: \"Le séjour du gîte : cheminée en pierre, poutres, table et canapé\", cadrage: '50% 47%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "gite-cuisine": {
+    "nom": "gite-cuisine",
+    "source": "recu/gite-cantou-emile-appartements.jpg",
+    "role": "galerie",
+    "alt": "La cuisine équipée du gîte, avec sa table en bois",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "3878b9717c38c448",
+    "ratio": "3:2",
+    "largeurs": [
+      480,
+      640,
+      1000
+    ],
+    "mobile": null,
+    "cadrage": "46% 55%",
+    "sujet": {
+      "x": 3.1,
+      "y": 0,
+      "l": 93.8,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.18,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.09,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.05,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.05,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 167,
+      "width": 2000,
+      "height": 1333,
+      "source": [
+        2000,
+        1500
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "gite-cuisine-480.webp",
+      "gite-cuisine-640.webp",
+      "gite-cuisine-1000.webp"
+    ],
+    "poids": {
+      "gite-cuisine-480.webp": 19358,
+      "gite-cuisine-640.webp": 33014,
+      "gite-cuisine-1000.webp": 74740
+    },
+    "media": "c.media({ nom: 'gite-cuisine', alt: \"La cuisine équipée du gîte, avec sa table en bois\", cadrage: '46% 55%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "appart-cuisine": {
+    "nom": "appart-cuisine",
+    "source": "recu/tarifs-2026.jpg",
+    "role": "galerie",
+    "alt": "La cuisine d'un appartement des Champs Fleuris, coin repas",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "c86010f4a486ec7a",
+    "ratio": "3:2",
+    "largeurs": [
+      480,
+      640,
+      1000
+    ],
+    "mobile": null,
+    "cadrage": "50% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.21,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.15,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.03,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.02,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 84,
+      "width": 2000,
+      "height": 1333,
+      "source": [
+        2000,
+        1500
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "appart-cuisine-480.webp",
+      "appart-cuisine-640.webp",
+      "appart-cuisine-1000.webp"
+    ],
+    "poids": {
+      "appart-cuisine-480.webp": 14684,
+      "appart-cuisine-640.webp": 22488,
+      "appart-cuisine-1000.webp": 42470
+    },
+    "media": "c.media({ nom: 'appart-cuisine', alt: \"La cuisine d'un appartement des Champs Fleuris, coin repas\", sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "appart-chambre": {
+    "nom": "appart-chambre",
+    "source": "recu/tarifs-2026-2.jpg",
+    "role": "galerie",
+    "alt": "Une chambre d'un appartement des Champs Fleuris",
+    "grok": false,
+    "mention": null,
+    "beaute": 2,
+    "empreinte": "5c72674bcb81bdee",
+    "ratio": "3:2",
+    "largeurs": [
+      480,
+      640
+    ],
+    "mobile": null,
+    "cadrage": "45% 50%",
+    "sujet": {
+      "x": 12.5,
+      "y": 0,
+      "l": 83.3,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.52,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.3,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.25,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 860,
+      "width": 1500,
+      "height": 1000,
+      "source": [
+        1500,
+        2000
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "appart-chambre-480.webp",
+      "appart-chambre-640.webp"
+    ],
+    "poids": {
+      "appart-chambre-480.webp": 18214,
+      "appart-chambre-640.webp": 28374
+    },
+    "media": "c.media({ nom: 'appart-chambre', alt: \"Une chambre d'un appartement des Champs Fleuris\", cadrage: '45% 50%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "mh-sejour": {
+    "nom": "mh-sejour",
+    "source": "recu/tarifs-2026-5.jpg",
+    "role": "galerie",
+    "alt": "Le séjour d'un mobil-home : banquette, table et cuisine ouverte",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "ffb9868f5f435018",
+    "ratio": "3:2",
+    "largeurs": [
+      480,
+      640,
+      1000
+    ],
+    "mobile": null,
+    "cadrage": "50% 43%",
+    "sujet": {
+      "x": 0,
+      "y": 6.3,
+      "l": 100,
+      "h": 87.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.18,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.13,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.12,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.06,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 164,
+      "top": 0,
+      "width": 1472,
+      "height": 981,
+      "source": [
+        2000,
+        981
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "mh-sejour-480.webp",
+      "mh-sejour-640.webp",
+      "mh-sejour-1000.webp"
+    ],
+    "poids": {
+      "mh-sejour-480.webp": 20466,
+      "mh-sejour-640.webp": 31270,
+      "mh-sejour-1000.webp": 59214
+    },
+    "media": "c.media({ nom: 'mh-sejour', alt: \"Le séjour d'un mobil-home : banquette, table et cuisine ouverte\", cadrage: '50% 43%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "mh-chambre": {
+    "nom": "mh-chambre",
+    "source": "recu/mobil-homes.jpg",
+    "role": "galerie",
+    "alt": "Une chambre de mobil-home avec un grand lit",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "fd3dbe2a5176b83e",
+    "ratio": "3:2",
+    "largeurs": [
+      480,
+      640,
+      1000
+    ],
+    "mobile": null,
+    "cadrage": "51% 56%",
+    "sujet": {
+      "x": 18.8,
+      "y": 22.8,
+      "l": 46.9,
+      "h": 72.6
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.71,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.53,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.51,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.3,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 180,
+      "width": 2000,
+      "height": 1333,
+      "source": [
+        2000,
+        1513
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "mh-chambre-480.webp",
+      "mh-chambre-640.webp",
+      "mh-chambre-1000.webp"
+    ],
+    "poids": {
+      "mh-chambre-480.webp": 15258,
+      "mh-chambre-640.webp": 24254,
+      "mh-chambre-1000.webp": 46356
+    },
+    "media": "c.media({ nom: 'mh-chambre', alt: \"Une chambre de mobil-home avec un grand lit\", cadrage: '51% 56%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "mh-chambre-2": {
+    "nom": "mh-chambre-2",
+    "source": "recu/tarifs-2026-8.jpg",
+    "role": "galerie",
+    "alt": "Une chambre de mobil-home aux murs bleus",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "3f4a619579c9b720",
+    "ratio": "3:2",
+    "largeurs": [
+      480,
+      640
+    ],
+    "mobile": null,
+    "cadrage": "47% 58%",
+    "sujet": {
+      "x": 1,
+      "y": 0,
+      "l": 99,
+      "h": 95.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.32,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.27,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.18,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.02,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 77,
+      "top": 0,
+      "width": 1350,
+      "height": 900,
+      "source": [
+        1427,
+        900
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "mh-chambre-2-480.webp",
+      "mh-chambre-2-640.webp"
+    ],
+    "poids": {
+      "mh-chambre-2-480.webp": 18682,
+      "mh-chambre-2-640.webp": 28612
+    },
+    "media": "c.media({ nom: 'mh-chambre-2', alt: \"Une chambre de mobil-home aux murs bleus\", cadrage: '47% 58%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "mh-exterieur": {
+    "nom": "mh-exterieur",
+    "source": "recu/tarifs-2026-13.jpg",
+    "role": "galerie",
+    "alt": "Un mobil-home blanc avec sa terrasse en bois, sur la pelouse",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "b550c4b446583254",
+    "ratio": "3:2",
+    "largeurs": [
+      480,
+      640
+    ],
+    "mobile": null,
+    "cadrage": "53% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.17,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.02,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 4,
+      "width": 900,
+      "height": 600,
+      "source": [
+        900,
+        675
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "900 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "mh-exterieur-480.webp",
+      "mh-exterieur-640.webp"
+    ],
+    "poids": {
+      "mh-exterieur-480.webp": 33584,
+      "mh-exterieur-640.webp": 57424
+    },
+    "media": "c.media({ nom: 'mh-exterieur', alt: \"Un mobil-home blanc avec sa terrasse en bois, sur la pelouse\", cadrage: '53% 50%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 2' })"
+  },
+  "logo-ancv": {
+    "nom": "logo-ancv",
+    "source": "recu/logo-2.webp",
+    "role": "logo",
+    "alt": "Chèque-Vacances ANCV acceptés",
+    "grok": false,
+    "mention": null,
+    "beaute": null,
+    "empreinte": "2a9c72ee5e1f3709",
+    "ratio": null,
+    "largeurs": [
+      240,
+      480
+    ],
+    "mobile": null,
+    "cadrage": null,
+    "sujet": null,
+    "zones_calmes": null,
+    "zone_texte": null,
+    "recadrage": null,
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "logo-ancv-240.webp",
+      "logo-ancv-480.webp"
+    ],
+    "poids": {
+      "logo-ancv-240.webp": 4440,
+      "logo-ancv-480.webp": 9192
+    },
+    "media": "c.media({ nom: 'logo-ancv', alt: \"Chèque-Vacances ANCV acceptés\", sizes: '240px' })"
+  },
+  "logo-vacaf": {
+    "nom": "logo-vacaf",
+    "source": "recu/logo-3.jpg",
+    "role": "logo",
+    "alt": "Bons Vacaf acceptés",
+    "grok": false,
+    "mention": null,
+    "beaute": null,
+    "empreinte": "b0dd843609c8ebca",
+    "ratio": null,
+    "largeurs": [
+      240,
+      480
+    ],
+    "mobile": null,
+    "cadrage": null,
+    "sujet": null,
+    "zones_calmes": null,
+    "zone_texte": null,
+    "recadrage": null,
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "logo-vacaf-240.webp",
+      "logo-vacaf-480.webp"
+    ],
+    "poids": {
+      "logo-vacaf-240.webp": 3974,
+      "logo-vacaf-480.webp": 8262
+    },
+    "media": "c.media({ nom: 'logo-vacaf', alt: \"Bons Vacaf acceptés\", sizes: '240px' })"
+  },
+  "grok/spa-vapeur": {
+    "nom": "grok/spa-vapeur",
+    "source": "recu/grok/spa-vapeur.png",
+    "role": "section-fond",
+    "alt": "Eau chaude qui bouillonne et vapeur au crépuscule",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "b00a9554f10bf544",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640
+      ],
+      "cadrage": "50% 72%"
+    },
+    "cadrage": "50% 72%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 96.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.35,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.04,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1600,
+      "height": 1067,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "version téléphone sans 1080 px (source trop petite)",
+      "agrandie 1,2 fois (source de 1600 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/spa-vapeur-640.webp",
+      "grok/spa-vapeur-1280.webp",
+      "grok/spa-vapeur-1920.webp",
+      "grok/spa-vapeur-mobile-640.webp"
+    ],
+    "poids": {
+      "grok/spa-vapeur-640.webp": 38350,
+      "grok/spa-vapeur-1280.webp": 98106,
+      "grok/spa-vapeur-1920.webp": 153090,
+      "grok/spa-vapeur-mobile-640.webp": 50252
+    },
+    "media": "c.media({ nom: 'grok/spa-vapeur', alt: \"Eau chaude qui bouillonne et vapeur au crépuscule\", cadrage: '50% 72%', cadrageMobile: '50% 72%', sizes: '100vw' })"
+  },
+  "grok/crete-aube": {
+    "nom": "grok/crete-aube",
+    "source": "recu/grok/crete-aube.png",
+    "role": "section-fond",
+    "alt": "Crêtes volcaniques herbeuses au lever du soleil au-dessus d'une mer de nuages, une randonneuse au loin",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 5,
+    "empreinte": "dca404fc2be5a1fd",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640
+      ],
+      "cadrage": "50% 56%"
+    },
+    "cadrage": "46% 56%",
+    "sujet": {
+      "x": 0,
+      "y": 4.5,
+      "l": 100,
+      "h": 91.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.59,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.18,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.15,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.12,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": "haut",
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1600,
+      "height": 1067,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "version téléphone sans 1080 px (source trop petite)",
+      "agrandie 1,2 fois (source de 1600 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/crete-aube-640.webp",
+      "grok/crete-aube-1280.webp",
+      "grok/crete-aube-1920.webp",
+      "grok/crete-aube-mobile-640.webp"
+    ],
+    "poids": {
+      "grok/crete-aube-640.webp": 26434,
+      "grok/crete-aube-1280.webp": 76262,
+      "grok/crete-aube-1920.webp": 123652,
+      "grok/crete-aube-mobile-640.webp": 44608
+    },
+    "media": "c.media({ nom: 'grok/crete-aube', alt: \"Crêtes volcaniques herbeuses au lever du soleil au-dessus d'une mer de nuages, une randonneuse au loin\", cadrage: '46% 56%', cadrageMobile: '50% 56%', sizes: '100vw' })"
+  },
+  "grok/matin-cafe": {
+    "nom": "grok/matin-cafe",
+    "source": "recu/grok/matin-cafe.png",
+    "role": "carte-service",
+    "alt": "Tasse de café fumante sur une table de pique-nique au lever du soleil, collines dans la brume",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "a6b46366606d06ba",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "44% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 95.5,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.2,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 81,
+      "width": 1074,
+      "height": 1343,
+      "source": [
+        1074,
+        1600
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1074 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/matin-cafe-480.webp",
+      "grok/matin-cafe-640.webp",
+      "grok/matin-cafe-784.webp"
+    ],
+    "poids": {
+      "grok/matin-cafe-480.webp": 56184,
+      "grok/matin-cafe-640.webp": 85610,
+      "grok/matin-cafe-784.webp": 110722
+    },
+    "media": "c.media({ nom: 'grok/matin-cafe', alt: \"Tasse de café fumante sur une table de pique-nique au lever du soleil, collines dans la brume\", cadrage: '44% 50%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '4 / 5' })"
+  },
+  "grok/rosee": {
+    "nom": "grok/rosee",
+    "source": "recu/grok/rosee.png",
+    "role": "section-fond",
+    "alt": "Gouttes de rosée sur des brins d'herbe au soleil du matin",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "c73371c9f77b48ab",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": null,
+    "cadrage": "43% 56%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 96.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.34,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1600,
+      "height": 1067,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 1600 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/rosee-640.webp",
+      "grok/rosee-1280.webp",
+      "grok/rosee-1920.webp"
+    ],
+    "poids": {
+      "grok/rosee-640.webp": 43486,
+      "grok/rosee-1280.webp": 103764,
+      "grok/rosee-1920.webp": 161062
+    },
+    "media": "c.media({ nom: 'grok/rosee', alt: \"Gouttes de rosée sur des brins d'herbe au soleil du matin\", cadrage: '43% 56%', sizes: '100vw' })"
+  },
+  "grok/reserver-prairie": {
+    "nom": "grok/reserver-prairie",
+    "source": "recu/grok/reserver-prairie.png",
+    "role": "ouverture",
+    "alt": "Table de pique-nique vide dans une prairie fleurie au soleil couchant, collines au loin",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "95c9c90bb73a104d",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640
+      ],
+      "cadrage": "50% 47%"
+    },
+    "cadrage": "50% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.36,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.02,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.01,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 55,
+      "width": 1600,
+      "height": 900,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "version téléphone sans 1080 px (source trop petite)",
+      "agrandie 1,2 fois (source de 1600 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/reserver-prairie-640.webp",
+      "grok/reserver-prairie-1280.webp",
+      "grok/reserver-prairie-1920.webp",
+      "grok/reserver-prairie-mobile-640.webp"
+    ],
+    "poids": {
+      "grok/reserver-prairie-640.webp": 44914,
+      "grok/reserver-prairie-1280.webp": 128926,
+      "grok/reserver-prairie-1920.webp": 205376,
+      "grok/reserver-prairie-mobile-640.webp": 82158
+    },
+    "media": "c.media({ nom: 'grok/reserver-prairie', alt: \"Table de pique-nique vide dans une prairie fleurie au soleil couchant, collines au loin\", cadrageMobile: '50% 47%', sizes: '100vw', priorite: true })"
+  },
+  "grok/linge-fourni": {
+    "nom": "grok/linge-fourni",
+    "source": "recu/grok/linge-fourni.png",
+    "role": "carte-service",
+    "alt": "Couette pliée, oreillers et couverture en laine sur un banc en bois",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 3,
+    "empreinte": "5475a433b6bcda9b",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "45% 47%",
+    "sujet": {
+      "x": 0,
+      "y": 7,
+      "l": 95.5,
+      "h": 93
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.36,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.03,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 207,
+      "width": 1074,
+      "height": 1343,
+      "source": [
+        1074,
+        1600
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1074 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/linge-fourni-480.webp",
+      "grok/linge-fourni-640.webp",
+      "grok/linge-fourni-784.webp"
+    ],
+    "poids": {
+      "grok/linge-fourni-480.webp": 53750,
+      "grok/linge-fourni-640.webp": 83336,
+      "grok/linge-fourni-784.webp": 109780
+    },
+    "media": "c.media({ nom: 'grok/linge-fourni', alt: \"Couette pliée, oreillers et couverture en laine sur un banc en bois\", cadrage: '45% 47%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '4 / 5' })"
+  },
+  "grok/page-404": {
+    "nom": "grok/page-404",
+    "source": "recu/grok/404-sardine.png",
+    "role": "404",
+    "alt": "Une sardine de tente toute seule dans l'herbe mouillée",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "510fb9ba4a14e2ed",
+    "ratio": "16:9",
+    "largeurs": [
+      800,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "50% 49%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.13,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.01,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1600,
+      "height": 900,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/page-404-800.webp",
+      "grok/page-404-1600.webp"
+    ],
+    "poids": {
+      "grok/page-404-800.webp": 57924,
+      "grok/page-404-1600.webp": 135458
+    },
+    "media": "c.media({ nom: 'grok/page-404', alt: \"Une sardine de tente toute seule dans l'herbe mouillée\", cadrage: '50% 49%', sizes: '100vw', ratio: '16 / 9' })"
+  }
+}

@@ -1,0 +1,6 @@
+[
+  { "valeur": 25000, "unite": "m²", "texte": "de prairie" },
+  { "valeur": 100, "unite": "", "texte": "emplacements de camping et locatifs" },
+  { "valeur": 5, "unite": "min", "texte": "du centre-ville et des thermes" },
+  { "valeur": 2, "unite": "km", "texte": "du Capucin, site de grimpe" }
+]

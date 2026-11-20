@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="fr" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Emplacements de camping au Mont-Dore : La Plage Verte</title>
+<meta name="description" content="84 emplacements engazonnés de 80 à 200 m², électricité 6 ou 10 A, aire de service camping-car, forfait curiste et navette thermale gratuite.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://plage-verte-maquette.vercel.app/emplacements">
+<style>:root{--fond:#F5F2E8;--texte:#1C2620;--voile-fond:#1F3B2D;--ouverture-fond:#1F3B2D;--menu-fond:#1F3B2D}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/epilogue-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/figtree-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#F5F2E8">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="La Plage Verte">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Emplacements de camping au Mont-Dore : La Plage Verte">
+<meta property="og:description" content="84 emplacements engazonnés de 80 à 200 m², électricité 6 ou 10 A, aire de service camping-car, forfait curiste et navette thermale gratuite.">
+<meta property="og:url" content="https://plage-verte-maquette.vercel.app/emplacements">
+<meta property="og:image" content="https://plage-verte-maquette.vercel.app/assets/partage/emplacements-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="La prairie du camping La Plage Verte et les crêtes du Sancy">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Campground","name":"Camping La Plage Verte","url":"https://plage-verte-maquette.vercel.app/","telephone":"+33473650430","email":"campinglaplageverte@orange.fr","address":{"@type":"PostalAddress","streetAddress":"83 route de La Tour d'Auvergne","postalCode":"63240","addressLocality":"Le Mont-Dore","addressCountry":"FR"},"starRating":{"@type":"Rating","ratingValue":"3"},"petsAllowed":true,"paymentAccepted":"Espèces, chèque, carte bancaire, virement, Chèques-Vacances","amenityFeature":[{"@type":"LocationFeatureSpecification","name":"Wi-Fi gratuit","value":true},{"@type":"LocationFeatureSpecification","name":"Spa extérieur","value":true},{"@type":"LocationFeatureSpecification","name":"Sauna","value":true},{"@type":"LocationFeatureSpecification","name":"Navette thermale gratuite","value":true},{"@type":"LocationFeatureSpecification","name":"Borne de recharge pour véhicules électriques","value":true}],"description":"Camping nature classé 3 étoiles au Mont-Dore, au pied des crêtes du Sancy : 84 emplacements, cabanes, mobil-homes, un gîte et deux appartements."}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="vague" aria-hidden="true"><svg class="voile-vague voile-vague--haut" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 120 C 240 20 480 20 720 70 S 1200 130 1440 40 V 120 H 0 Z"/></svg><svg class="voile-vague voile-vague--bas" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 C 240 100 480 100 720 50 S 1200 -10 1440 80 V 0 H 0 Z"/></svg><div class="voile-contenu"><img src="/assets/images/logo-clair.svg" alt="" width="56" height="56"><span data-voile-libelle>Emplacements</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <svg class="ouverture-crete" viewBox="0 0 1000 260" preserveAspectRatio="none" aria-hidden="true"><path d="M0 200 L70 176 L130 188 L190 150 L250 160 L310 120 L360 136 L420 84 L470 108 L520 62 L575 118 L640 104 L700 138 L770 112 L840 152 L910 140 L1000 162" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg>
+  <span class="ouverture-soleil" data-ouverture-objet></span>
+  <p class="ouverture-nom">La Plage Verte</p>
+  <p class="ouverture-ligne">Camping nature au Mont-Dore</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil">
+      <img src="/assets/images/logo.svg" alt="" width="40" height="40"><span>La Plage Verte</span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/emplacements" data-libelle="Emplacements" aria-current="page">Emplacements</a></li><li><a href="/locations" data-libelle="Locations">Locations</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li><li><a href="/reserver" data-libelle="Réserver">Réserver</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton" href="/reserver" data-libelle="Réserver">Demander un séjour</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/emplacements" class="menu-lien" data-libelle="Emplacements" aria-current="page">Emplacements</a></li><li style="--i:2"><a href="/locations" class="menu-lien" data-libelle="Locations">Locations</a></li><li style="--i:3"><a href="/contact" class="menu-lien" data-libelle="Contact">Contact</a></li><li style="--i:4"><a href="/reserver" class="menu-lien" data-libelle="Réserver">Réserver</a></li></ul>
+  <p><a class="bouton" href="tel:+33473650430">Appeler 04 73 65 04 30</a></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="ouv-scindee" id="debut">
+  <div class="ouv-scindee-texte">
+    <p class="surtitre">84 emplacements</p>
+    <h1 class="ouv-titre-int" data-anime="lignes">Planter sa tente <em>dans la prairie</em></h1>
+    <p class="masque-ecran-tres-bas" data-anime>Engazonnés et arborés, au soleil ou à l&#39;ombre, de 80 à 200 m² : pour la tente, la caravane, le van ou le camping-car.</p>
+    <p class="ouv-actions-int" data-anime><a href="/reserver?hebergement=emplacement-electricite" class="bouton" data-libelle="Réserver" data-action-principale data-survol="magnetique">Demander un emplacement</a></p>
+    <p class="ouv-info-int" data-info-cle data-anime><svg class="icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20 12 4l9 16M12 4v16M8 20l4-6 4 6M2 20h20"/></svg><span>Arrivée dès 14 h · départ avant 12 h</span></p>
+  </div>
+  <figure class="media ouv-scindee-media" data-iris-centre data-effet="prairie" style="--cadrage:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/prairie-mobile-640.webp 640w" sizes="(max-width: 760px) 100vw, 55vw">
+    <img src="/assets/images/prairie-1280.webp" srcset="/assets/images/prairie-640.webp 640w, /assets/images/prairie-1280.webp 1280w, /assets/images/prairie-1920.webp 1920w" sizes="(max-width: 760px) 100vw, 55vw" alt="La prairie du camping La Plage Verte et les crêtes du Sancy" width="1280" height="720" fetchpriority="high" loading="eager" decoding="async">
+  </picture>
+</figure>
+</section>
+<section class="detail conteneur" id="detail">
+  <div>
+    <p class="surtitre">Votre emplacement</p>
+    <h2 data-anime="lignes">De la place, <em>de l'herbe</em></h2>
+    <ul class="coches" data-anime="cascade"><li>84 emplacements engazonnés et arborés</li><li>De 80 à 200 m², 100 m² en moyenne</li><li>Électricité 6 A ou 10 A</li><li>Aire de service camping-car : vidange et point d&#39;eau</li><li>Animaux acceptés</li></ul>
+  </div>
+  <figure class="media detail-media" data-anime="rideau" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/emplacements-640.webp" srcset="/assets/images/emplacements-480.webp 480w, /assets/images/emplacements-640.webp 640w" sizes="(max-width: 760px) 100vw, 40vw" alt="Une allée du camping entre les emplacements." width="640" height="801" loading="lazy" decoding="async">
+  </picture><figcaption class="media-legende">Une allée du camping entre les emplacements.</figcaption>
+</figure>
+</section>
+<section class="tarifs" id="tarifs">
+  <div class="conteneur">
+    <div class="section-tete">
+      <div><p class="surtitre">Tarifs 2026</p><h2 data-anime="lignes">Combien coûte <em>une nuit</em> ?</h2></div>
+      <p data-anime>Les redevances de la grille 2026, par nuit. Ajustez votre séjour : le total se calcule tout seul.</p>
+    </div>
+    <form class="calc" data-visuel data-calculateur aria-label="Calculateur du prix d&#39;une nuit" data-taxe="0.6599999999999999">
+    <div class="calc-champs">
+      <div class="calc-compteur" data-calc-ligne="adultes" data-prix-unitaire="5.5">
+      <span class="calc-libelle" id="calc-adultes-l">Personne de plus de 7 ans<small>5,50 € / nuit</small></span>
+      <span class="calc-pas">
+        <button type="button" data-moins aria-label="Retirer : Personne de plus de 7 ans">−</button>
+        <input type="number" id="calc-adultes" name="adultes" value="2" min="1" max="8" inputmode="numeric" aria-labelledby="calc-adultes-l">
+        <button type="button" data-plus aria-label="Ajouter : Personne de plus de 7 ans">+</button>
+      </span>
+    </div><div class="calc-compteur" data-calc-ligne="enfants" data-prix-unitaire="3.6">
+      <span class="calc-libelle" id="calc-enfants-l">Enfant de moins de 7 ans<small>3,60 € / nuit</small></span>
+      <span class="calc-pas">
+        <button type="button" data-moins aria-label="Retirer : Enfant de moins de 7 ans">−</button>
+        <input type="number" id="calc-enfants" name="enfants" value="0" min="0" max="6" inputmode="numeric" aria-labelledby="calc-enfants-l">
+        <button type="button" data-plus aria-label="Ajouter : Enfant de moins de 7 ans">+</button>
+      </span>
+    </div><div class="calc-compteur" data-calc-ligne="animaux" data-prix-unitaire="1.5">
+      <span class="calc-libelle" id="calc-animaux-l">Animal<small>1,50 € / nuit</small></span>
+      <span class="calc-pas">
+        <button type="button" data-moins aria-label="Retirer : Animal">−</button>
+        <input type="number" id="calc-animaux" name="animaux" value="0" min="0" max="3" inputmode="numeric" aria-labelledby="calc-animaux-l">
+        <button type="button" data-plus aria-label="Ajouter : Animal">+</button>
+      </span>
+    </div>
+      <div class="calc-compteur" data-calc-ligne="majeurs" data-prix-unitaire="0">
+        <span class="calc-libelle" id="calc-majeurs-l">dont personnes de plus de 18 ans</span>
+        <span class="calc-pas">
+          <button type="button" data-moins aria-label="Retirer : dont personnes de plus de 18 ans">−</button>
+          <input type="number" id="calc-majeurs" name="majeurs" value="2" min="0" max="8" inputmode="numeric" aria-labelledby="calc-majeurs-l">
+          <button type="button" data-plus aria-label="Ajouter : dont personnes de plus de 18 ans">+</button>
+        </span>
+      </div>
+      <fieldset class="calc-choix"><legend>Votre abri</legend>
+        <label class="puce"><input type="radio" name="abri" value="tente" data-prix="6" checked><span>Tente ou caravane + voiture<small>emplacement 4,00 € + véhicule 2,00 €</small></span></label><label class="puce"><input type="radio" name="abri" value="van" data-prix="6.7" ><span>Camping-car, van, fourgon<small>6,70 € la nuit</small></span></label><label class="puce"><input type="radio" name="abri" value="pied" data-prix="4" ><span>Tente, sans véhicule<small>emplacement 4,00 €</small></span></label>
+      </fieldset>
+      <fieldset class="calc-choix"><legend>Électricité</legend>
+        <label class="puce"><input type="radio" name="electricite" value="sans" data-prix="0" ><span>Sans électricité</span></label><label class="puce"><input type="radio" name="electricite" value="6a" data-prix="5.6" checked><span>Électricité 5/6 A<small>5,60 € / nuit</small></span></label><label class="puce"><input type="radio" name="electricite" value="10a" data-prix="9.2" ><span>Électricité 10 A (selon disponibilité)<small>9,20 € / nuit</small></span></label>
+      </fieldset>
+      <div class="calc-compteur" data-calc-ligne="nuits" data-prix-unitaire="0">
+        <span class="calc-libelle" id="calc-nuits-l">Nombre de nuits</span>
+        <span class="calc-pas">
+          <button type="button" data-moins aria-label="Retirer : Nombre de nuits">−</button>
+          <input type="number" id="calc-nuits" name="nuits" value="7" min="1" max="30" inputmode="numeric" aria-labelledby="calc-nuits-l">
+          <button type="button" data-plus aria-label="Ajouter : Nombre de nuits">+</button>
+        </span>
+      </div>
+    </div>
+    <div class="calc-total" aria-live="polite">
+      <p class="calc-ligne"><span>Par nuit</span><strong data-prix data-calc-nuit>22,60 €</strong></p>
+      <p class="calc-ligne"><span>Taxes de séjour</span><strong data-prix data-calc-taxes>1,32 €</strong></p>
+      <p class="calc-grand"><span>Total estimé <small data-calc-pour data-modele="pour {n} nuit(s)">pour 7 nuit(s)</small></span><strong data-prix data-calc-total>167,44 €</strong></p>
+      <a href="/reserver?hebergement=emplacement-electricite&amp;personnes=2&amp;nuits=7" class="bouton" data-libelle="Réserver" data-calc-lien>Demander ce séjour</a>
+      <p class="calc-note">Estimation d&#39;après la grille 2026 (taxe de séjour 0,60 € et taxe départementale 0,06 € par nuit et par personne de plus de 18 ans). Le camping confirme le prix exact.</p>
+    </div>
+  </form>
+    <details class="autres-tarifs">
+      <summary>Autres tarifs</summary>
+      <dl><div><dt>Visiteur</dt><dd>2,90 € la nuit</dd></div><div><dt>Garage mort</dt><dd>4,00 € la nuit, avec un séjour au camping</dd></div><div><dt>Lave-linge</dt><dd>6,00 €</dd></div><div><dt>Sèche-linge</dt><dd>5,00 €</dd></div><div><dt>Lave-vaisselle</dt><dd>2,00 €</dd></div><div><dt>Sauna</dt><dd>5,00 € par personne, 30 min</dd></div><div><dt>Spa</dt><dd>gratuit</dd></div><div><dt>Wi-Fi</dt><dd>gratuit</dd></div><div><dt>Recharge de batterie</dt><dd>0,50 €</dd></div><div><dt>Bouteille de glace pour glacière</dt><dd>1,00 €</dd></div></dl>
+    </details>
+  </div>
+</section>
+<section class="cure" id="cure">
+  <div class="conteneur cure-grille">
+    <div>
+      <p class="surtitre surtitre--clair">Curistes</p>
+      <h2 data-anime="lignes">Le forfait <em>cure</em></h2>
+      <p data-anime>Pour une cure ou un séjour d&#39;au moins 3 semaines : tarifs préférentiels, dès 427 € pour 2 personnes avec électricité 6 A.</p>
+      <p data-anime><a href="/reserver?hebergement=emplacement-electricite&amp;cure=oui" class="bouton bouton--clair" data-libelle="Réserver">Demander un forfait curiste</a></p>
+    </div>
+    <div class="navette" data-visuel>
+      <p class="navette-titre">Navette gratuite vers les thermes, du lundi au samedi</p>
+      <svg class="navette-trace" viewBox="0 0 400 120" aria-hidden="true" data-fx="trace"><path data-fx-trait d="M30 80 C 110 20, 200 120, 280 50 S 360 40, 370 60" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><circle cx="30" cy="80" r="9" fill="currentColor"/><circle cx="370" cy="60" r="9" fill="currentColor"/></svg>
+      <div class="navette-points">
+        <p><strong>Camping</strong><span>Départ du camping</span><b data-prix>8 h 15</b></p>
+        <p class="navette-duree">5 min</p>
+        <p><strong>Thermes</strong><span>Dernier départ des thermes</span><b data-prix>12 h 15</b></p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="equipements conteneur" id="equipements">
+  <div class="equipements-texte">
+    <p class="surtitre">Équipements</p>
+    <h2 data-anime="lignes">Tout le confort <em>du camp</em></h2>
+    <ul class="coches" data-anime="cascade"><li>2 blocs sanitaires : douches, lavabos en cabines, éviers, WC</li><li>1 bloc accessible aux personnes à mobilité réduite, douche-WC avec rampe</li><li>Laverie : lave-linge 6 €, sèche-linge 5 €, lave-vaisselle 2 €</li><li>Barnum avec tables et chaises</li><li>Aires de jeux pour les enfants</li><li>Wi-Fi gratuit et borne de recharge pour véhicules électriques</li></ul>
+  </div>
+  <div class="equipements-photos" data-anime="cascade">
+    <figure class="media eq-1" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/sanitaires-640.webp" srcset="/assets/images/sanitaires-480.webp 480w, /assets/images/sanitaires-640.webp 640w" sizes="(max-width: 760px) 50vw, 22vw" alt="2 blocs, dont 1 accessible aux personnes à mobilité réduite." width="640" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure>
+    <figure class="media eq-2" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/laverie-1000.webp" srcset="/assets/images/laverie-480.webp 480w, /assets/images/laverie-640.webp 640w, /assets/images/laverie-1000.webp 1000w" sizes="(max-width: 760px) 50vw, 26vw" alt="Lave-linge, sèche-linge et lave-vaisselle en libre-service." width="1000" height="750" loading="lazy" decoding="async">
+  </picture>
+</figure>
+  </div>
+</section>
+<section class="groupes" id="groupes">
+  <div class="conteneur groupes-grille">
+    <figure class="media groupes-media" data-anime="rideau" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/barnum-1000.webp" srcset="/assets/images/barnum-480.webp 480w, /assets/images/barnum-640.webp 640w, /assets/images/barnum-1000.webp 1000w" sizes="(max-width: 760px) 100vw, 50vw" alt="Le barnum, prêt pour les repas de groupe." width="1000" height="750" loading="lazy" decoding="async">
+  </picture><figcaption class="media-legende">Le barnum, prêt pour les repas de groupe.</figcaption>
+</figure>
+    <div>
+      <p class="surtitre">Groupes</p>
+      <h2 data-anime="lignes">Un camping nature <em>pour votre groupe</em></h2>
+      <p data-anime>Grands emplacements à la surface adaptée à votre demande, cabanes et mobil-homes ; barnum en libre accès, pain frais et viennoiseries le matin, lave-vaisselle et machine à laver.</p>
+      <p class="groupes-preciser" data-anime>Pour votre devis, précisez :</p>
+      <ul class="coches" data-anime="cascade"><li>le nombre de petites tentes et de marabouts</li><li>la surface ou le nombre d&#39;emplacements</li><li>le nombre de véhicules</li><li>le nombre de branchements électriques</li></ul>
+      <p data-anime><a href="/reserver?hebergement=groupe" class="bouton" data-libelle="Réserver">Demander un devis groupe</a></p>
+    </div>
+  </div>
+</section>
+<section class="fin-appel" id="appel">
+  <div class="fin-ciel" aria-hidden="true">
+    <span class="fin-soleil" data-effet="soleil"></span>
+    <svg class="fin-crete" viewBox="0 0 1000 260" preserveAspectRatio="none" data-effet="crete" data-visuel><path class="fin-crete-fond" d="M0 200 L70 176 L130 188 L190 150 L250 160 L310 120 L360 136 L420 84 L470 108 L520 62 L575 118 L640 104 L700 138 L770 112 L840 152 L910 140 L1000 162 L1000 260 L0 260Z"/><path class="fin-crete-trait" d="M0 200 L70 176 L130 188 L190 150 L250 160 L310 120 L360 136 L420 84 L470 108 L520 62 L575 118 L640 104 L700 138 L770 112 L840 152 L910 140 L1000 162" fill="none" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke" pathLength="1"/></svg>
+  </div>
+  <div class="conteneur fin-appel-texte">
+    <p class="surtitre">Saison prochaine</p>
+    <h2 data-anime="lignes">Votre coin de prairie <em>vous attend</em></h2>
+    <p data-anime>Colette et Laurent répondent rapidement à chaque demande : dites-leur vos dates, votre façon de dormir et combien vous serez.</p>
+    <p class="fin-actions" data-anime>
+      <a href="/reserver?hebergement=emplacement-electricite" class="bouton bouton--clair" data-libelle="Réserver" data-survol="magnetique">Demander un séjour</a>
+      <a class="bouton bouton--contour" href="tel:+33473650430">Appeler le 04 73 65 04 30</a>
+    </p>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <p class="pied-logo"><img src="/assets/images/logo-clair.svg" alt="" width="48" height="48"><span>La Plage Verte</span></p>
+      <p>Camping 3 étoiles · Camping nature au Mont-Dore</p>
+      <p>83 route de La Tour d&#39;Auvergne<br>63240 Le Mont-Dore</p>
+    </div>
+    <div>
+      <p class="pied-titre">Nous joindre</p>
+      <p>Accueil <a href="tel:+33473650430">04 73 65 04 30</a><br>Mobile <a href="tel:+33679259593">06 79 25 95 93</a><br><a href="mailto:campinglaplageverte@orange.fr">campinglaplageverte@orange.fr</a></p>
+    </div>
+    <nav aria-label="Le camping">
+      <p class="pied-titre">Le camping</p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/emplacements" data-libelle="Emplacements" aria-current="page">Emplacements</a></li><li><a href="/locations" data-libelle="Locations">Locations</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li><li><a href="/reserver" data-libelle="Réserver">Réserver</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titre">Paiement</p>
+      <p class="pied-logos"><img src="/assets/images/logo-ancv-240.webp" alt="Chèques-Vacances ANCV acceptés" width="80" height="59" loading="lazy"><img src="/assets/images/logo-vacaf-240.webp" alt="Bons Vacaf acceptés" width="78" height="59" loading="lazy"></p>
+      <p class="pied-petit">Espèces, chèque, carte bancaire, virement et Chèques-Vacances. Bons Vacaf acceptés.</p>
+    </div>
+  </div>
+  <div class="conteneur pied-bas">
+    <p>Mentions légales : à compléter · Politique de confidentialité : à compléter</p>
+    <p>Maquette : les formulaires sont simulés, rien n&#39;est envoyé.</p>
+    <p><a href="#haut" data-sans-transition>Retour en haut</a> · © La Plage Verte</p>
+  </div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33473650430">Appeler</a>
+  <a class="bouton" href="/reserver" data-libelle="Réserver">Demander un séjour</a>
+</div>
+</body>
+</html>

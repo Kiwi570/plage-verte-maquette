@@ -1,0 +1,20 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Campground",
+  "name": "Camping La Plage Verte",
+  "url": "https://plage-verte-maquette.vercel.app/",
+  "telephone": "+33473650430",
+  "email": "campinglaplageverte@orange.fr",
+  "address": { "@type": "PostalAddress", "streetAddress": "83 route de La Tour d'Auvergne", "postalCode": "63240", "addressLocality": "Le Mont-Dore", "addressCountry": "FR" },
+  "starRating": { "@type": "Rating", "ratingValue": "3" },
+  "petsAllowed": true,
+  "paymentAccepted": "Espèces, chèque, carte bancaire, virement, Chèques-Vacances",
+  "amenityFeature": [
+    { "@type": "LocationFeatureSpecification", "name": "Wi-Fi gratuit", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Spa extérieur", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Sauna", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Navette thermale gratuite", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Borne de recharge pour véhicules électriques", "value": true }
+  ],
+  "description": { "fr": "Camping nature classé 3 étoiles au Mont-Dore, au pied des crêtes du Sancy : 84 emplacements, cabanes, mobil-homes, un gîte et deux appartements." }
+}

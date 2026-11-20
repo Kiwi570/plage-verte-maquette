@@ -1,0 +1,8 @@
+[
+  { "icone": "wifi", "titre": "Wi-Fi gratuit", "texte": "Dans tout le camping." },
+  { "icone": "navette", "titre": "Navette thermale", "texte": "Gratuite, du lundi au samedi : départ du camping à 8 h 15, dernier retour des thermes à 12 h 15." },
+  { "icone": "borne", "titre": "Borne de recharge", "texte": "Pour les véhicules électriques." },
+  { "icone": "laverie", "titre": "Laverie", "texte": "Lave-linge, sèche-linge et lave-vaisselle en libre-service." },
+  { "icone": "barnum", "titre": "Barnum", "texte": "Tables et chaises en libre accès, à l'abri." },
+  { "icone": "jeux", "titre": "Aires de jeux", "texte": "Pour les enfants, dans la prairie." }
+]

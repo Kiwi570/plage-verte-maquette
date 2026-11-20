@@ -1,0 +1,15 @@
+{
+  "nom": "La Plage Verte",
+  "adresse": "https://plage-verte-maquette.vercel.app",
+  "siteActuel": "plage-verte.com",
+  "version": 1,
+  "langues": ["fr"],
+  "navigation": ["accueil", "emplacements", "locations", "contact", "reserver"],
+  "actionEntete": { "page": "reserver" },
+  "couleurs": { "fond": "#F5F2E8", "texte": "#1C2620", "voile": "#1F3B2D", "ouverture": "#1F3B2D", "menu": "#1F3B2D", "theme": "#F5F2E8" },
+  "formeVoile": "vague",
+  "contact": { "telephone": "04 73 65 04 30", "telephoneLien": "+33473650430", "mobile": "06 79 25 95 93", "mobileLien": "+33679259593", "email": "campinglaplageverte@orange.fr", "adresse": "83 route de La Tour d'Auvergne, 63240 Le Mont-Dore" },
+  "polices": ["/assets/fonts/epilogue-latin-800-normal.woff2", "/assets/fonts/figtree-latin-400-normal.woff2"],
+  "imagePartage": "aerienne-1280.webp",
+  "curseur": false
+}

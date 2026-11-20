@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="fr" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Camping La Plage Verte : camping nature au Mont-Dore, au pied du Sancy</title>
+<meta name="description" content="Camping 3 étoiles au Mont-Dore : 84 emplacements dans 25 000 m² de prairie, cabanes, mobil-homes, gîte et appartements, spa, à 5 minutes des thermes.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://plage-verte-maquette.vercel.app/">
+<style>:root{--fond:#F5F2E8;--texte:#1C2620;--voile-fond:#1F3B2D;--ouverture-fond:#1F3B2D;--menu-fond:#1F3B2D}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/epilogue-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/figtree-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#F5F2E8">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="La Plage Verte">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Camping La Plage Verte : camping nature au Mont-Dore, au pied du Sancy">
+<meta property="og:description" content="Camping 3 étoiles au Mont-Dore : 84 emplacements dans 25 000 m² de prairie, cabanes, mobil-homes, gîte et appartements, spa, à 5 minutes des thermes.">
+<meta property="og:url" content="https://plage-verte-maquette.vercel.app/">
+<meta property="og:image" content="https://plage-verte-maquette.vercel.app/assets/partage/accueil-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="La Plage Verte, camping nature au Mont-Dore, vu du ciel">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Campground","name":"Camping La Plage Verte","url":"https://plage-verte-maquette.vercel.app/","telephone":"+33473650430","email":"campinglaplageverte@orange.fr","address":{"@type":"PostalAddress","streetAddress":"83 route de La Tour d'Auvergne","postalCode":"63240","addressLocality":"Le Mont-Dore","addressCountry":"FR"},"starRating":{"@type":"Rating","ratingValue":"3"},"petsAllowed":true,"paymentAccepted":"Espèces, chèque, carte bancaire, virement, Chèques-Vacances","amenityFeature":[{"@type":"LocationFeatureSpecification","name":"Wi-Fi gratuit","value":true},{"@type":"LocationFeatureSpecification","name":"Spa extérieur","value":true},{"@type":"LocationFeatureSpecification","name":"Sauna","value":true},{"@type":"LocationFeatureSpecification","name":"Navette thermale gratuite","value":true},{"@type":"LocationFeatureSpecification","name":"Borne de recharge pour véhicules électriques","value":true}],"description":"Camping nature classé 3 étoiles au Mont-Dore, au pied des crêtes du Sancy : 84 emplacements, cabanes, mobil-homes, un gîte et deux appartements."}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="vague" aria-hidden="true"><svg class="voile-vague voile-vague--haut" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 120 C 240 20 480 20 720 70 S 1200 130 1440 40 V 120 H 0 Z"/></svg><svg class="voile-vague voile-vague--bas" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 C 240 100 480 100 720 50 S 1200 -10 1440 80 V 0 H 0 Z"/></svg><div class="voile-contenu"><img src="/assets/images/logo-clair.svg" alt="" width="56" height="56"><span data-voile-libelle>Accueil</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <svg class="ouverture-crete" viewBox="0 0 1000 260" preserveAspectRatio="none" aria-hidden="true"><path d="M0 200 L70 176 L130 188 L190 150 L250 160 L310 120 L360 136 L420 84 L470 108 L520 62 L575 118 L640 104 L700 138 L770 112 L840 152 L910 140 L1000 162" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg>
+  <span class="ouverture-soleil" data-ouverture-objet></span>
+  <p class="ouverture-nom">La Plage Verte</p>
+  <p class="ouverture-ligne">Camping nature au Mont-Dore</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil" aria-current="page">
+      <img src="/assets/images/logo.svg" alt="" width="40" height="40"><span>La Plage Verte</span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/emplacements" data-libelle="Emplacements">Emplacements</a></li><li><a href="/locations" data-libelle="Locations">Locations</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li><li><a href="/reserver" data-libelle="Réserver">Réserver</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton" href="/reserver" data-libelle="Réserver">Demander un séjour</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil" aria-current="page">Accueil</a></li><li style="--i:1"><a href="/emplacements" class="menu-lien" data-libelle="Emplacements">Emplacements</a></li><li style="--i:2"><a href="/locations" class="menu-lien" data-libelle="Locations">Locations</a></li><li style="--i:3"><a href="/contact" class="menu-lien" data-libelle="Contact">Contact</a></li><li style="--i:4"><a href="/reserver" class="menu-lien" data-libelle="Réserver">Réserver</a></li></ul>
+  <p><a class="bouton" href="tel:+33473650430">Appeler 04 73 65 04 30</a></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="ouv-accueil" id="debut">
+  <figure class="media ouv-accueil-media" data-effet="survol" style="--cadrage:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/aerienne-mobile-640.webp 640w, /assets/images/aerienne-mobile-1080.webp 1080w" sizes="100vw">
+    <img src="/assets/images/aerienne-1280.webp" srcset="/assets/images/aerienne-640.webp 640w, /assets/images/aerienne-1280.webp 1280w, /assets/images/aerienne-1920.webp 1920w" sizes="100vw" alt="La Plage Verte, camping nature au Mont-Dore, vu du ciel" width="1280" height="720" fetchpriority="high" loading="eager" decoding="async">
+  </picture>
+</figure>
+  <div class="ouv-accueil-voile" aria-hidden="true"></div>
+  <div class="cachet" data-iris-centre="disque" aria-hidden="true">
+    <span class="cachet-etoiles">★★★</span><span class="cachet-mot">Camping</span><span class="cachet-lieu">Le Mont-Dore</span>
+  </div>
+  <div class="conteneur ouv-accueil-texte">
+    <p class="surtitre surtitre--clair ouv-apparait">Camping 3 étoiles · Le Mont-Dore</p>
+    <h1 class="ouv-titre" data-anime="gsap"><span class="ligne-masque"><span class="ouv-ligne">Camping <em>nature</em></span></span><span class="ligne-masque"><span class="ouv-ligne">au Mont-Dore</span></span></h1>
+    <p class="ouv-texte ouv-apparait masque-ecran-tres-bas">Une évasion au cœur des volcans d&#39;Auvergne : 25 000 m² de prairie au pied des crêtes du Sancy, à 5 minutes des thermes.</p>
+    <div class="ouv-actions ouv-apparait">
+      <a href="/reserver" class="bouton" data-libelle="Réserver" data-action-principale data-survol="magnetique">Demander un séjour</a>
+      <a class="bouton bouton--contour bouton--sur-photo" href="#dormir" data-sans-transition>Voir les hébergements</a>
+    </div>
+    <p class="ouv-info ouv-apparait" data-info-cle data-saison='{"annee":2026,"periodes":[{"libelle":"Mobil-homes","debut":"2026-04-26","fin":"2026-10-11"},{"libelle":"Emplacements et cabanes","debut":"2026-05-07","fin":"2026-09-13"}],"textes":{"avant":"Ouverture le {date}","pendant":"Ouvert · {libelle} jusqu&#39;au {date}","apres":"Saison {annee} terminée · dates {suivante} à venir"}}'><span class="pastille" aria-hidden="true"></span><span data-saison-texte>Saison 2026 terminée · dates 2027 à venir</span></p>
+  </div>
+</section>
+<section class="bienvenue" id="bienvenue">
+  <div class="conteneur bienvenue-grille">
+    <div class="bienvenue-texte">
+      <p class="surtitre">Bienvenue</p>
+      <h2 data-anime="lignes">Les vraies vacances, <em>c'est ici</em></h2>
+      <p data-anime>Colette et Laurent vous accueillent dans un camping convivial et familial, à 3 km du village, au pied des crêtes du Sancy : le point de départ de nombreuses randonnées.</p>
+      <p data-anime>Touristes, curistes, randonneurs, grimpeurs, golfeurs ou camping-caristes : chacun y trouve son coin de prairie.</p>
+    </div>
+    <div class="bienvenue-photos">
+      <figure class="media bienvenue-accueil" data-anime="rideau" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/accueil-1000.webp" srcset="/assets/images/accueil-480.webp 480w, /assets/images/accueil-640.webp 640w, /assets/images/accueil-1000.webp 1000w" sizes="(max-width: 760px) 70vw, 30vw" alt="Le bâtiment de l&#39;accueil." width="1000" height="750" loading="lazy" decoding="async">
+  </picture><figcaption class="media-legende">Le bâtiment de l&#39;accueil.</figcaption>
+</figure>
+      <figure class="media bienvenue-calinette" data-fx="parallaxe" data-fx-force="8" style="--cadrage:42% 40%">
+  <picture>
+    <img src="/assets/images/calinette-640.webp" srcset="/assets/images/calinette-480.webp 480w, /assets/images/calinette-640.webp 640w" sizes="(max-width: 760px) 50vw, 20vw" alt="Calinette vous le confirme : les animaux sont acceptés au camping." width="640" height="800" loading="lazy" decoding="async">
+  </picture><figcaption class="media-legende">Calinette vous le confirme : les animaux sont acceptés au camping.</figcaption>
+</figure>
+    </div>
+  </div>
+  <ul class="conteneur chiffres" data-anime="cascade"><li><strong><span data-compteur="25000">25 000</span><small>m²</small></strong><span>de prairie</span></li><li><strong><span data-compteur="100">100</span></strong><span>emplacements de camping et locatifs</span></li><li><strong><span data-compteur="5">5</span><small>min</small></strong><span>du centre-ville et des thermes</span></li><li><strong><span data-compteur="2">2</span><small>km</small></strong><span>du Capucin, site de grimpe</span></li></ul>
+</section>
+<section class="dormir" id="dormir">
+  <div class="conteneur">
+    <div class="section-tete">
+      <div><p class="surtitre">Hébergements</p><h2 data-anime="lignes">Quatre façons <em>de dormir</em></h2></div>
+      <p data-anime>100 emplacements de camping et locatifs, au soleil ou à l&#39;ombre.</p>
+    </div>
+    <ul class="dormir-grille" data-anime="cascade">
+      <li class="dormir-carte" data-survol="incline" data-survol-force="5">
+        <figure class="media dormir-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/emplacements-640.webp" srcset="/assets/images/emplacements-480.webp 480w, /assets/images/emplacements-640.webp 640w" sizes="(max-width: 760px) 46vw, 24vw" alt="Emplacements" width="640" height="801" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <div class="dormir-corps">
+          <svg class="icone dormir-icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20 12 4l9 16M12 4v16M8 20l4-6 4 6M2 20h20"/></svg>
+          <h3><a href="/emplacements" class="dormir-lien" data-libelle="Emplacements" data-superpose>Emplacements</a></h3>
+          <p class="dormir-texte">84 emplacements engazonnés de 80 à 200 m², électricité 6 ou 10 A.</p>
+          <p class="dormir-prix" data-prix>5,50 € par personne et par nuit</p>
+        </div>
+      </li><li class="dormir-carte" data-survol="incline" data-survol-force="5">
+        <figure class="media dormir-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/cabane-carte-640.webp" srcset="/assets/images/cabane-carte-480.webp 480w, /assets/images/cabane-carte-640.webp 640w" sizes="(max-width: 760px) 46vw, 24vw" alt="Cabanes" width="640" height="800" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <div class="dormir-corps">
+          <svg class="icone dormir-icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 12 4l9 7M5 10v10h14V10M10 20v-5h4v5"/></svg>
+          <h3><a href="/locations#cabane" class="dormir-lien" data-libelle="Locations" data-superpose>Cabanes</a></h3>
+          <p class="dormir-texte">2 cabanes en bois de 20 m², pour 1 à 3 personnes.</p>
+          <p class="dormir-prix" data-prix>dès 65 € la nuit</p>
+        </div>
+      </li><li class="dormir-carte" data-survol="incline" data-survol-force="5">
+        <figure class="media dormir-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/mobil-home-terrasse-640.webp" srcset="/assets/images/mobil-home-terrasse-480.webp 480w, /assets/images/mobil-home-terrasse-640.webp 640w" sizes="(max-width: 760px) 46vw, 24vw" alt="Mobil-homes" width="640" height="800" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <div class="dormir-corps">
+          <svg class="icone dormir-icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="16" height="10" rx="1.5"/><path d="M18 11h4v6h-4M6 17v2M14 17v2M6 10h4v3H6z"/></svg>
+          <h3><a href="/locations#mh-eco" class="dormir-lien" data-libelle="Locations" data-superpose>Mobil-homes</a></h3>
+          <p class="dormir-texte">16 mobil-homes avec terrasse, de 1 à 6 personnes.</p>
+          <p class="dormir-prix" data-prix>dès 440 € la semaine</p>
+        </div>
+      </li><li class="dormir-carte" data-survol="incline" data-survol-force="5">
+        <figure class="media dormir-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/gite-ferme-640.webp" srcset="/assets/images/gite-ferme-480.webp 480w, /assets/images/gite-ferme-640.webp 640w" sizes="(max-width: 760px) 46vw, 24vw" alt="Gîte et appartements" width="640" height="800" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <div class="dormir-corps">
+          <svg class="icone dormir-icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20V10l6-5 6 5v10M15 10l3-3 3 3v10M7 20v-5h4v5M2 20h20"/></svg>
+          <h3><a href="/locations#gite" class="dormir-lien" data-libelle="Locations" data-superpose>Gîte et appartements</a></h3>
+          <p class="dormir-texte">Une ferme de 1894 et deux appartements, jardin et parking privé.</p>
+          <p class="dormir-prix" data-prix>dès 360 € la semaine</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+<section class="pres" id="sur-place">
+  <div class="conteneur pres-tete">
+    <div><p class="surtitre">Sur place</p><h2 data-anime="lignes">Le camping <em>de près</em></h2></div>
+    <p class="pres-consigne"><span class="si-souris">Continuez à descendre : la rangée défile avec vous.</span><span class="si-tactile">Faites glisser : tout ce qui est là quand vous arrivez.</span></p>
+  </div>
+  <div class="pres-fenetre" tabindex="0" role="region" aria-label="Photos du camping, à faire défiler">
+  <div class="pres-piste" data-effet="rangee" data-galerie>
+    <article class="pres-carte" id="sur-place-1" data-fx="vitesse" data-fx-force="2">
+      <figure class="media pres-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/accueil-1000.webp" srcset="/assets/images/accueil-480.webp 480w, /assets/images/accueil-640.webp 640w, /assets/images/accueil-1000.webp 1000w" sizes="(max-width: 760px) 80vw, 34vw" alt="Ouvert de 9 h à 12 h et de 14 h à 19 h en haute saison." width="1000" height="750" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <h3>L&#39;accueil</h3>
+      <p>Ouvert de 9 h à 12 h et de 14 h à 19 h en haute saison.</p>
+    </article><article class="pres-carte" id="sur-place-2" data-fx="vitesse" data-fx-force="2">
+      <figure class="media pres-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/barnum-1000.webp" srcset="/assets/images/barnum-480.webp 480w, /assets/images/barnum-640.webp 640w, /assets/images/barnum-1000.webp 1000w" sizes="(max-width: 760px) 80vw, 34vw" alt="Tables et chaises en libre accès, pour les repas à l&#39;abri." width="1000" height="750" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <h3>Le barnum</h3>
+      <p>Tables et chaises en libre accès, pour les repas à l&#39;abri.</p>
+    </article><article class="pres-carte" id="sur-place-3" data-fx="vitesse" data-fx-force="2">
+      <figure class="media pres-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/mh-exterieur-640.webp" srcset="/assets/images/mh-exterieur-480.webp 480w, /assets/images/mh-exterieur-640.webp 640w" sizes="(max-width: 760px) 80vw, 34vw" alt="16 mobil-homes avec terrasse, au soleil ou à l&#39;ombre." width="640" height="427" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <h3>Les mobil-homes</h3>
+      <p>16 mobil-homes avec terrasse, au soleil ou à l&#39;ombre.</p>
+    </article><article class="pres-carte" id="sur-place-4" data-fx="vitesse" data-fx-force="2">
+      <figure class="media pres-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/laverie-1000.webp" srcset="/assets/images/laverie-480.webp 480w, /assets/images/laverie-640.webp 640w, /assets/images/laverie-1000.webp 1000w" sizes="(max-width: 760px) 80vw, 34vw" alt="Lave-linge, sèche-linge et lave-vaisselle en libre-service." width="1000" height="750" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <h3>La laverie</h3>
+      <p>Lave-linge, sèche-linge et lave-vaisselle en libre-service.</p>
+    </article><article class="pres-carte" id="sur-place-5" data-fx="vitesse" data-fx-force="2">
+      <figure class="media pres-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/sanitaires-640.webp" srcset="/assets/images/sanitaires-480.webp 480w, /assets/images/sanitaires-640.webp 640w" sizes="(max-width: 760px) 80vw, 34vw" alt="2 blocs, dont 1 accessible aux personnes à mobilité réduite." width="640" height="853" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <h3>Les sanitaires</h3>
+      <p>2 blocs, dont 1 accessible aux personnes à mobilité réduite.</p>
+    </article>
+  </div>
+  </div>
+</section>
+<section class="spa" id="bien-etre" data-fx="plein-ecran" data-fx-depart="inset(22% 26% 22% 26% round 999px)">
+  <div data-collant>
+    <figure class="media spa-media" data-grok style="--cadrage:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/spa-vapeur-mobile-640.webp 640w" sizes="100vw">
+    <img src="/assets/images/grok/spa-vapeur-1280.webp" srcset="/assets/images/grok/spa-vapeur-640.webp 640w, /assets/images/grok/spa-vapeur-1280.webp 1280w, /assets/images/grok/spa-vapeur-1920.webp 1920w" sizes="100vw" alt="L&#39;espace bien-être" width="1280" height="854" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+    <canvas class="spa-vapeur" data-effet="vapeur" aria-hidden="true"></canvas>
+    <p class="spa-mots" aria-hidden="true"><span data-fx-ecarte="g">Spa</span> <span data-fx-ecarte="d">&amp; sauna</span></p>
+    <div class="spa-legende" data-fx-apres>
+      <figure class="media spa-photo" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/spa-1000.webp" srcset="/assets/images/spa-480.webp 480w, /assets/images/spa-640.webp 640w, /assets/images/spa-1000.webp 1000w" sizes="160px" alt="Le spa du camping, sur sa terrasse fleurie." width="1000" height="750" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <div>
+        <h2>L&#39;espace bien-être</h2>
+        <p>Ouvert de 9 h 30 à 19 h. Spa extérieur en accès libre et gratuit ; sauna sur réservation, 5 € par personne les 30 minutes.</p>
+        <p class="spa-petit">Réservé aux plus de 16 ans séjournant au camping.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="matin" id="matin">
+  <div class="conteneur matin-grille">
+    <figure class="media matin-media" data-grok data-fx="zoom" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/matin-cafe-784.webp" srcset="/assets/images/grok/matin-cafe-480.webp 480w, /assets/images/grok/matin-cafe-640.webp 640w, /assets/images/grok/matin-cafe-784.webp 784w" sizes="(max-width: 760px) 100vw, 40vw" alt="Pain et viennoiseries &lt;em&gt;cuits sur place&lt;/em&gt;" width="784" height="980" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+    <div>
+      <p class="surtitre">Le matin</p>
+      <h2 data-anime="lignes">Pain et viennoiseries <em>cuits sur place</em></h2>
+      <p data-anime>En saison, Laurent et Colette vendent chaque matin au point « petit déj » des pains et des viennoiseries cuits sur place.</p>
+      <h3 class="matin-sous" data-anime>Et toute la journée</h3>
+      <ul class="services" data-anime="cascade"><li><svg class="icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 9a14 14 0 0 1 19 0"/><path d="M5.5 12.5a9.5 9.5 0 0 1 13 0"/><path d="M8.7 16a5 5 0 0 1 6.6 0"/><path d="M12 19.5h.01"/></svg><div><strong>Wi-Fi gratuit</strong><span>Dans tout le camping.</span></div></li><li><svg class="icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="11" rx="2"/><path d="M3 11h18M7 16v3M17 16v3M7 8h3M14 8h3"/></svg><div><strong>Navette thermale</strong><span>Gratuite, du lundi au samedi : départ du camping à 8 h 15, dernier retour des thermes à 12 h 15.</span></div></li><li><svg class="icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="10" height="18" rx="2"/><path d="M11 7l-2.5 4h3L9 15M15 9h2a2 2 0 0 1 2 2v5a1.5 1.5 0 0 0 3 0v-7l-2-2"/></svg><div><strong>Borne de recharge</strong><span>Pour les véhicules électriques.</span></div></li><li><svg class="icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><circle cx="12" cy="13" r="4.5"/><path d="M7 6.5h2M12 6.5h5"/></svg><div><strong>Laverie</strong><span>Lave-linge, sèche-linge et lave-vaisselle en libre-service.</span></div></li><li><svg class="icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 11 12 4l10 7"/><path d="M4 10v10M20 10v10M2 11h20M8 20v-5h8v5"/></svg><div><strong>Barnum</strong><span>Tables et chaises en libre accès, à l&#39;abri.</span></div></li><li><svg class="icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V9M20 21V9M4 9l8-5 8 5M8 13l4 4 4-4M12 17v4"/></svg><div><strong>Aires de jeux</strong><span>Pour les enfants, dans la prairie.</span></div></li></ul>
+    </div>
+  </div>
+</section>
+<section class="sancy" id="sancy">
+  <div class="sancy-bandeau">
+    <figure class="media sancy-media" data-grok data-fx="parallaxe" data-fx-force="12" style="--cadrage:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/crete-aube-mobile-640.webp 640w" sizes="100vw">
+    <img src="/assets/images/grok/crete-aube-1280.webp" srcset="/assets/images/grok/crete-aube-640.webp 640w, /assets/images/grok/crete-aube-1280.webp 1280w, /assets/images/grok/crete-aube-1920.webp 1920w" sizes="100vw" alt="Partez à la découverte du Sancy" width="1280" height="854" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+    <div class="conteneur sancy-tete">
+      <p class="surtitre surtitre--clair">Alentours</p>
+      <h2 data-anime="lignes">Partez à la découverte <em>du Sancy</em></h2>
+    </div>
+  </div>
+  <div class="conteneur sancy-corps">
+    <p class="sancy-intro" data-anime>Au cœur du parc naturel des Volcans d&#39;Auvergne, le camping est un point de départ pour découvrir Le Mont-Dore et le massif du Sancy. Choisissez votre façon de partir.</p>
+    <div class="profils">
+      <div class="profils-onglets" role="tablist" aria-label="Quatre façons de découvrir le Sancy">
+        <button type="button" role="tab" id="onglet-contemplatifs" aria-controls="profil-contemplatifs" aria-selected="true" tabindex="0">Contemplatifs</button><button type="button" role="tab" id="onglet-sportifs" aria-controls="profil-sportifs" aria-selected="false" tabindex="-1">Sportifs</button><button type="button" role="tab" id="onglet-curieux" aria-controls="profil-curieux" aria-selected="false" tabindex="-1">Curieux</button><button type="button" role="tab" id="onglet-gastronomes" aria-controls="profil-gastronomes" aria-selected="false" tabindex="-1">Gastronomes</button>
+      </div>
+      <article class="profil" id="profil-contemplatifs" role="tabpanel" aria-labelledby="onglet-contemplatifs" >
+        <figure class="media profil-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/sancy-vallee-800.webp" srcset="/assets/images/sancy-vallee-480.webp 480w, /assets/images/sancy-vallee-640.webp 640w, /assets/images/sancy-vallee-800.webp 800w" sizes="(max-width: 760px) 100vw, 45vw" alt="Contemplatifs : Lacs volcaniques, Cascades, Puy de Sancy, Pic du Capucin, Sylvatorium, GR30" width="800" height="600" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <div class="profil-texte">
+          <h3>Contemplatifs</h3>
+          <p>Lacs volcaniques, cascades, puy de Sancy et pic du Capucin, sylvatorium, et le GR30 qui passe par les crêtes.</p>
+          <ul class="profil-liste"><li>Lacs volcaniques</li><li>Cascades</li><li>Puy de Sancy</li><li>Pic du Capucin</li><li>Sylvatorium</li><li>GR30</li></ul>
+        </div>
+      </article><article class="profil" id="profil-sportifs" role="tabpanel" aria-labelledby="onglet-sportifs" data-replie>
+        <figure class="media profil-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/sancy-tyrolienne-800.webp" srcset="/assets/images/sancy-tyrolienne-480.webp 480w, /assets/images/sancy-tyrolienne-640.webp 640w, /assets/images/sancy-tyrolienne-800.webp 800w" sizes="(max-width: 760px) 100vw, 45vw" alt="Sportifs : Tyrolienne à virages, Escalade, Parcours dans les arbres, Luge d&#39;été" width="800" height="600" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <div class="profil-texte">
+          <h3>Sportifs</h3>
+          <p>Tyrolienne à virages, sites d&#39;escalade, parcours dans les arbres et luge d&#39;été. Le Capucin est à 2 km du camping.</p>
+          <ul class="profil-liste"><li>Tyrolienne à virages</li><li>Escalade</li><li>Parcours dans les arbres</li><li>Luge d&#39;été</li></ul>
+        </div>
+      </article><article class="profil" id="profil-curieux" role="tabpanel" aria-labelledby="onglet-curieux" data-replie>
+        <figure class="media profil-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/sancy-thermes-800.webp" srcset="/assets/images/sancy-thermes-480.webp 480w, /assets/images/sancy-thermes-640.webp 640w, /assets/images/sancy-thermes-800.webp 800w" sizes="(max-width: 760px) 100vw, 45vw" alt="Curieux : Château, Église romane, Architecture thermale, Thermes à 5 min" width="800" height="600" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <div class="profil-texte">
+          <h3>Curieux</h3>
+          <p>Château, église romane et architecture thermale. Les thermes du Mont-Dore sont à 5 minutes, avec la navette gratuite du camping.</p>
+          <ul class="profil-liste"><li>Château</li><li>Église romane</li><li>Architecture thermale</li><li>Thermes à 5 min</li></ul>
+        </div>
+      </article><article class="profil" id="profil-gastronomes" role="tabpanel" aria-labelledby="onglet-gastronomes" data-replie>
+        <figure class="media profil-media" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/sancy-caves-800.webp" srcset="/assets/images/sancy-caves-480.webp 480w, /assets/images/sancy-caves-640.webp 640w, /assets/images/sancy-caves-800.webp 800w" sizes="(max-width: 760px) 100vw, 45vw" alt="Gastronomes : Route des fromages AOP, Caves d&#39;affinage de Saint-Nectaire, Truffade" width="800" height="600" loading="lazy" decoding="async">
+  </picture>
+</figure>
+        <div class="profil-texte">
+          <h3>Gastronomes</h3>
+          <p>La route des fromages AOP d&#39;Auvergne, les caves d&#39;affinage de Saint-Nectaire, et la truffade.</p>
+          <ul class="profil-liste"><li>Route des fromages AOP</li><li>Caves d&#39;affinage de Saint-Nectaire</li><li>Truffade</li></ul>
+        </div>
+      </article>
+    </div>
+    <p class="sancy-lien"><a href="https://www.sancy.com/" target="_blank" rel="noopener" aria-label="Le programme de l&#39;office de tourisme du Sancy (nouvel onglet)">Le programme sur sancy.com ↗</a></p>
+  </div>
+</section>
+<section class="engagements" id="engagements">
+  <div class="mots-bandeau" data-fx="mots-geants" aria-hidden="true" data-ruban data-visuel data-audit-ignorer>
+    <p data-fx-rangee>Respecter · Préserver · Économiser · Réduire · Respecter · Préserver · Économiser · Réduire ·</p>
+    <p data-fx-rangee data-sens="-1">Réduire · Économiser · Préserver · Respecter · Réduire · Économiser · Préserver · Respecter ·</p>
+  </div>
+  <div class="conteneur engagements-grille">
+    <div class="engagements-tete">
+      <p class="surtitre">Camping responsable</p>
+      <h2 data-anime="lignes">Le Sancy, <em>un environnement sauvage à protéger</em></h2>
+      <p data-anime>Depuis sa création, le camping s&#39;engage pour préserver le cadre naturel qui l&#39;entoure.</p>
+      <figure class="media engagements-media" data-grok data-anime="rideau" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/rosee-1280.webp" srcset="/assets/images/grok/rosee-640.webp 640w, /assets/images/grok/rosee-1280.webp 1280w, /assets/images/grok/rosee-1920.webp 1920w" sizes="(max-width: 760px) 100vw, 35vw" alt="Rosée du matin sur l&#39;herbe" width="1280" height="854" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+    </div>
+    <ul class="engagements-liste" data-anime="cascade"><li><h3>Respecter le site</h3><ul><li>Peu de terrassements, une intégration pensée dans le paysage</li><li>Matériaux naturels et locaux</li><li>Sols peu imperméabilisés, plantations d&#39;espèces locales</li></ul></li><li><h3>Préserver l&#39;eau</h3><ul><li>Compteurs divisionnaires pour repérer les fuites</li><li>Jamais d&#39;eau potable pour arroser</li><li>Robinets à poussoir et limiteurs de débit</li></ul></li><li><h3>Économiser l&#39;énergie</h3><ul><li>Canalisations d&#39;eau chaude calorifugées, mitigeurs</li><li>Éclairage LED, détecteurs de présence et minuteries</li><li>Allées balisées par des bornes solaires</li></ul></li><li><h3>Réduire les pollutions</h3><ul><li>Eaux usées traitées par une installation conforme</li><li>Tri sélectif, papier et cartouches recyclés</li><li>Produits d&#39;entretien écolabellisés</li></ul></li></ul>
+  </div>
+</section>
+<section class="saison" id="saison">
+  <div class="conteneur saison-grille">
+    <div>
+      <p class="surtitre">Saison 2026</p>
+      <h2 data-anime="lignes">Quand <em>venir</em></h2>
+      <p data-anime>Arrivées à partir de 14 h, départs avant 12 h. Accueil de 9 h à 12 h et de 14 h à 19 h en haute saison.</p>
+      <p class="saison-statut" data-anime data-saison='{"annee":2026,"periodes":[{"libelle":"Mobil-homes","debut":"2026-04-26","fin":"2026-10-11"},{"libelle":"Emplacements et cabanes","debut":"2026-05-07","fin":"2026-09-13"}],"textes":{"avant":"Ouverture le {date}","pendant":"Ouvert · {libelle} jusqu&#39;au {date}","apres":"Saison {annee} terminée · dates {suivante} à venir"}}'><span class="pastille" aria-hidden="true"></span><span data-saison-texte>Saison 2026 terminée · dates 2027 à venir</span></p>
+      <p data-anime>Les dates de la saison 2027 seront annoncées par le camping. Vous pouvez déjà demander vos dates.</p>
+    </div>
+    <div class="frise" data-effet="saison" data-visuel data-frise='{&quot;debut&quot;:1775001600000,&quot;fin&quot;:1796083200000}'>
+    <ol class="frise-mois" aria-hidden="true"><li><span class="mois-long">Avr.</span><span class="mois-court">A</span></li><li><span class="mois-long">Mai</span><span class="mois-court">M</span></li><li><span class="mois-long">Juin</span><span class="mois-court">J</span></li><li><span class="mois-long">Juil.</span><span class="mois-court">J</span></li><li><span class="mois-long">Août</span><span class="mois-court">A</span></li><li><span class="mois-long">Sept.</span><span class="mois-court">S</span></li><li><span class="mois-long">Oct.</span><span class="mois-court">O</span></li><li><span class="mois-long">Nov.</span><span class="mois-court">N</span></li></ol>
+    <div class="frise-ligne">
+      <p class="frise-libelle">Mobil-homes<span>du 26 avril au 11 octobre</span></p>
+      <div class="frise-piste"><span class="frise-barre" style="--g:10.25%;--d:20.90%"></span></div>
+    </div><div class="frise-ligne">
+      <p class="frise-libelle">Emplacements et cabanes<span>du 7 mai au 13 septembre</span></p>
+      <div class="frise-piste"><span class="frise-barre" style="--g:14.75%;--d:32.38%"></span></div>
+    </div>
+    <span class="frise-jour frise-jour--droite" data-frise-jour style="--x:95.49" ><span>Aujourd&#39;hui</span></span>
+  </div>
+  </div>
+</section>
+<section class="fin-appel" id="appel">
+  <div class="fin-ciel" aria-hidden="true">
+    <span class="fin-soleil" data-effet="soleil"></span>
+    <svg class="fin-crete" viewBox="0 0 1000 260" preserveAspectRatio="none" data-effet="crete" data-visuel><path class="fin-crete-fond" d="M0 200 L70 176 L130 188 L190 150 L250 160 L310 120 L360 136 L420 84 L470 108 L520 62 L575 118 L640 104 L700 138 L770 112 L840 152 L910 140 L1000 162 L1000 260 L0 260Z"/><path class="fin-crete-trait" d="M0 200 L70 176 L130 188 L190 150 L250 160 L310 120 L360 136 L420 84 L470 108 L520 62 L575 118 L640 104 L700 138 L770 112 L840 152 L910 140 L1000 162" fill="none" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke" pathLength="1"/></svg>
+  </div>
+  <div class="conteneur fin-appel-texte">
+    <p class="surtitre">Saison prochaine</p>
+    <h2 data-anime="lignes">Votre coin de prairie <em>vous attend</em></h2>
+    <p data-anime>Colette et Laurent répondent rapidement à chaque demande : dites-leur vos dates, votre façon de dormir et combien vous serez.</p>
+    <p class="fin-actions" data-anime>
+      <a href="/reserver" class="bouton bouton--clair" data-libelle="Réserver" data-survol="magnetique">Demander un séjour</a>
+      <a class="bouton bouton--contour" href="tel:+33473650430">Appeler le 04 73 65 04 30</a>
+    </p>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <p class="pied-logo"><img src="/assets/images/logo-clair.svg" alt="" width="48" height="48"><span>La Plage Verte</span></p>
+      <p>Camping 3 étoiles · Camping nature au Mont-Dore</p>
+      <p>83 route de La Tour d&#39;Auvergne<br>63240 Le Mont-Dore</p>
+    </div>
+    <div>
+      <p class="pied-titre">Nous joindre</p>
+      <p>Accueil <a href="tel:+33473650430">04 73 65 04 30</a><br>Mobile <a href="tel:+33679259593">06 79 25 95 93</a><br><a href="mailto:campinglaplageverte@orange.fr">campinglaplageverte@orange.fr</a></p>
+    </div>
+    <nav aria-label="Le camping">
+      <p class="pied-titre">Le camping</p>
+      <ul><li><a href="/" data-libelle="Accueil" aria-current="page">Accueil</a></li><li><a href="/emplacements" data-libelle="Emplacements">Emplacements</a></li><li><a href="/locations" data-libelle="Locations">Locations</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li><li><a href="/reserver" data-libelle="Réserver">Réserver</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titre">Paiement</p>
+      <p class="pied-logos"><img src="/assets/images/logo-ancv-240.webp" alt="Chèques-Vacances ANCV acceptés" width="80" height="59" loading="lazy"><img src="/assets/images/logo-vacaf-240.webp" alt="Bons Vacaf acceptés" width="78" height="59" loading="lazy"></p>
+      <p class="pied-petit">Espèces, chèque, carte bancaire, virement et Chèques-Vacances. Bons Vacaf acceptés.</p>
+    </div>
+  </div>
+  <div class="conteneur pied-bas">
+    <p>Mentions légales : à compléter · Politique de confidentialité : à compléter</p>
+    <p>Maquette : les formulaires sont simulés, rien n&#39;est envoyé.</p>
+    <p><a href="#haut" data-sans-transition>Retour en haut</a> · © La Plage Verte</p>
+  </div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33473650430">Appeler</a>
+  <a class="bouton" href="/reserver" data-libelle="Réserver">Demander un séjour</a>
+</div>
+</body>
+</html>

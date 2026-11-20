@@ -1,0 +1,24 @@
+{
+  "siteActuel": "plage-verte.com",
+  "pagesTypes": [
+    "/",
+    "/emplacements",
+    "/locations",
+    "/reserver",
+    "/contact"
+  ],
+  "effets": [
+    "survol",
+    "crete",
+    "soleil",
+    "saison",
+    "vapeur",
+    "carte-acces",
+    "prairie",
+    "bandeau",
+    "rangee"
+  ],
+  "grille": {
+    "dispenses": {}
+  }
+}

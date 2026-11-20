@@ -1,0 +1,445 @@
+[
+ {
+  "source": "recu/logo-plage-verte.png",
+  "nom": "logo-sombre",
+  "role": "logo",
+  "marque": "principale",
+  "alt": "La Plage Verte"
+ },
+ {
+  "source": "recu/vue-aerienne-camping.jpg",
+  "nom": "aerienne",
+  "role": "ouverture",
+  "page": "accueil",
+  "mobile": true,
+  "zone_texte": "bas",
+  "beaute": 4,
+  "alt": "Le camping vu du ciel : mobil-homes et emplacements entre les haies, au milieu des prairies, crêtes boisées à l'horizon"
+ },
+ {
+  "source": "recu/plage-verte.jpg",
+  "nom": "prairie",
+  "role": "ouverture",
+  "page": "emplacements",
+  "mobile": true,
+  "zone_texte": "haut",
+  "beaute": 4,
+  "alt": "La prairie du camping sous le ciel bleu, arbres, vans et bâtiment d'accueil, crêtes du Sancy derrière"
+ },
+ {
+  "source": "recu/vue-cabane-puy-gros.jpg",
+  "nom": "cabane-capucin",
+  "role": "ouverture",
+  "page": "locations",
+  "mobile": true,
+  "cadrage": [
+   62,
+   55
+  ],
+  "beaute": 4,
+  "alt": "Une cabane en bois du camping, un bouleau, la prairie et les sommets au loin"
+ },
+ {
+  "source": "recu/vue-emplacements.jpg",
+  "nom": "emplacements",
+  "role": "carte-service",
+  "ratio": "4:5",
+  "largeurs": [
+   480,
+   640
+  ],
+  "beaute": 3,
+  "alt": "Allée du camping entre les emplacements ombragés, tente et voitures"
+ },
+ {
+  "source": "recu/vue-cabane-puy-gros.jpg",
+  "nom": "cabane-carte",
+  "role": "carte-service",
+  "ratio": "4:5",
+  "largeurs": [
+   480,
+   640
+  ],
+  "cadrage": [
+   70,
+   55
+  ],
+  "beaute": 3,
+  "alt": "Cabane en bois au bord de la prairie"
+ },
+ {
+  "source": "recu/tarifs-2026-6.jpg",
+  "nom": "mobil-home-terrasse",
+  "role": "carte-service",
+  "ratio": "4:5",
+  "largeurs": [
+   480,
+   640
+  ],
+  "beaute": 3,
+  "alt": "Terrasse en bois d'un mobil-home avec table, chaises et parasol"
+ },
+ {
+  "source": "recu/gite-cantou-emile-appartements-3.jpg",
+  "nom": "gite-ferme",
+  "role": "carte-service",
+  "ratio": "4:5",
+  "largeurs": [
+   480,
+   640
+  ],
+  "beaute": 3,
+  "alt": "Le gîte Cantou d'Émile, ferme auvergnate en pierre au toit d'ardoise, barrière blanche"
+ },
+ {
+  "source": "recu/calinette-accueil-animal-camping.jpg",
+  "nom": "calinette",
+  "role": "portrait",
+  "ratio": "4:5",
+  "largeurs": [
+   480,
+   640
+  ],
+  "beaute": 3,
+  "alt": "Calinette, la chienne du camping, assise dans l'herbe"
+ },
+ {
+  "source": "recu/accueil-camping.jpg",
+  "nom": "accueil",
+  "role": "galerie",
+  "ratio": "4:3",
+  "largeurs": [
+   480,
+   640,
+   1000
+  ],
+  "beaute": 3,
+  "alt": "Le bâtiment d'accueil fleuri du camping, au bout de l'allée"
+ },
+ {
+  "source": "recu/barnum-plage-verte-sejour.jpg",
+  "nom": "barnum",
+  "role": "galerie",
+  "ratio": "4:3",
+  "largeurs": [
+   480,
+   640,
+   1000
+  ],
+  "beaute": 3,
+  "alt": "Le barnum du camping avec ses tables et ses chaises, ouvert sur la prairie"
+ },
+ {
+  "source": "recu/equipements-bien-etre-spa.jpg",
+  "nom": "spa",
+  "role": "galerie",
+  "ratio": "4:3",
+  "largeurs": [
+   480,
+   640,
+   1000
+  ],
+  "beaute": 3,
+  "alt": "Le spa extérieur sur sa terrasse en bois fleurie, à côté de la maison"
+ },
+ {
+  "source": "recu/lavoir-plage-verte.jpg",
+  "nom": "laverie",
+  "role": "galerie",
+  "ratio": "4:3",
+  "largeurs": [
+   480,
+   640,
+   1000
+  ],
+  "beaute": 3,
+  "alt": "La laverie : deux lave-linge et les bacs à vaisselle"
+ },
+ {
+  "source": "recu/commun2.jpg",
+  "nom": "sanitaires",
+  "role": "galerie",
+  "ratio": "3:4",
+  "largeurs": [
+   480,
+   640
+  ],
+  "beaute": 3,
+  "alt": "Le couloir lumineux d'un bloc sanitaire, portes orange"
+ },
+ {
+  "source": "recu/douche-camping.jpg",
+  "nom": "douche",
+  "role": "galerie",
+  "ratio": "3:4",
+  "largeurs": [
+   480,
+   640
+  ],
+  "beaute": 2,
+  "alt": "Une cabine de douche d'un bloc sanitaire"
+ },
+ {
+  "source": "recu/partez-decouverte-sancy-2.jpg",
+  "nom": "sancy-vallee",
+  "role": "galerie",
+  "ratio": "4:3",
+  "largeurs": [
+   480,
+   640,
+   800
+  ],
+  "beaute": 4,
+  "alt": "La vallée du Mont-Dore vue d'en haut, fleurs sauvages au premier plan et sommets du Sancy"
+ },
+ {
+  "source": "recu/partez-decouverte-sancy-3.jpg",
+  "nom": "sancy-tyrolienne",
+  "role": "galerie",
+  "ratio": "4:3",
+  "largeurs": [
+   480,
+   640,
+   800
+  ],
+  "cadrage": [
+   56,
+   52
+  ],
+  "beaute": 3,
+  "alt": "Une personne file sur une tyrolienne au-dessus de la forêt"
+ },
+ {
+  "source": "recu/partez-decouverte-sancy.jpg",
+  "nom": "sancy-thermes",
+  "role": "galerie",
+  "ratio": "4:3",
+  "largeurs": [
+   480,
+   640,
+   800
+  ],
+  "beaute": 3,
+  "alt": "Une salle des thermes du Mont-Dore, carrelage et fontaine octogonale"
+ },
+ {
+  "source": "recu/partez-decouverte-sancy-4.jpg",
+  "nom": "sancy-caves",
+  "role": "galerie",
+  "ratio": "4:3",
+  "largeurs": [
+   480,
+   640,
+   800
+  ],
+  "beaute": 3,
+  "alt": "Fromages de Saint-Nectaire à l'affinage sur des planches de cave"
+ },
+ {
+  "source": "recu/gite-cantou-emile-appartements-4.jpg",
+  "nom": "gite-sejour",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   480,
+   640,
+   1000
+  ],
+  "beaute": 3,
+  "alt": "Le séjour du gîte : cheminée en pierre, poutres, table et canapé"
+ },
+ {
+  "source": "recu/gite-cantou-emile-appartements.jpg",
+  "nom": "gite-cuisine",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   480,
+   640,
+   1000
+  ],
+  "beaute": 3,
+  "alt": "La cuisine équipée du gîte, avec sa table en bois"
+ },
+ {
+  "source": "recu/tarifs-2026.jpg",
+  "nom": "appart-cuisine",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   480,
+   640,
+   1000
+  ],
+  "beaute": 3,
+  "alt": "La cuisine d'un appartement des Champs Fleuris, coin repas"
+ },
+ {
+  "source": "recu/tarifs-2026-2.jpg",
+  "nom": "appart-chambre",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   480,
+   640
+  ],
+  "beaute": 2,
+  "alt": "Une chambre d'un appartement des Champs Fleuris"
+ },
+ {
+  "source": "recu/tarifs-2026-5.jpg",
+  "nom": "mh-sejour",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   480,
+   640,
+   1000
+  ],
+  "beaute": 3,
+  "alt": "Le séjour d'un mobil-home : banquette, table et cuisine ouverte"
+ },
+ {
+  "source": "recu/mobil-homes.jpg",
+  "nom": "mh-chambre",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   480,
+   640,
+   1000
+  ],
+  "beaute": 3,
+  "alt": "Une chambre de mobil-home avec un grand lit"
+ },
+ {
+  "source": "recu/tarifs-2026-8.jpg",
+  "nom": "mh-chambre-2",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   480,
+   640
+  ],
+  "beaute": 3,
+  "alt": "Une chambre de mobil-home aux murs bleus"
+ },
+ {
+  "source": "recu/tarifs-2026-13.jpg",
+  "nom": "mh-exterieur",
+  "role": "galerie",
+  "ratio": "3:2",
+  "largeurs": [
+   480,
+   640
+  ],
+  "beaute": 3,
+  "alt": "Un mobil-home blanc avec sa terrasse en bois, sur la pelouse"
+ },
+ {
+  "source": "recu/logo-2.webp",
+  "nom": "logo-ancv",
+  "role": "logo",
+  "marque": "partenaire",
+  "alt": "Chèque-Vacances ANCV acceptés"
+ },
+ {
+  "source": "recu/logo-3.jpg",
+  "nom": "logo-vacaf",
+  "role": "logo",
+  "marque": "partenaire",
+  "alt": "Bons Vacaf acceptés"
+ },
+ {
+  "source": "recu/grok/spa-vapeur.png",
+  "nom": "grok/spa-vapeur",
+  "role": "section-fond",
+  "page": "accueil",
+  "emplacement": "Bien-être : image qui s'ouvre en plein écran",
+  "priorite": "Indispensable",
+  "mobile": true,
+  "beaute": 4,
+  "consigne_scene": "Close-up of the surface of warm bubbling water in an outdoor hot tub in the cool early morning, soft steam rising and drifting through the frame, tiny bubbles catching the low sunlight, blurred green hills and a dewy meadow far behind, nobody, no visible tub rim, no brand, no candles, no towels",
+  "alt": "Eau chaude qui bouillonne et vapeur au crépuscule",
+  "cadrage": [
+   50,
+   72
+  ]
+ },
+ {
+  "source": "recu/grok/crete-aube.png",
+  "nom": "grok/crete-aube",
+  "role": "section-fond",
+  "gabarit": "lieu",
+  "page": "accueil",
+  "emplacement": "Le Sancy : grand bandeau d'ouverture de la section",
+  "priorite": "Indispensable",
+  "mobile": true,
+  "zone_texte": "haut",
+  "beaute": 5,
+  "scene": "grassy rounded volcanic ridges at sunrise above a soft sea of clouds, a tiny lone hiker silhouette far away on the ridge path, back turned, long shadows, large calm sky in the upper half",
+  "alt": "Crêtes volcaniques herbeuses au lever du soleil au-dessus d'une mer de nuages, une randonneuse au loin"
+ },
+ {
+  "source": "recu/grok/matin-cafe.png",
+  "nom": "grok/matin-cafe",
+  "role": "carte-service",
+  "ratio": "4:5",
+  "page": "accueil",
+  "emplacement": "Le matin : photo à côté du point petit-déj",
+  "priorite": "Indispensable",
+  "beaute": 4,
+  "consigne_scene": "An enamel camping mug of steaming coffee on a weathered wooden picnic table at sunrise, dew on the grass around, soft mist over distant green volcanic hills, warm low sun from the side, nobody, no brand, no food",
+  "alt": "Tasse de café fumante sur une table de pique-nique au lever du soleil, collines dans la brume"
+ },
+ {
+  "source": "recu/grok/rosee.png",
+  "nom": "grok/rosee",
+  "role": "section-fond",
+  "gabarit": "texture",
+  "ratio": "3:2",
+  "page": "accueil",
+  "emplacement": "Engagements durables : image de la section",
+  "priorite": "Conseillée",
+  "beaute": 4,
+  "scene": "macro of dew drops on fresh grass blades backlit by early morning sun, shallow depth of field, soft green and gold bokeh",
+  "alt": "Gouttes de rosée sur des brins d'herbe au soleil du matin"
+ },
+ {
+  "source": "recu/grok/reserver-prairie.png",
+  "nom": "grok/reserver-prairie",
+  "role": "ouverture",
+  "gabarit": "lieu",
+  "page": "reserver",
+  "emplacement": "Réserver : image d'ouverture à côté du formulaire",
+  "priorite": "Indispensable",
+  "mobile": true,
+  "zone_texte": "gauche",
+  "beaute": 4,
+  "scene": "a lone empty wooden picnic table in a lush meadow full of wildflowers in warm morning light, long soft shadows, gentle green volcanic hills in the distance, a large calm sky on the left",
+  "alt": "Table de pique-nique vide dans une prairie fleurie au soleil couchant, collines au loin"
+ },
+ {
+  "source": "recu/grok/linge-fourni.png",
+  "nom": "grok/linge-fourni",
+  "role": "carte-service",
+  "ratio": "4:5",
+  "page": "locations",
+  "emplacement": "Ce qui est fourni : oreillers, couettes, couvertures",
+  "priorite": "Conseillée",
+  "beaute": 3,
+  "consigne_scene": "Still life of a neatly folded white duvet, two plump pillows and a soft green wool blanket stacked on a light wooden bench against a pale wooden wall, soft morning light from a small window, calm and immaculate, nobody, no bed sheets",
+  "alt": "Couette pliée, oreillers et couverture en laine sur un banc en bois"
+ },
+ {
+  "source": "recu/grok/404-sardine.png",
+  "nom": "grok/page-404",
+  "role": "404",
+  "page": "404",
+  "emplacement": "Page introuvable",
+  "priorite": "Conseillée",
+  "beaute": 4,
+  "consigne_scene": "A single bent metal tent peg and a loose guy rope lying alone in tall wet grass, morning dew, soft light, a gentle touch of humour, nobody, no tent",
+  "alt": "Une sardine de tente toute seule dans l'herbe mouillée"
+ }
+]
