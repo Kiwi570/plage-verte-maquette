@@ -38,18 +38,22 @@ export default (c) => html`
       ${c.donnees.hebergements.map((h) => html`<li class="fiche" id="${h.id}" data-type="${h.type}" data-max="${h.max}">
         <div class="fiche-photos">
           ${c.media({ nom: h.images[0], alt: h.nom, classe: 'fiche-media', sizes: '(max-width: 760px) 100vw, 30vw', attrs: 'data-fx="parallaxe" data-fx-force="6"' })}
-          ${c.media({ nom: h.images[1], alt: `${h.nom} : ${c.s('locations.fiche.autrePhoto').toLowerCase()}`, classe: 'fiche-media-2', sizes: '(max-width: 760px) 40vw, 14vw' })}
+          ${c.media({ nom: h.images[1], alt: `${h.nom} : ${c.s('locations.fiche.autrePhoto').toLowerCase()}`, classe: 'fiche-media-2', sizes: '(max-width: 760px) 40vw, 30vw' })}
+          <button type="button" class="fiche-echange" data-echange aria-label="${c.s('locations.fiche.echanger')} : ${h.nom}"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h13l-3-3M20 16H7l3 3"/></svg></button>
         </div>
         <div class="fiche-corps">
           <p class="fiche-type">${icone(ICONE_TYPE[h.type])}<span>${c.s('locations.filtre.jusqua', { n: h.max })}</span></p>
           <h3>${h.nom}</h3>
           <p class="fiche-sur">${h.sur}</p>
+          <details class="fiche-plus" open>
+          <summary>${c.t('locations.fiche.plus')}</summary>
           <dl class="fiche-specs">
             <div><dt>${c.t('locations.fiche.surface')}</dt><dd>${h.surface}</dd></div>
             <div><dt>${c.t('locations.fiche.capacite')}</dt><dd>${c.s('locations.fiche.personnes', { min: h.min, max: h.max })}</dd></div>
             <div><dt>${c.t('locations.fiche.couchage')}</dt><dd>${h.couchage}</dd></div>
           </dl>
           <ul class="coches coches--petit">${h.points.map((p) => html`<li>${p}</li>`)}</ul>
+          </details>
           <table class="fiche-prix"><tbody>${h.prix.map(([k, v]) => html`<tr><th scope="row">${k}</th><td data-prix>${v}</td></tr>`)}</tbody></table>
           <p class="fiche-note">${h.note}</p>
           ${c.lien('reserver', { params: `hebergement=${h.formulaire}&logement=${h.id}`, classe: 'bouton', texte: c.t('locations.fiche.action') })}

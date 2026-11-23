@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1">
+<html lang="fr" data-v="2">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -35,14 +35,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/epilogue-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/figtree-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#F5F2E8">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -185,6 +185,19 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       </div>
     </div>
     <div class="calc-total" aria-live="polite">
+      <figure class="pitch" aria-hidden="true">
+        <svg viewBox="0 0 320 132" data-pitch>
+          <rect class="pitch-herbe" x="3" y="3" width="314" height="126" rx="16"/>
+          <rect class="pitch-bord" x="10" y="10" width="300" height="112" rx="11"/>
+          <g class="pitch-arbre"><circle cx="32" cy="34" r="16"/><circle cx="48" cy="26" r="12"/></g>
+          <g data-abri="tente" class="pitch-abri"><path class="pitch-toile" d="M72 98 L106 44 L140 98 Z"/><path class="pitch-porte" d="M106 98 L106 62 L120 98 Z"/><g class="pitch-voiture" transform="translate(150 74)"><rect width="74" height="24" rx="8"/><rect x="12" y="-12" width="44" height="16" rx="6"/><circle cx="16" cy="25" r="6"/><circle cx="58" cy="25" r="6"/></g></g>
+          <g data-abri="van" class="pitch-abri" hidden><g class="pitch-van" transform="translate(70 50)"><rect width="128" height="46" rx="12"/><rect x="92" y="8" width="26" height="16" rx="4" class="pitch-vitre"/><rect x="14" y="8" width="60" height="16" rx="4" class="pitch-vitre"/><circle cx="26" cy="47" r="8"/><circle cx="102" cy="47" r="8"/></g></g>
+          <g data-abri="pied" class="pitch-abri" hidden><path class="pitch-toile" d="M96 98 L130 44 L164 98 Z"/><path class="pitch-porte" d="M130 98 L130 62 L144 98 Z"/></g>
+          <g data-elec class="pitch-borne" transform="translate(272 46)"><rect width="22" height="50" rx="5"/><path d="M13 12 L7 24 L12 24 L9 36 L16 21 L11 21 Z" class="pitch-eclair"/></g>
+          <g data-gens></g>
+        </svg>
+        <figcaption>Votre emplacement<span data-elec-texte> · 6 A</span></figcaption>
+      </figure>
       <p class="calc-ligne"><span>Par nuit</span><strong data-prix data-calc-nuit>22,60 €</strong></p>
       <p class="calc-ligne"><span>Taxes de séjour</span><strong data-prix data-calc-taxes>1,32 €</strong></p>
       <p class="calc-grand"><span>Total estimé <small data-calc-pour data-modele="pour {n} nuit(s)">pour 7 nuit(s)</small></span><strong data-prix data-calc-total>167,44 €</strong></p>

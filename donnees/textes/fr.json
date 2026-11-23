@@ -96,7 +96,9 @@
       "action": "Demander un séjour",
       "secondaire": "Voir les hébergements",
       "cachet": "Camping",
-      "cachetLieu": "Le Mont-Dore"
+      "cachetLieu": "Le Mont-Dore",
+      "defiler": "Défiler",
+      "defilerAria": "Descendre vers la présentation du camping"
     },
     "bienvenue": {
       "surtitre": "Bienvenue",
@@ -116,7 +118,7 @@
       "cabanes": "Cabanes",
       "cabanesTexte": "2 cabanes en bois de 20 m², pour 1 à 3 personnes.",
       "cabanesPrix": "dès 65 € la nuit",
-      "mobilhomes": "Mobil-homes",
+      "mobilhomes": "<span class=\"insecable\">Mobil-homes</span>",
       "mobilhomesTexte": "16 mobil-homes avec terrasse, de 1 à 6 personnes.",
       "mobilhomesPrix": "dès 440 € la semaine",
       "gite": "Gîte et appartements",
@@ -164,9 +166,10 @@
     },
     "engagements": {
       "surtitre": "Camping responsable",
-      "titre": "Le Sancy, <em>un environnement sauvage à protéger</em>",
+      "titre": "Le Sancy, un environnement sauvage <em>à protéger</em>",
       "texte": "Depuis sa création, le camping s'engage pour préserver le cadre naturel qui l'entoure.",
-      "photo": "Rosée du matin sur l'herbe"
+      "photo": "Rosée du matin sur l'herbe",
+      "liste": "Les engagements du camping"
     },
     "saison": {
       "surtitre": "Saison 2026",
@@ -176,6 +179,28 @@
       "suite": "Les dates de la saison 2027 seront annoncées par le camping. Vous pouvez déjà demander vos dates.",
       "mois": "Avr.,Mai,Juin,Juil.,Août,Sept.,Oct.,Nov.",
       "moisCourts": "A,M,J,J,A,S,O,N"
+    },
+    "choix": {
+      "titre": "Trouvez votre façon de dormir",
+      "combien": "Vous serez",
+      "personnes": "Nombre de personnes",
+      "facon": "Vous préférez",
+      "toile": "Sous la toile",
+      "sec": "Au sec",
+      "cure": "C'est pour une cure (3 semaines)",
+      "depart": "Choisissez le nombre de personnes et votre façon de dormir : on vous montre ce qui vous va.",
+      "toileReponse": "Pour {n} sous la toile : un emplacement de 80 à 200 m², 5,50 € par personne de plus de 7 ans et par nuit.",
+      "toileCure": "Pour une cure sous la toile : le forfait curiste, dès 427 € pour 2 personnes avec électricité 6 A.",
+      "secReponse": "Pour {n} au sec : {k}, dès {prix} la semaine ({nom}).",
+      "secCure": "Pour une cure à {n} au sec : {k}, dès {prix} la cure ({nom}).",
+      "secAucun": "Au-delà de 6 personnes au sec, pensez au séjour de groupe.",
+      "voirEmplacements": "Voir les emplacements",
+      "voirLogements": "Voir ces logements",
+      "voirGroupe": "Demander un séjour de groupe",
+      "unePersonne": "une personne",
+      "personnesN": "{n} personnes",
+      "unLogement": "1 logement possible",
+      "logementsN": "{k} logements possibles"
     }
   },
   "emplacements": {
@@ -213,7 +238,8 @@
       "moins": "Retirer",
       "plus": "Ajouter",
       "autres": "Autres tarifs",
-      "region": "Calculateur du prix d'une nuit"
+      "region": "Calculateur du prix d'une nuit",
+      "scene": "Votre emplacement"
     },
     "cure": {
       "surtitre": "Curistes",
@@ -278,7 +304,9 @@
       "couchage": "Couchage",
       "personnes": "{min} à {max} personnes",
       "action": "Demander ce logement",
-      "autrePhoto": "Autre photo"
+      "autrePhoto": "Autre photo",
+      "echanger": "Voir l'autre photo",
+      "plus": "Couchages et équipements"
     },
     "fourni": {
       "surtitre": "Bon à savoir",
@@ -361,7 +389,7 @@
       "surtitre": "Coordonnées",
       "titre": "Colette et Laurent <em>vous répondent</em>",
       "texte": "Une question sur un emplacement, une cure ou un séjour de groupe : appelez l'accueil ou écrivez. Calinette vous le confirme, les animaux sont acceptés.",
-      "horairesTitre": "Accueil",
+      "horairesTitre": "Horaires",
       "horaires": "De 9 h à 12 h et de 14 h à 19 h en haute saison.",
       "adresseTitre": "Adresse"
     },

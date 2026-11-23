@@ -4,7 +4,7 @@
 // aucun envoi réel, un événement « formulaire:envoye » porte les données, et un lien mailto: de repli est possible.
 // Sans JavaScript : toutes les étapes sont visibles et le formulaire reste un formulaire HTML ordinaire.
 /* Module formulaire-par-etapes de la bibliothèque, branché sur le GSAP du site (pas de mode calme). */
-import { rafraichir } from '../socle/mesures.js?v=1';
+import { rafraichir } from '../socle/mesures.js?v=2';
 const pret = async () => ({ gsap: window.gsap, calme: false, rafraichir });
 
 const MESSAGES = {

@@ -47,6 +47,19 @@ function calculateur(c) {
       </div>
     </div>
     <div class="calc-total" aria-live="polite">
+      <figure class="pitch" aria-hidden="true">
+        <svg viewBox="0 0 320 132" data-pitch>
+          <rect class="pitch-herbe" x="3" y="3" width="314" height="126" rx="16"/>
+          <rect class="pitch-bord" x="10" y="10" width="300" height="112" rx="11"/>
+          <g class="pitch-arbre"><circle cx="32" cy="34" r="16"/><circle cx="48" cy="26" r="12"/></g>
+          <g data-abri="tente" class="pitch-abri"><path class="pitch-toile" d="M72 98 L106 44 L140 98 Z"/><path class="pitch-porte" d="M106 98 L106 62 L120 98 Z"/><g class="pitch-voiture" transform="translate(150 74)"><rect width="74" height="24" rx="8"/><rect x="12" y="-12" width="44" height="16" rx="6"/><circle cx="16" cy="25" r="6"/><circle cx="58" cy="25" r="6"/></g></g>
+          <g data-abri="van" class="pitch-abri" hidden><g class="pitch-van" transform="translate(70 50)"><rect width="128" height="46" rx="12"/><rect x="92" y="8" width="26" height="16" rx="4" class="pitch-vitre"/><rect x="14" y="8" width="60" height="16" rx="4" class="pitch-vitre"/><circle cx="26" cy="47" r="8"/><circle cx="102" cy="47" r="8"/></g></g>
+          <g data-abri="pied" class="pitch-abri" hidden><path class="pitch-toile" d="M96 98 L130 44 L164 98 Z"/><path class="pitch-porte" d="M130 98 L130 62 L144 98 Z"/></g>
+          <g data-elec class="pitch-borne" transform="translate(272 46)"><rect width="22" height="50" rx="5"/><path d="M13 12 L7 24 L12 24 L9 36 L16 21 L11 21 Z" class="pitch-eclair"/></g>
+          <g data-gens></g>
+        </svg>
+        <figcaption>${c.t('emplacements.calcul.scene')}<span data-elec-texte> · 6 A</span></figcaption>
+      </figure>
       <p class="calc-ligne"><span>${c.t('emplacements.calcul.parNuit')}</span><strong data-prix data-calc-nuit>${euros(initial)}</strong></p>
       <p class="calc-ligne"><span>${c.t('emplacements.calcul.taxes')}</span><strong data-prix data-calc-taxes>${euros(taxes)}</strong></p>
       <p class="calc-grand"><span>${c.t('emplacements.calcul.total')} <small data-calc-pour data-modele="${c.s('emplacements.calcul.pourNuits')}">${c.s('emplacements.calcul.pourNuits', { n: 7 })}</small></span><strong data-prix data-calc-total>${euros((initial + taxes) * 7)}</strong></p>

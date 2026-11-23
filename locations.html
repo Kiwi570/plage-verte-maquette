@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1">
+<html lang="fr" data-v="2">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -35,14 +35,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/epilogue-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/figtree-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#F5F2E8">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -143,21 +143,25 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   </picture>
 </figure>
           <figure class="media fiche-media-2" style="--cadrage:50% 50%">
-  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/cabane-capucin-mobile-640.webp 640w" sizes="(max-width: 760px) 40vw, 14vw">
-    <img src="/assets/images/cabane-capucin-1280.webp" srcset="/assets/images/cabane-capucin-640.webp 640w, /assets/images/cabane-capucin-1280.webp 1280w, /assets/images/cabane-capucin-1920.webp 1920w" sizes="(max-width: 760px) 40vw, 14vw" alt="Les cabanes : autre photo" width="1280" height="720" loading="lazy" decoding="async">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/cabane-capucin-mobile-640.webp 640w" sizes="(max-width: 760px) 40vw, 30vw">
+    <img src="/assets/images/cabane-capucin-1280.webp" srcset="/assets/images/cabane-capucin-640.webp 640w, /assets/images/cabane-capucin-1280.webp 1280w, /assets/images/cabane-capucin-1920.webp 1920w" sizes="(max-width: 760px) 40vw, 30vw" alt="Les cabanes : autre photo" width="1280" height="720" loading="lazy" decoding="async">
   </picture>
 </figure>
+          <button type="button" class="fiche-echange" data-echange aria-label="Voir l&#39;autre photo : Les cabanes"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h13l-3-3M20 16H7l3 3"/></svg></button>
         </div>
         <div class="fiche-corps">
           <p class="fiche-type"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 12 4l9 7M5 10v10h14V10M10 20v-5h4v5"/></svg><span>jusqu&#39;à 3 pers.</span></p>
           <h3>Les cabanes</h3>
           <p class="fiche-sur">2 cabanes en bois</p>
+          <details class="fiche-plus" open>
+          <summary>Couchages et équipements</summary>
           <dl class="fiche-specs">
             <div><dt>Surface</dt><dd>20 m²</dd></div>
             <div><dt>Capacité</dt><dd>1 à 3 personnes</dd></div>
             <div><dt>Couchage</dt><dd>1 clic-clac 130 × 190 cm et 1 banquette-lit 80 × 190 cm</dd></div>
           </dl>
           <ul class="coches coches--petit"><li>Puits de lumière et chauffage électrique</li><li>Coin cuisine : réfrigérateur, réchaud à gaz, micro-ondes, cafetière, vaisselle pour 3</li><li>Salon de jardin sur 180 m² d&#39;herbe, au soleil ou à l&#39;ombre</li></ul>
+          </details>
           <table class="fiche-prix"><tbody><tr><th scope="row">Nuitée</th><td data-prix>dès 65 €</td></tr><tr><th scope="row">Semaine</th><td data-prix>dès 350 €</td></tr><tr><th scope="row">Cure ou 3 semaines</th><td data-prix>dès 750 €</td></tr></tbody></table>
           <p class="fiche-note">Tarifs 2026, basse saison, 1 à 2 personnes. Draps non fournis.</p>
           <a href="/reserver?hebergement=cabane&amp;logement=cabane" class="bouton" data-libelle="Réserver">Demander ce logement</a>
@@ -171,20 +175,24 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 </figure>
           <figure class="media fiche-media-2" style="--cadrage:50% 50%">
   <picture>
-    <img src="/assets/images/mh-exterieur-640.webp" srcset="/assets/images/mh-exterieur-480.webp 480w, /assets/images/mh-exterieur-640.webp 640w" sizes="(max-width: 760px) 40vw, 14vw" alt="Mobil-home Éco : autre photo" width="640" height="427" loading="lazy" decoding="async">
+    <img src="/assets/images/mh-exterieur-640.webp" srcset="/assets/images/mh-exterieur-480.webp 480w, /assets/images/mh-exterieur-640.webp 640w" sizes="(max-width: 760px) 40vw, 30vw" alt="Mobil-home Éco : autre photo" width="640" height="427" loading="lazy" decoding="async">
   </picture>
 </figure>
+          <button type="button" class="fiche-echange" data-echange aria-label="Voir l&#39;autre photo : Mobil-home Éco"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h13l-3-3M20 16H7l3 3"/></svg></button>
         </div>
         <div class="fiche-corps">
           <p class="fiche-type"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="16" height="10" rx="1.5"/><path d="M18 11h4v6h-4M6 17v2M14 17v2M6 10h4v3H6z"/></svg><span>jusqu&#39;à 4 pers.</span></p>
           <h3>Mobil-home Éco</h3>
           <p class="fiche-sur">2 chambres</p>
+          <details class="fiche-plus" open>
+          <summary>Couchages et équipements</summary>
           <dl class="fiche-specs">
             <div><dt>Surface</dt><dd>29 m²</dd></div>
             <div><dt>Capacité</dt><dd>1 à 4 personnes</dd></div>
             <div><dt>Couchage</dt><dd>1 lit 140 × 190 cm et 2 lits 80 × 190 cm</dd></div>
           </dl>
           <ul class="coches coches--petit"><li>Salle d&#39;eau avec douche et lavabo, WC séparé</li><li>Kitchenette</li><li>Terrasse</li></ul>
+          </details>
           <table class="fiche-prix"><tbody><tr><th scope="row">Semaine</th><td data-prix>dès 440 €</td></tr><tr><th scope="row">Cure</th><td data-prix>dès 990 €</td></tr></tbody></table>
           <p class="fiche-note">Tarifs 2026, selon le nombre de personnes.</p>
           <a href="/reserver?hebergement=mobil-home&amp;logement=mh-eco" class="bouton" data-libelle="Réserver">Demander ce logement</a>
@@ -198,20 +206,24 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 </figure>
           <figure class="media fiche-media-2" style="--cadrage:50% 50%">
   <picture>
-    <img src="/assets/images/mh-chambre-1000.webp" srcset="/assets/images/mh-chambre-480.webp 480w, /assets/images/mh-chambre-640.webp 640w, /assets/images/mh-chambre-1000.webp 1000w" sizes="(max-width: 760px) 40vw, 14vw" alt="Mobil-homes Confort : autre photo" width="1000" height="667" loading="lazy" decoding="async">
+    <img src="/assets/images/mh-chambre-1000.webp" srcset="/assets/images/mh-chambre-480.webp 480w, /assets/images/mh-chambre-640.webp 640w, /assets/images/mh-chambre-1000.webp 1000w" sizes="(max-width: 760px) 40vw, 30vw" alt="Mobil-homes Confort : autre photo" width="1000" height="667" loading="lazy" decoding="async">
   </picture>
 </figure>
+          <button type="button" class="fiche-echange" data-echange aria-label="Voir l&#39;autre photo : Mobil-homes Confort"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h13l-3-3M20 16H7l3 3"/></svg></button>
         </div>
         <div class="fiche-corps">
           <p class="fiche-type"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="16" height="10" rx="1.5"/><path d="M18 11h4v6h-4M6 17v2M14 17v2M6 10h4v3H6z"/></svg><span>jusqu&#39;à 6 pers.</span></p>
           <h3>Mobil-homes Confort</h3>
           <p class="fiche-sur">2 ou 3 chambres · Riviera, Super Titania, Savanah, Pacifique</p>
+          <details class="fiche-plus" open>
+          <summary>Couchages et équipements</summary>
           <dl class="fiche-specs">
             <div><dt>Surface</dt><dd>25 à 32 m²</dd></div>
             <div><dt>Capacité</dt><dd>1 à 6 personnes</dd></div>
             <div><dt>Couchage</dt><dd>1 lit 140 × 190 cm et 2 ou 4 lits 80 × 190 cm</dd></div>
           </dl>
           <ul class="coches coches--petit"><li>Salle d&#39;eau avec douche et lavabo, WC séparé</li><li>Kitchenette</li><li>Terrasse</li></ul>
+          </details>
           <table class="fiche-prix"><tbody><tr><th scope="row">Semaine</th><td data-prix>dès 490 €</td></tr><tr><th scope="row">Cure</th><td data-prix>dès 1 090 €</td></tr></tbody></table>
           <p class="fiche-note">Tarifs 2026, selon le nombre de personnes.</p>
           <a href="/reserver?hebergement=mobil-home&amp;logement=mh-confort" class="bouton" data-libelle="Réserver">Demander ce logement</a>
@@ -225,20 +237,24 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 </figure>
           <figure class="media fiche-media-2" style="--cadrage:50% 50%">
   <picture>
-    <img src="/assets/images/mh-sejour-1000.webp" srcset="/assets/images/mh-sejour-480.webp 480w, /assets/images/mh-sejour-640.webp 640w, /assets/images/mh-sejour-1000.webp 1000w" sizes="(max-width: 760px) 40vw, 14vw" alt="Mobil-home Premium : autre photo" width="1000" height="666" loading="lazy" decoding="async">
+    <img src="/assets/images/mh-sejour-1000.webp" srcset="/assets/images/mh-sejour-480.webp 480w, /assets/images/mh-sejour-640.webp 640w, /assets/images/mh-sejour-1000.webp 1000w" sizes="(max-width: 760px) 40vw, 30vw" alt="Mobil-home Premium : autre photo" width="1000" height="666" loading="lazy" decoding="async">
   </picture>
 </figure>
+          <button type="button" class="fiche-echange" data-echange aria-label="Voir l&#39;autre photo : Mobil-home Premium"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h13l-3-3M20 16H7l3 3"/></svg></button>
         </div>
         <div class="fiche-corps">
           <p class="fiche-type"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="16" height="10" rx="1.5"/><path d="M18 11h4v6h-4M6 17v2M14 17v2M6 10h4v3H6z"/></svg><span>jusqu&#39;à 4 pers.</span></p>
           <h3>Mobil-home Premium</h3>
           <p class="fiche-sur">2 chambres, 2 salles d&#39;eau</p>
+          <details class="fiche-plus" open>
+          <summary>Couchages et équipements</summary>
           <dl class="fiche-specs">
             <div><dt>Surface</dt><dd>33 m²</dd></div>
             <div><dt>Capacité</dt><dd>1 à 4 personnes</dd></div>
             <div><dt>Couchage</dt><dd>1 lit 140 × 190 cm et 2 lits 80 × 190 cm</dd></div>
           </dl>
           <ul class="coches coches--petit"><li>2 salles d&#39;eau, chacune avec son WC</li><li>Kitchenette</li><li>Terrasse</li></ul>
+          </details>
           <table class="fiche-prix"><tbody><tr><th scope="row">Semaine</th><td data-prix>dès 550 €</td></tr><tr><th scope="row">Cure</th><td data-prix>dès 1 210 €</td></tr></tbody></table>
           <p class="fiche-note">Tarifs 2026, selon le nombre de personnes.</p>
           <a href="/reserver?hebergement=mobil-home&amp;logement=mh-premium" class="bouton" data-libelle="Réserver">Demander ce logement</a>
@@ -252,20 +268,24 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 </figure>
           <figure class="media fiche-media-2" style="--cadrage:50% 50%">
   <picture>
-    <img src="/assets/images/gite-sejour-1000.webp" srcset="/assets/images/gite-sejour-480.webp 480w, /assets/images/gite-sejour-640.webp 640w, /assets/images/gite-sejour-1000.webp 1000w" sizes="(max-width: 760px) 40vw, 14vw" alt="Gîte « Le Cantou d&#39;Émile » : autre photo" width="1000" height="667" loading="lazy" decoding="async">
+    <img src="/assets/images/gite-sejour-1000.webp" srcset="/assets/images/gite-sejour-480.webp 480w, /assets/images/gite-sejour-640.webp 640w, /assets/images/gite-sejour-1000.webp 1000w" sizes="(max-width: 760px) 40vw, 30vw" alt="Gîte « Le Cantou d&#39;Émile » : autre photo" width="1000" height="667" loading="lazy" decoding="async">
   </picture>
 </figure>
+          <button type="button" class="fiche-echange" data-echange aria-label="Voir l&#39;autre photo : Gîte « Le Cantou d&#39;Émile »"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h13l-3-3M20 16H7l3 3"/></svg></button>
         </div>
         <div class="fiche-corps">
           <p class="fiche-type"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20V10l6-5 6 5v10M15 10l3-3 3 3v10M7 20v-5h4v5M2 20h20"/></svg><span>jusqu&#39;à 5 pers.</span></p>
           <h3>Gîte « Le Cantou d&#39;Émile »</h3>
           <p class="fiche-sur">Gîtes de France 3 épis · ferme auvergnate de 1894</p>
+          <details class="fiche-plus" open>
+          <summary>Couchages et équipements</summary>
           <dl class="fiche-specs">
             <div><dt>Surface</dt><dd>90 m²</dd></div>
             <div><dt>Capacité</dt><dd>1 à 5 personnes</dd></div>
             <div><dt>Couchage</dt><dd>1 lit 140 × 190 cm et 3 lits 90 × 190 cm</dd></div>
           </dl>
           <ul class="coches coches--petit"><li>2 chambres, salle d&#39;eau, WC indépendant</li><li>Cuisine et séjour, matériaux naturels</li><li>Jardin et stationnement privé</li></ul>
+          </details>
           <table class="fiche-prix"><tbody><tr><th scope="row">Semaine</th><td data-prix>dès 590 €</td></tr><tr><th scope="row">Cure</th><td data-prix>dès 1 190 €</td></tr></tbody></table>
           <p class="fiche-note">Tarifs 2026. Non accessible aux personnes en situation de handicap.</p>
           <a href="/reserver?hebergement=gite&amp;logement=gite" class="bouton" data-libelle="Réserver">Demander ce logement</a>
@@ -279,20 +299,24 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 </figure>
           <figure class="media fiche-media-2" style="--cadrage:50% 50%">
   <picture>
-    <img src="/assets/images/gite-cuisine-1000.webp" srcset="/assets/images/gite-cuisine-480.webp 480w, /assets/images/gite-cuisine-640.webp 640w, /assets/images/gite-cuisine-1000.webp 1000w" sizes="(max-width: 760px) 40vw, 14vw" alt="Appartements « Les Champs Fleuris » : autre photo" width="1000" height="667" loading="lazy" decoding="async">
+    <img src="/assets/images/gite-cuisine-1000.webp" srcset="/assets/images/gite-cuisine-480.webp 480w, /assets/images/gite-cuisine-640.webp 640w, /assets/images/gite-cuisine-1000.webp 1000w" sizes="(max-width: 760px) 40vw, 30vw" alt="Appartements « Les Champs Fleuris » : autre photo" width="1000" height="667" loading="lazy" decoding="async">
   </picture>
 </figure>
+          <button type="button" class="fiche-echange" data-echange aria-label="Voir l&#39;autre photo : Appartements « Les Champs Fleuris »"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h13l-3-3M20 16H7l3 3"/></svg></button>
         </div>
         <div class="fiche-corps">
           <p class="fiche-type"><svg class="icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20V10l6-5 6 5v10M15 10l3-3 3 3v10M7 20v-5h4v5M2 20h20"/></svg><span>jusqu&#39;à 6 pers.</span></p>
           <h3>Appartements « Les Champs Fleuris »</h3>
           <p class="fiche-sur">2 appartements F2 classés 2 étoiles</p>
+          <details class="fiche-plus" open>
+          <summary>Couchages et équipements</summary>
           <dl class="fiche-specs">
             <div><dt>Surface</dt><dd>35 à 45 m²</dd></div>
             <div><dt>Capacité</dt><dd>1 à 6 personnes</dd></div>
             <div><dt>Couchage</dt><dd>2 à 3 lits 140 × 190 cm</dd></div>
           </dl>
           <ul class="coches coches--petit"><li>1 à 2 chambres, salle d&#39;eau (douche ou baignoire sabot), WC indépendant</li><li>Cuisine avec coin repas ; salon au 2e étage</li><li>Jardin et stationnement privé</li></ul>
+          </details>
           <table class="fiche-prix"><tbody><tr><th scope="row">Semaine</th><td data-prix>dès 360 €</td></tr><tr><th scope="row">Cure</th><td data-prix>dès 920 €</td></tr></tbody></table>
           <p class="fiche-note">Tarifs 2026. Non accessibles aux personnes en situation de handicap.</p>
           <a href="/reserver?hebergement=gite&amp;logement=appartements" class="bouton" data-libelle="Réserver">Demander ce logement</a>

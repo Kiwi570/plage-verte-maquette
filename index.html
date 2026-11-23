@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1">
+<html lang="fr" data-v="2">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -35,14 +35,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/epilogue-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/figtree-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#F5F2E8">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -125,6 +125,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     </div>
     <p class="ouv-info ouv-apparait" data-info-cle data-saison='{"annee":2026,"periodes":[{"libelle":"Mobil-homes","debut":"2026-04-26","fin":"2026-10-11"},{"libelle":"Emplacements et cabanes","debut":"2026-05-07","fin":"2026-09-13"}],"textes":{"avant":"Ouverture le {date}","pendant":"Ouvert · {libelle} jusqu&#39;au {date}","apres":"Saison {annee} terminée · dates {suivante} à venir"}}'><span class="pastille" aria-hidden="true"></span><span data-saison-texte>Saison 2026 terminée · dates 2027 à venir</span></p>
   </div>
+  <a class="defiler ouv-apparait" href="#bienvenue" data-sans-transition aria-label="Descendre vers la présentation du camping"><span>Défiler</span><i aria-hidden="true"></i></a>
 </section>
 <section class="bienvenue" id="bienvenue">
   <div class="conteneur bienvenue-grille">
@@ -155,8 +156,24 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <div><p class="surtitre">Hébergements</p><h2 data-anime="lignes">Quatre façons <em>de dormir</em></h2></div>
       <p data-anime>100 emplacements de camping et locatifs, au soleil ou à l&#39;ombre.</p>
     </div>
+    <div class="choix" data-choix='{"logements":[{"nom":"Les cabanes","type":"cabane","max":3,"semaine":350,"cure":750},{"nom":"Mobil-home Éco","type":"mobil-home","max":4,"semaine":440,"cure":990},{"nom":"Mobil-homes Confort","type":"mobil-home","max":6,"semaine":490,"cure":1090},{"nom":"Mobil-home Premium","type":"mobil-home","max":4,"semaine":550,"cure":1210},{"nom":"Gîte Le Cantou d&#39;Émile","type":"gite","max":5,"semaine":590,"cure":1190},{"nom":"Appartements Les Champs Fleuris","type":"gite","max":6,"semaine":360,"cure":920}],"textes":{"depart":"Choisissez le nombre de personnes et votre façon de dormir : on vous montre ce qui vous va.","toileReponse":"Pour {n} sous la toile : un emplacement de 80 à 200 m², 5,50 € par personne de plus de 7 ans et par nuit.","toileCure":"Pour une cure sous la toile : le forfait curiste, dès 427 € pour 2 personnes avec électricité 6 A.","secReponse":"Pour {n} au sec : {k}, dès {prix} la semaine ({nom}).","secCure":"Pour une cure à {n} au sec : {k}, dès {prix} la cure ({nom}).","secAucun":"Au-delà de 6 personnes au sec, pensez au séjour de groupe.","voirEmplacements":"Voir les emplacements","voirLogements":"Voir ces logements","voirGroupe":"Demander un séjour de groupe","unePersonne":"une personne","personnesN":"{n} personnes","unLogement":"1 logement possible","logementsN":"{k} logements possibles"},"liens":{"emplacements":"/emplacements","locations":"/locations","reserver":"/reserver"}}' data-visuel>
+    <p class="choix-titre">Trouvez votre façon de dormir</p>
+    <div class="choix-ligne">
+      <span class="choix-libelle" id="choix-n">Vous serez</span>
+      <div class="choix-boutons" role="group" aria-labelledby="choix-n"><button type="button" class="filtre-n" data-choix-n="1" aria-pressed="false">1</button><button type="button" class="filtre-n" data-choix-n="2" aria-pressed="false">2</button><button type="button" class="filtre-n" data-choix-n="3" aria-pressed="false">3</button><button type="button" class="filtre-n" data-choix-n="4" aria-pressed="false">4</button><button type="button" class="filtre-n" data-choix-n="5" aria-pressed="false">5</button><button type="button" class="filtre-n" data-choix-n="6" aria-pressed="false">6+</button></div>
+    </div>
+    <div class="choix-ligne">
+      <span class="choix-libelle" id="choix-f">Vous préférez</span>
+      <div class="choix-boutons" role="group" aria-labelledby="choix-f">
+        <button type="button" class="puce-bouton" data-choix-f="toile" aria-pressed="false"><svg class="icone choix-icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20 12 4l9 16M12 4v16M8 20l4-6 4 6M2 20h20"/></svg>Sous la toile</button>
+        <button type="button" class="puce-bouton" data-choix-f="sec" aria-pressed="false"><svg class="icone choix-icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="16" height="10" rx="1.5"/><path d="M18 11h4v6h-4M6 17v2M14 17v2M6 10h4v3H6z"/></svg>Au sec</button>
+      </div>
+      <label class="choix-cure"><input type="checkbox" data-choix-cure><span>C&#39;est pour une cure (3 semaines)</span></label>
+    </div>
+    <p class="choix-reponse" role="status" data-choix-reponse>Choisissez le nombre de personnes et votre façon de dormir : on vous montre ce qui vous va.</p>
+  </div>
     <ul class="dormir-grille" data-anime="cascade">
-      <li class="dormir-carte" data-survol="incline" data-survol-force="5">
+      <li class="dormir-carte" data-survol="incline" data-survol-force="5" data-choix-carte="toile">
         <figure class="media dormir-media" style="--cadrage:50% 50%">
   <picture>
     <img src="/assets/images/emplacements-640.webp" srcset="/assets/images/emplacements-480.webp 480w, /assets/images/emplacements-640.webp 640w" sizes="(max-width: 760px) 46vw, 24vw" alt="Emplacements" width="640" height="801" loading="lazy" decoding="async">
@@ -168,7 +185,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
           <p class="dormir-texte">84 emplacements engazonnés de 80 à 200 m², électricité 6 ou 10 A.</p>
           <p class="dormir-prix" data-prix>5,50 € par personne et par nuit</p>
         </div>
-      </li><li class="dormir-carte" data-survol="incline" data-survol-force="5">
+      </li><li class="dormir-carte" data-survol="incline" data-survol-force="5" data-choix-carte="cabane">
         <figure class="media dormir-media" style="--cadrage:50% 50%">
   <picture>
     <img src="/assets/images/cabane-carte-640.webp" srcset="/assets/images/cabane-carte-480.webp 480w, /assets/images/cabane-carte-640.webp 640w" sizes="(max-width: 760px) 46vw, 24vw" alt="Cabanes" width="640" height="800" loading="lazy" decoding="async">
@@ -180,7 +197,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
           <p class="dormir-texte">2 cabanes en bois de 20 m², pour 1 à 3 personnes.</p>
           <p class="dormir-prix" data-prix>dès 65 € la nuit</p>
         </div>
-      </li><li class="dormir-carte" data-survol="incline" data-survol-force="5">
+      </li><li class="dormir-carte" data-survol="incline" data-survol-force="5" data-choix-carte="mobil-home">
         <figure class="media dormir-media" style="--cadrage:50% 50%">
   <picture>
     <img src="/assets/images/mobil-home-terrasse-640.webp" srcset="/assets/images/mobil-home-terrasse-480.webp 480w, /assets/images/mobil-home-terrasse-640.webp 640w" sizes="(max-width: 760px) 46vw, 24vw" alt="Mobil-homes" width="640" height="800" loading="lazy" decoding="async">
@@ -188,11 +205,11 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 </figure>
         <div class="dormir-corps">
           <svg class="icone dormir-icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="16" height="10" rx="1.5"/><path d="M18 11h4v6h-4M6 17v2M14 17v2M6 10h4v3H6z"/></svg>
-          <h3><a href="/locations#mh-eco" class="dormir-lien" data-libelle="Locations" data-superpose>Mobil-homes</a></h3>
+          <h3><a href="/locations#mh-eco" class="dormir-lien" data-libelle="Locations" data-superpose><span class="insecable">Mobil-homes</span></a></h3>
           <p class="dormir-texte">16 mobil-homes avec terrasse, de 1 à 6 personnes.</p>
           <p class="dormir-prix" data-prix>dès 440 € la semaine</p>
         </div>
-      </li><li class="dormir-carte" data-survol="incline" data-survol-force="5">
+      </li><li class="dormir-carte" data-survol="incline" data-survol-force="5" data-choix-carte="gite">
         <figure class="media dormir-media" style="--cadrage:50% 50%">
   <picture>
     <img src="/assets/images/gite-ferme-640.webp" srcset="/assets/images/gite-ferme-480.webp 480w, /assets/images/gite-ferme-640.webp 640w" sizes="(max-width: 760px) 46vw, 24vw" alt="Gîte et appartements" width="640" height="800" loading="lazy" decoding="async">
@@ -294,7 +311,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <h2 data-anime="lignes">Pain et viennoiseries <em>cuits sur place</em></h2>
       <p data-anime>En saison, Laurent et Colette vendent chaque matin au point « petit déj » des pains et des viennoiseries cuits sur place.</p>
       <h3 class="matin-sous" data-anime>Et toute la journée</h3>
-      <ul class="services" data-anime="cascade"><li><svg class="icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 9a14 14 0 0 1 19 0"/><path d="M5.5 12.5a9.5 9.5 0 0 1 13 0"/><path d="M8.7 16a5 5 0 0 1 6.6 0"/><path d="M12 19.5h.01"/></svg><div><strong>Wi-Fi gratuit</strong><span>Dans tout le camping.</span></div></li><li><svg class="icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="11" rx="2"/><path d="M3 11h18M7 16v3M17 16v3M7 8h3M14 8h3"/></svg><div><strong>Navette thermale</strong><span>Gratuite, du lundi au samedi : départ du camping à 8 h 15, dernier retour des thermes à 12 h 15.</span></div></li><li><svg class="icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="10" height="18" rx="2"/><path d="M11 7l-2.5 4h3L9 15M15 9h2a2 2 0 0 1 2 2v5a1.5 1.5 0 0 0 3 0v-7l-2-2"/></svg><div><strong>Borne de recharge</strong><span>Pour les véhicules électriques.</span></div></li><li><svg class="icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><circle cx="12" cy="13" r="4.5"/><path d="M7 6.5h2M12 6.5h5"/></svg><div><strong>Laverie</strong><span>Lave-linge, sèche-linge et lave-vaisselle en libre-service.</span></div></li><li><svg class="icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 11 12 4l10 7"/><path d="M4 10v10M20 10v10M2 11h20M8 20v-5h8v5"/></svg><div><strong>Barnum</strong><span>Tables et chaises en libre accès, à l&#39;abri.</span></div></li><li><svg class="icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V9M20 21V9M4 9l8-5 8 5M8 13l4 4 4-4M12 17v4"/></svg><div><strong>Aires de jeux</strong><span>Pour les enfants, dans la prairie.</span></div></li></ul>
+      <ul class="services" data-anime="cascade"><li><svg class="icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" data-fx="trace"><path d="M2.5 9a14 14 0 0 1 19 0"/><path d="M5.5 12.5a9.5 9.5 0 0 1 13 0"/><path d="M8.7 16a5 5 0 0 1 6.6 0"/><path d="M12 19.5h.01"/></svg><div><strong>Wi-Fi gratuit</strong><span>Dans tout le camping.</span></div></li><li><svg class="icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" data-fx="trace"><rect x="3" y="5" width="18" height="11" rx="2"/><path d="M3 11h18M7 16v3M17 16v3M7 8h3M14 8h3"/></svg><div><strong>Navette thermale</strong><span>Gratuite, du lundi au samedi : départ du camping à 8 h 15, dernier retour des thermes à 12 h 15.</span></div></li><li><svg class="icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" data-fx="trace"><rect x="5" y="3" width="10" height="18" rx="2"/><path d="M11 7l-2.5 4h3L9 15M15 9h2a2 2 0 0 1 2 2v5a1.5 1.5 0 0 0 3 0v-7l-2-2"/></svg><div><strong>Borne de recharge</strong><span>Pour les véhicules électriques.</span></div></li><li><svg class="icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" data-fx="trace"><rect x="4" y="3" width="16" height="18" rx="2"/><circle cx="12" cy="13" r="4.5"/><path d="M7 6.5h2M12 6.5h5"/></svg><div><strong>Laverie</strong><span>Lave-linge, sèche-linge et lave-vaisselle en libre-service.</span></div></li><li><svg class="icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" data-fx="trace"><path d="M2 11 12 4l10 7"/><path d="M4 10v10M20 10v10M2 11h20M8 20v-5h8v5"/></svg><div><strong>Barnum</strong><span>Tables et chaises en libre accès, à l&#39;abri.</span></div></li><li><svg class="icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" data-fx="trace"><path d="M4 21V9M20 21V9M4 9l8-5 8 5M8 13l4 4 4-4M12 17v4"/></svg><div><strong>Aires de jeux</strong><span>Pour les enfants, dans la prairie.</span></div></li></ul>
     </div>
   </div>
 </section>
@@ -373,7 +390,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <div class="conteneur engagements-grille">
     <div class="engagements-tete">
       <p class="surtitre">Camping responsable</p>
-      <h2 data-anime="lignes">Le Sancy, <em>un environnement sauvage à protéger</em></h2>
+      <h2 data-anime="lignes">Le Sancy, un environnement sauvage <em>à protéger</em></h2>
       <p data-anime>Depuis sa création, le camping s&#39;engage pour préserver le cadre naturel qui l&#39;entoure.</p>
       <figure class="media engagements-media" data-grok data-anime="rideau" style="--cadrage:50% 50%">
   <picture>
@@ -381,7 +398,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   </picture><figcaption class="mention-ia">Illustration générée</figcaption>
 </figure>
     </div>
-    <ul class="engagements-liste" data-anime="cascade"><li><h3>Respecter le site</h3><ul><li>Peu de terrassements, une intégration pensée dans le paysage</li><li>Matériaux naturels et locaux</li><li>Sols peu imperméabilisés, plantations d&#39;espèces locales</li></ul></li><li><h3>Préserver l&#39;eau</h3><ul><li>Compteurs divisionnaires pour repérer les fuites</li><li>Jamais d&#39;eau potable pour arroser</li><li>Robinets à poussoir et limiteurs de débit</li></ul></li><li><h3>Économiser l&#39;énergie</h3><ul><li>Canalisations d&#39;eau chaude calorifugées, mitigeurs</li><li>Éclairage LED, détecteurs de présence et minuteries</li><li>Allées balisées par des bornes solaires</li></ul></li><li><h3>Réduire les pollutions</h3><ul><li>Eaux usées traitées par une installation conforme</li><li>Tri sélectif, papier et cartouches recyclés</li><li>Produits d&#39;entretien écolabellisés</li></ul></li></ul>
+    <ul class="engagements-liste" data-anime="cascade" tabindex="0" aria-label="Les engagements du camping"><li><svg class="icone engagements-icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" data-fx="trace"><path d="M5 19C5 10 10 4 20 4c0 10-6 15-15 15Z"/><path d="M5 19 13 11"/></svg><h3>Respecter le site</h3><ul><li>Peu de terrassements, une intégration pensée dans le paysage</li><li>Matériaux naturels et locaux</li><li>Sols peu imperméabilisés, plantations d&#39;espèces locales</li></ul></li><li><svg class="icone engagements-icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" data-fx="trace"><path d="M12 3s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11Z"/><path d="M9.5 14.5a2.6 2.6 0 0 0 2.5 2.5"/></svg><h3>Préserver l&#39;eau</h3><ul><li>Compteurs divisionnaires pour repérer les fuites</li><li>Jamais d&#39;eau potable pour arroser</li><li>Robinets à poussoir et limiteurs de débit</li></ul></li><li><svg class="icone engagements-icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" data-fx="trace"><path d="M13 2 5 13h6l-1 9 8-11h-6l1-9Z"/></svg><h3>Économiser l&#39;énergie</h3><ul><li>Canalisations d&#39;eau chaude calorifugées, mitigeurs</li><li>Éclairage LED, détecteurs de présence et minuteries</li><li>Allées balisées par des bornes solaires</li></ul></li><li><svg class="icone engagements-icone" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" data-fx="trace"><path d="M20 12a8 8 0 0 1-14 5.3M4 12a8 8 0 0 1 14-5.3"/><path d="M18 3v4h-4M6 21v-4h4"/></svg><h3>Réduire les pollutions</h3><ul><li>Eaux usées traitées par une installation conforme</li><li>Tri sélectif, papier et cartouches recyclés</li><li>Produits d&#39;entretien écolabellisés</li></ul></li></ul>
   </div>
 </section>
 <section class="saison" id="saison">
@@ -402,7 +419,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <p class="frise-libelle">Emplacements et cabanes<span>du 7 mai au 13 septembre</span></p>
       <div class="frise-piste"><span class="frise-barre" style="--g:14.75%;--d:32.38%"></span></div>
     </div>
-    <span class="frise-jour frise-jour--droite" data-frise-jour style="--x:95.49" ><span>Aujourd&#39;hui</span></span>
+    <span class="frise-jour frise-jour--droite" data-frise-jour style="--x:96.72" ><span>Aujourd&#39;hui</span></span>
   </div>
   </div>
 </section>

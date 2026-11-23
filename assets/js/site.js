@@ -1,8 +1,8 @@
 /* La Plage Verte : effets propres au client. Le socle gère l'ouverture, les transitions, l'en-tête, le menu,
    les boucles, les mesures et la bibliothèque d'effets (posés par attributs dans les pages).
    Effets du plan (data-effet) : crete, soleil, saison, vapeur, carte-acces, prairie, bandeau. */
-import { demarrer, boucle, etat, versObjet, quand, rafraichir } from './socle/index.js?v=1';
-import { init as initFormulaireEtapes } from './modules/formulaire-par-etapes.js?v=1';
+import { demarrer, boucle, etat, versObjet, quand, rafraichir } from './socle/index.js?v=2';
+import { init as initFormulaireEtapes } from './modules/formulaire-par-etapes.js?v=2';
 
 const gsap = window.gsap;
 const ST = () => window.ScrollTrigger;
@@ -147,7 +147,8 @@ function carteAcces() {
   svg.__jouer = () => {
     gsap.timeline({ defaults: { ease: 'power2.out' } })
       .fromTo(traits, { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 1.4, stagger: 0.5 }, 0)
-      .to(points, { opacity: 1, duration: 0.5, stagger: 0.06, clearProps: 'opacity' }, 0.2);
+      .to(points, { opacity: 1, duration: 0.5, stagger: 0.06, clearProps: 'opacity' }, 0.2)
+      .call(() => { const v = $('[data-carte-voyageur]', svg), m = v && v.querySelector('animateMotion'); if (m && m.beginElement) { v.setAttribute('opacity', '1'); m.beginElement(); setTimeout(() => v.setAttribute('opacity', '0'), 2700); } }, null, 1.6);
   };
   if (ST()) gsap.fromTo($('.carte-crete-groupe', svg), { y: 0 }, { y: -18, ease: 'none', scrollTrigger: { trigger: svg, start: 'top top', end: 'bottom top', scrub: 0.4 } });
 }
@@ -184,6 +185,80 @@ function profils() {
   });
 }
 
+/* ---------- Accueil : « Trouvez votre façon de dormir » ---------- */
+function choixDormir() {
+  const z = $('[data-choix]');
+  if (!z) return;
+  let d; try { d = JSON.parse(z.dataset.choix); } catch { return; }
+  const T = d.textes, rep = $('[data-choix-reponse]', z), cure = $('[data-choix-cure]', z);
+  const cartes = $$('[data-choix-carte]');
+  const euros = (n) => new Intl.NumberFormat('fr-FR').format(n).replace(/[\u202f\u00a0]/g, '\u00a0') + '\u00a0€';
+  let n = 0, f = '';
+  const qui = () => (n === 1 ? T.unePersonne : T.personnesN.replace('{n}', n >= 6 ? '6 ou plus' : n));
+  const lien = (href, texte) => { const a = document.createElement('a'); a.href = href; a.textContent = texte; a.className = 'choix-lien'; return a; };
+  const montrer = () => {
+    $$('[data-choix-n]', z).forEach((b) => b.setAttribute('aria-pressed', String(+b.dataset.choixN === n)));
+    $$('[data-choix-f]', z).forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.choixF === f)));
+    let ok = () => true, texte = T.depart, a = null;
+    if (f === 'toile') {
+      ok = (t) => t === 'toile';
+      texte = cure.checked ? T.toileCure : T.toileReponse.replace('{n}', n ? qui() : T.personnesN.replace('{n}', '2'));
+      a = lien(d.liens.emplacements + (cure.checked ? '#cure' : '#tarifs'), T.voirEmplacements);
+    } else if (f === 'sec') {
+      const besoin = n || 1;
+      const possibles = d.logements.filter((l) => l.max >= besoin);
+      ok = (t) => possibles.some((l) => l.type === t);
+      if (!possibles.length || (n >= 6 && !possibles.length)) { texte = T.secAucun; a = lien(d.liens.reserver + '?hebergement=groupe', T.voirGroupe); }
+      else {
+        const cle = cure.checked ? 'cure' : 'semaine';
+        const moins = possibles.filter((l) => l[cle]).sort((x, y) => x[cle] - y[cle])[0];
+        texte = (cure.checked ? T.secCure : T.secReponse).replace('{n}', n ? qui() : T.unePersonne).replace('{k}', possibles.length === 1 ? T.unLogement : T.logementsN.replace('{k}', possibles.length)).replace('{prix}', euros(moins[cle])).replace('{nom}', moins.nom);
+        a = lien(d.liens.locations + (n ? `?personnes=${Math.min(n, 6)}` : '') + '#logements', T.voirLogements);
+      }
+    } else if (n) {
+      ok = (t) => t === 'toile' || d.logements.some((l) => l.type === t && l.max >= n);
+    }
+    rep.textContent = texte;
+    if (a) { rep.append(' '); rep.append(a); }
+    cartes.forEach((c) => {
+      const garde = ok(c.dataset.choixCarte);
+      if (garde === !c.hasAttribute('data-ecartee')) return;
+      if (garde) c.removeAttribute('data-ecartee'); else c.setAttribute('data-ecartee', '');
+      if (gsap) gsap.fromTo(c, { y: garde ? 10 : 0 }, { y: 0, duration: 0.45, ease: 'power2.out', clearProps: 'transform' });
+    });
+  };
+  $$('[data-choix-n]', z).forEach((b) => b.addEventListener('click', () => { const v = +b.dataset.choixN; n = n === v ? 0 : v; montrer(); }));
+  $$('[data-choix-f]', z).forEach((b) => b.addEventListener('click', () => { f = f === b.dataset.choixF ? '' : b.dataset.choixF; montrer(); }));
+  cure.addEventListener('change', montrer);
+}
+
+/* ---------- Emplacements : l'emplacement dessiné en direct (abri, personnes, animaux, électricité) ---------- */
+const SVGNS = 'http://www.w3.org/2000/svg';
+function dessinerEmplacement(svg, e) {
+  if (!svg) return;
+  $$('[data-abri]', svg).forEach((g) => { g.hidden = g.dataset.abri !== e.abri; });
+  const borne = $('[data-elec]', svg);
+  borne.style.display = e.elec === 'sans' ? 'none' : '';
+  const lib = svg.closest('figure') && svg.closest('figure').querySelector('[data-elec-texte]');
+  if (lib) lib.textContent = e.elec === 'sans' ? ' · sans électricité' : e.elec === '10a' ? ' · 10 A' : ' · 6 A';
+  const gens = $('[data-gens]', svg);
+  const voulu = [...Array(e.adultes).fill('a'), ...Array(e.enfants).fill('e'), ...Array(e.animaux).fill('c')];
+  const actuels = [...gens.children];
+  actuels.slice(voulu.length).forEach((g) => g.remove());
+  voulu.forEach((k, i) => {
+    let g = gens.children[i];
+    if (g && g.dataset.k === k) return;
+    if (g) g.remove();
+    g = document.createElementNS(SVGNS, 'g'); g.dataset.k = k;
+    const x = 30 + i * 17, y = 116;
+    if (k === 'c') g.innerHTML = `<path class="pitch-chien" d="M${x - 8} ${y} l0 -7 q0 -4 5 -4 l8 0 l2 -5 l4 1 l-1 5 q2 2 1 4 l-2 0 l0 6 l-3 0 l0 -5 l-8 0 l0 5 z"/>`;
+    else { const s = k === 'a' ? 1 : 0.72; g.innerHTML = `<circle class="pitch-tete" cx="${x}" cy="${y - 22 * s}" r="${5 * s}"/><path class="pitch-corps" d="M${x - 6 * s} ${y} q0 -${14 * s} ${6 * s} -${14 * s} q${6 * s} 0 ${6 * s} ${14 * s} z"/>`; }
+    const avant = gens.children[i];
+    gens.insertBefore(g, avant || null);
+    if (gsap) gsap.fromTo(g, { scale: 0, svgOrigin: `${x} ${y}` }, { scale: 1, svgOrigin: `${x} ${y}`, duration: 0.4, ease: 'back.out(2)' });
+  });
+}
+
 /* ---------- Emplacements : calculateur de nuitée (redevances 2026) ---------- */
 function calculateur() {
   const f = $('[data-calculateur]');
@@ -203,6 +278,7 @@ function calculateur() {
     $('[data-calc-taxes]', f).textContent = euros(taxes);
     $('[data-calc-total]', f).textContent = euros((parNuit + taxes) * nuits);
     if (pour) pour.textContent = pour.dataset.modele.replace('{n}', nuits);
+    dessinerEmplacement($('[data-pitch]', f), { abri: abri ? abri.value : 'tente', elec: elec ? elec.value : 'sans', adultes: Math.min(adultes, 8), enfants: Math.min(enfants, 6), animaux: Math.min(animaux, 3) });
     if (lien) {
       const u = new URL(lien.href, location.href);
       u.searchParams.set('hebergement', elec && elec.value === 'sans' ? 'emplacement-sans' : 'emplacement-electricite');
@@ -252,6 +328,22 @@ function filtre() {
   appliquer(false);
 }
 
+/* ---------- Locations : la vignette échange sa photo avec la grande ; détails repliés sur téléphone ---------- */
+function fiches() {
+  $$('[data-echange]').forEach((b) => {
+    const fiche = b.closest('.fiche-photos');
+    b.addEventListener('click', () => {
+      const a = $('.fiche-media img', fiche), v = $('.fiche-media-2 img', fiche);
+      if (!a || !v) return;
+      const attrs = ['src', 'srcset', 'alt'];
+      const echanger = () => attrs.forEach((k) => { const x = a.getAttribute(k), y = v.getAttribute(k); if (y != null) a.setAttribute(k, y); if (x != null) v.setAttribute(k, x); });
+      if (!gsap) { echanger(); return; }
+      gsap.timeline().to([a, v], { opacity: 0, duration: 0.18 }).call(echanger).to([a, v], { opacity: 1, duration: 0.35, clearProps: 'opacity' });
+    });
+  });
+  if (matchMedia('(max-width: 760px)').matches) $$('.fiche-plus[open]').forEach((d) => d.removeAttribute('open'));
+}
+
 /* ---------- Réserver : formulaire par étapes prérempli par l'adresse ---------- */
 const LOGEMENTS = { cabane: 'Cabane', 'mh-eco': 'Mobil-home Éco', 'mh-confort': 'Mobil-home Confort', 'mh-premium': 'Mobil-home Premium', gite: 'Gîte « Le Cantou d\'Émile »', appartements: 'Appartements « Les Champs Fleuris »' };
 function reservation() {
@@ -292,7 +384,7 @@ demarrer({
   preparer() {
     statuts();
     frise(); crete(); rangee(); vapeur(); prairie(); bandeau(); carteAcces();
-    profils(); calculateur(); filtre(); reservation();
+    profils(); choixDormir(); calculateur(); filtre(); fiches(); reservation();
     quand('pret', () => statuts());
   },
   /* Intro (≈ 2,4 s) : la crête du Sancy se trace, le soleil monte, puis glisse sur l'objet d'ouverture de la page

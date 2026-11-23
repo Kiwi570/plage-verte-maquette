@@ -1,10 +1,38 @@
 /* Accueil : ouverture sur la vue aérienne (cachet rond = objet d'ouverture), bienvenue et chiffres,
    quatre façons de dormir, le camping de près (galerie épinglée), spa en plein écran, le matin et les services,
    le Sancy en quatre profils, engagements (mots géants), frise de saison, appel final avec la crête. */
-import { html } from '../../outils/gabarit.mjs';
+import { html, brut } from '../../outils/gabarit.mjs';
 import { appelFinal, statutSaison, saisonAttrs, icone, nombre, aujourdhui, dateLongue } from '../gabarits/blocs.mjs';
 
 export const page = { cle: 'accueil', fichier: 'index', imagePartage: 'aerienne-1280.webp' };
+
+/* « Trouvez votre façon de dormir » : nombre de personnes, toile ou au sec, cure. Les cartes qui conviennent
+   restent en avant, les autres s'effacent ; la réponse donne le vrai prix « dès » 2026 et mène à la bonne page. */
+const nombrePrix = (v) => parseInt(String(v).replace(/[^0-9]/g, ''), 10) || null;
+function choix(c) {
+  const logements = c.donnees.hebergements.map((h) => {
+    const p = Object.fromEntries(h.prix.map(([k, v]) => [k.toLowerCase(), nombrePrix(v)]));
+    return { nom: h.nom.replace(/[«»]/g, '').replace(/\s+/g, ' ').trim(), type: h.type, max: h.max, semaine: p.semaine, cure: p['cure ou 3 semaines'] || p.cure };
+  });
+  const textes = ['depart', 'toileReponse', 'toileCure', 'secReponse', 'secCure', 'secAucun', 'voirEmplacements', 'voirLogements', 'voirGroupe', 'unePersonne', 'personnesN', 'unLogement', 'logementsN'].reduce((o, k) => (o[k] = c.s(`accueil.choix.${k}`), o), {});
+  const donnees = JSON.stringify({ logements, textes, liens: { emplacements: c.url('emplacements'), locations: c.url('locations'), reserver: c.url('reserver') } }).replace(/'/g, '&#39;');
+  return html`<div class="choix" data-choix='${brut(donnees)}' data-visuel>
+    <p class="choix-titre">${c.t('accueil.choix.titre')}</p>
+    <div class="choix-ligne">
+      <span class="choix-libelle" id="choix-n">${c.t('accueil.choix.combien')}</span>
+      <div class="choix-boutons" role="group" aria-labelledby="choix-n">${[1, 2, 3, 4, 5, 6].map((n) => html`<button type="button" class="filtre-n" data-choix-n="${n}" aria-pressed="false">${n}${n === 6 ? '+' : ''}</button>`)}</div>
+    </div>
+    <div class="choix-ligne">
+      <span class="choix-libelle" id="choix-f">${c.t('accueil.choix.facon')}</span>
+      <div class="choix-boutons" role="group" aria-labelledby="choix-f">
+        <button type="button" class="puce-bouton" data-choix-f="toile" aria-pressed="false">${icone('tente', 'icone choix-icone')}${c.t('accueil.choix.toile')}</button>
+        <button type="button" class="puce-bouton" data-choix-f="sec" aria-pressed="false">${icone('mobilhome', 'icone choix-icone')}${c.t('accueil.choix.sec')}</button>
+      </div>
+      <label class="choix-cure"><input type="checkbox" data-choix-cure><span>${c.t('accueil.choix.cure')}</span></label>
+    </div>
+    <p class="choix-reponse" role="status" data-choix-reponse>${c.t('accueil.choix.depart')}</p>
+  </div>`;
+}
 
 function frise(c) {
   const s = c.donnees.saison, an = s.annee;
@@ -40,6 +68,7 @@ export default (c) => html`
     </div>
     <p class="ouv-info ouv-apparait" data-info-cle${saisonAttrs(c)}><span class="pastille" aria-hidden="true"></span><span data-saison-texte>${statutSaison(c)}</span></p>
   </div>
+  <a class="defiler ouv-apparait" href="#bienvenue" data-sans-transition aria-label="${c.s('accueil.hero.defilerAria')}"><span>${c.t('accueil.hero.defiler')}</span><i aria-hidden="true"></i></a>
 </section>
 
 <section class="bienvenue" id="bienvenue">
@@ -64,12 +93,13 @@ export default (c) => html`
       <div><p class="surtitre">${c.t('accueil.dormir.surtitre')}</p><h2 data-anime="lignes">${c.tb('accueil.dormir.titre')}</h2></div>
       <p data-anime>${c.t('accueil.dormir.texte')}</p>
     </div>
+    ${choix(c)}
     <ul class="dormir-grille" data-anime="cascade">
-      ${[['emplacements', 'emplacements', 'emplacements', '', 'tente'], ['cabanes', 'cabane-carte', 'locations', 'cabane', 'cabane'], ['mobilhomes', 'mobil-home-terrasse', 'locations', 'mh-eco', 'mobilhome'], ['gite', 'gite-ferme', 'locations', 'gite', 'gite']].map(([k, img, pageCle, ancre, ic]) => html`<li class="dormir-carte" data-survol="incline" data-survol-force="5">
-        ${c.media({ nom: img, alt: c.s(`accueil.dormir.${k}`), classe: 'dormir-media', sizes: '(max-width: 760px) 46vw, 24vw' })}
+      ${[['emplacements', 'emplacements', 'emplacements', '', 'tente', 'toile'], ['cabanes', 'cabane-carte', 'locations', 'cabane', 'cabane', 'cabane'], ['mobilhomes', 'mobil-home-terrasse', 'locations', 'mh-eco', 'mobilhome', 'mobil-home'], ['gite', 'gite-ferme', 'locations', 'gite', 'gite', 'gite']].map(([k, img, pageCle, ancre, ic, type]) => html`<li class="dormir-carte" data-survol="incline" data-survol-force="5" data-choix-carte="${type}">
+        ${c.media({ nom: img, alt: c.s(`accueil.dormir.${k}`).replace(/<[^>]+>/g, ''), classe: 'dormir-media', sizes: '(max-width: 760px) 46vw, 24vw' })}
         <div class="dormir-corps">
           ${icone(ic, 'icone dormir-icone')}
-          <h3>${c.lien(pageCle, { ancre, texte: c.t(`accueil.dormir.${k}`), classe: 'dormir-lien', attrs: 'data-superpose' })}</h3>
+          <h3>${c.lien(pageCle, { ancre, texte: c.tb(`accueil.dormir.${k}`), classe: 'dormir-lien', attrs: 'data-superpose' })}</h3>
           <p class="dormir-texte">${c.t(`accueil.dormir.${k}Texte`)}</p>
           <p class="dormir-prix" data-prix>${c.t(`accueil.dormir.${k}Prix`)}</p>
         </div>
@@ -118,7 +148,7 @@ export default (c) => html`
       <h2 data-anime="lignes">${c.tb('accueil.matin.titre')}</h2>
       <p data-anime>${c.t('accueil.matin.texte')}</p>
       <h3 class="matin-sous" data-anime>${c.t('accueil.matin.servicesTitre')}</h3>
-      <ul class="services" data-anime="cascade">${c.donnees.services.map((x) => html`<li>${icone(x.icone)}<div><strong>${x.titre}</strong><span>${x.texte}</span></div></li>`)}</ul>
+      <ul class="services" data-anime="cascade">${c.donnees.services.map((x) => html`<li>${icone(x.icone, 'icone', 'data-fx="trace"')}<div><strong>${x.titre}</strong><span>${x.texte}</span></div></li>`)}</ul>
     </div>
   </div>
 </section>
@@ -162,7 +192,7 @@ export default (c) => html`
       <p data-anime>${c.t('accueil.engagements.texte')}</p>
       ${c.media({ nom: 'grok/rosee', alt: c.s('accueil.engagements.photo'), classe: 'engagements-media', sizes: '(max-width: 760px) 100vw, 35vw', attrs: 'data-anime="rideau"' })}
     </div>
-    <ul class="engagements-liste" data-anime="cascade">${c.donnees.engagements.map((e) => html`<li><h3>${e.titre}</h3><ul>${e.liste.map((x) => html`<li>${x}</li>`)}</ul></li>`)}</ul>
+    <ul class="engagements-liste" data-anime="cascade" tabindex="0" aria-label="${c.s('accueil.engagements.liste')}">${c.donnees.engagements.map((e) => html`<li>${icone(e.icone, 'icone engagements-icone', 'data-fx="trace"')}<h3>${e.titre}</h3><ul>${e.liste.map((x) => html`<li>${x}</li>`)}</ul></li>`)}</ul>
   </div>
 </section>
 

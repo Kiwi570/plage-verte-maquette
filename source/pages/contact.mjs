@@ -25,11 +25,12 @@ export default (c) => html`
         <g transform="translate(0 440) scale(.8 .42)"><g class="carte-crete-groupe"><path class="carte-crete-fond" d="${CRETE} L1000 260 L0 260Z"/><path class="carte-crete" d="${CRETE}" vector-effect="non-scaling-stroke"/></g></g>
         <text class="carte-texte carte-texte--doux" x="560" y="530">${c.t('contact.hero.sancy')}</text>
         <path class="carte-route-fond" d="M160 300 C 260 300, 330 250, 430 260 S 590 300, 650 250"/>
-        <path class="carte-route" data-carte-trace d="M160 300 C 260 300, 330 250, 430 260 S 590 300, 650 250" pathLength="1"/>
+        <path class="carte-route" id="carte-route" data-carte-trace d="M160 300 C 260 300, 330 250, 430 260 S 590 300, 650 250" pathLength="1"/>
         <path class="carte-sentier" data-carte-trace d="M160 300 C 170 350, 220 380, 255 410" pathLength="1"/>
         <g class="carte-point carte-point--camping" data-carte-point transform="translate(160 300)"><circle r="26"/><circle r="9" class="carte-coeur"/></g>
         <text class="carte-texte carte-texte--fort" x="160" y="250" text-anchor="middle" data-carte-point>${c.t('contact.hero.camping')}</text>
         <g class="carte-point" data-carte-point transform="translate(650 250)"><circle r="14"/></g>
+        <circle class="carte-voyageur" r="9" opacity="0" data-carte-voyageur><animateMotion dur="2.6s" begin="indefinite" fill="freeze" keyPoints="1;0" keyTimes="0;1" calcMode="linear" rotate="auto"><mpath href="#carte-route"/></animateMotion></circle>
         <text class="carte-texte" x="650" y="210" text-anchor="middle" data-carte-point>${c.t('contact.hero.village')}</text>
         <text class="carte-texte carte-texte--doux" x="650" y="292" text-anchor="middle" data-carte-point>${c.t('contact.hero.villageDetail')}</text>
         <g class="carte-pic" data-carte-point transform="translate(262 420)"><path d="M-22 18 L0 -22 L22 18Z"/></g>

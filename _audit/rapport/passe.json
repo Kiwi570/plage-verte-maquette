@@ -1,13 +1,13 @@
 {
- "id": "20261120-181704-complet-cible-partiel",
- "date": "2026-11-20T18:20:38.356Z",
+ "id": "20261123-143358-complet-cible-partiel",
+ "date": "2026-11-23T14:36:11.324Z",
  "niveau": "complet",
- "pages": "/,/404,/emplacements,/reserver",
+ "pages": "/,/emplacements",
  "etapes": [
   "fichiers",
   "mesures"
  ],
- "version": "1",
+ "version": "2",
  "echecs": 0,
  "aRegarder": 3,
  "nonLances": 0,

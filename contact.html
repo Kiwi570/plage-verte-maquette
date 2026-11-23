@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1">
+<html lang="fr" data-v="2">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -35,14 +35,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/epilogue-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/figtree-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#F5F2E8">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -124,11 +124,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <g transform="translate(0 440) scale(.8 .42)"><g class="carte-crete-groupe"><path class="carte-crete-fond" d="M0 200 L70 176 L130 188 L190 150 L250 160 L310 120 L360 136 L420 84 L470 108 L520 62 L575 118 L640 104 L700 138 L770 112 L840 152 L910 140 L1000 162 L1000 260 L0 260Z"/><path class="carte-crete" d="M0 200 L70 176 L130 188 L190 150 L250 160 L310 120 L360 136 L420 84 L470 108 L520 62 L575 118 L640 104 L700 138 L770 112 L840 152 L910 140 L1000 162" vector-effect="non-scaling-stroke"/></g></g>
         <text class="carte-texte carte-texte--doux" x="560" y="530">Crêtes du Sancy</text>
         <path class="carte-route-fond" d="M160 300 C 260 300, 330 250, 430 260 S 590 300, 650 250"/>
-        <path class="carte-route" data-carte-trace d="M160 300 C 260 300, 330 250, 430 260 S 590 300, 650 250" pathLength="1"/>
+        <path class="carte-route" id="carte-route" data-carte-trace d="M160 300 C 260 300, 330 250, 430 260 S 590 300, 650 250" pathLength="1"/>
         <path class="carte-sentier" data-carte-trace d="M160 300 C 170 350, 220 380, 255 410" pathLength="1"/>
         <g class="carte-point carte-point--camping" data-carte-point transform="translate(160 300)"><circle r="26"/><circle r="9" class="carte-coeur"/></g>
         <text class="carte-texte carte-texte--fort" x="160" y="250" text-anchor="middle" data-carte-point>La Plage Verte</text>
         <g class="carte-point" data-carte-point transform="translate(650 250)"><circle r="14"/></g>
+        <circle class="carte-voyageur" r="9" opacity="0" data-carte-voyageur><animateMotion dur="2.6s" begin="indefinite" fill="freeze" keyPoints="1;0" keyTimes="0;1" calcMode="linear" rotate="auto"><mpath href="#carte-route"/></animateMotion></circle>
         <text class="carte-texte" x="650" y="210" text-anchor="middle" data-carte-point>Le Mont-Dore</text>
         <text class="carte-texte carte-texte--doux" x="650" y="292" text-anchor="middle" data-carte-point>centre-ville et thermes</text>
         <g class="carte-pic" data-carte-point transform="translate(262 420)"><path d="M-22 18 L0 -22 L22 18Z"/></g>
@@ -163,7 +164,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <div><dt>Accueil</dt><dd><a href="tel:+33473650430">04 73 65 04 30</a></dd></div>
         <div><dt>Mobile</dt><dd><a href="tel:+33679259593">06 79 25 95 93</a></dd></div>
         <div><dt>Écrire</dt><dd><a href="mailto:campinglaplageverte@orange.fr">campinglaplageverte@orange.fr</a></dd></div>
-        <div><dt>Accueil</dt><dd>De 9 h à 12 h et de 14 h à 19 h en haute saison.</dd></div>
+        <div><dt>Horaires</dt><dd>De 9 h à 12 h et de 14 h à 19 h en haute saison.</dd></div>
         <div><dt>Adresse</dt><dd>83 route de La Tour d&#39;Auvergne, 63240 Le Mont-Dore</dd></div>
         <div><dt>Paiement</dt><dd>Espèces, chèque, carte bancaire, virement et Chèques-Vacances. Bons Vacaf acceptés.</dd></div>
       </dl>

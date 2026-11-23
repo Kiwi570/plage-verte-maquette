@@ -61,7 +61,11 @@ export const ICONES = {
   mobilhome: '<rect x="2" y="7" width="16" height="10" rx="1.5"/><path d="M18 11h4v6h-4M6 17v2M14 17v2M6 10h4v3H6z"/>',
   gite: '<path d="M3 20V10l6-5 6 5v10M15 10l3-3 3 3v10M7 20v-5h4v5M2 20h20"/>',
   groupe: '<circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M2 20c0-3.5 2.7-6 6-6s6 2.5 6 6M12 20c0-3.5 1.8-6 4-6s6 2.5 6 6"/>',
+  feuille: '<path d="M5 19C5 10 10 4 20 4c0 10-6 15-15 15Z"/><path d="M5 19 13 11"/>',
+  goutte: '<path d="M12 3s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11Z"/><path d="M9.5 14.5a2.6 2.6 0 0 0 2.5 2.5"/>',
+  eclair: '<path d="M13 2 5 13h6l-1 9 8-11h-6l1-9Z"/>',
+  recycle: '<path d="M20 12a8 8 0 0 1-14 5.3M4 12a8 8 0 0 1 14-5.3"/><path d="M18 3v4h-4M6 21v-4h4"/>',
 };
-export const icone = (nom, classe = 'icone') => brut(`<svg class="${classe}" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">${ICONES[nom] || ''}</svg>`);
+export const icone = (nom, classe = 'icone', attrs = '') => brut(`<svg class="${classe}" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"${attrs ? ' ' + attrs : ''}>${ICONES[nom] || ''}</svg>`);
 
 export const nombre = (n) => new Intl.NumberFormat('fr-FR').format(n).replace(/[  ]/g, ' ');

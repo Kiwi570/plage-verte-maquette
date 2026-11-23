@@ -1,6 +1,42 @@
 [
-  { "mot": "Respecter", "titre": "Respecter le site", "liste": ["Peu de terrassements, une intégration pensée dans le paysage", "Matériaux naturels et locaux", "Sols peu imperméabilisés, plantations d'espèces locales"] },
-  { "mot": "Préserver", "titre": "Préserver l'eau", "liste": ["Compteurs divisionnaires pour repérer les fuites", "Jamais d'eau potable pour arroser", "Robinets à poussoir et limiteurs de débit"] },
-  { "mot": "Économiser", "titre": "Économiser l'énergie", "liste": ["Canalisations d'eau chaude calorifugées, mitigeurs", "Éclairage LED, détecteurs de présence et minuteries", "Allées balisées par des bornes solaires"] },
-  { "mot": "Réduire", "titre": "Réduire les pollutions", "liste": ["Eaux usées traitées par une installation conforme", "Tri sélectif, papier et cartouches recyclés", "Produits d'entretien écolabellisés"] }
+  {
+    "mot": "Respecter",
+    "titre": "Respecter le site",
+    "liste": [
+      "Peu de terrassements, une intégration pensée dans le paysage",
+      "Matériaux naturels et locaux",
+      "Sols peu imperméabilisés, plantations d'espèces locales"
+    ],
+    "icone": "feuille"
+  },
+  {
+    "mot": "Préserver",
+    "titre": "Préserver l'eau",
+    "liste": [
+      "Compteurs divisionnaires pour repérer les fuites",
+      "Jamais d'eau potable pour arroser",
+      "Robinets à poussoir et limiteurs de débit"
+    ],
+    "icone": "goutte"
+  },
+  {
+    "mot": "Économiser",
+    "titre": "Économiser l'énergie",
+    "liste": [
+      "Canalisations d'eau chaude calorifugées, mitigeurs",
+      "Éclairage LED, détecteurs de présence et minuteries",
+      "Allées balisées par des bornes solaires"
+    ],
+    "icone": "eclair"
+  },
+  {
+    "mot": "Réduire",
+    "titre": "Réduire les pollutions",
+    "liste": [
+      "Eaux usées traitées par une installation conforme",
+      "Tri sélectif, papier et cartouches recyclés",
+      "Produits d'entretien écolabellisés"
+    ],
+    "icone": "recycle"
+  }
 ]

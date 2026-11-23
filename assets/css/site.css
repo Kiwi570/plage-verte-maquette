@@ -703,7 +703,7 @@ html.js:not(.secours):not([data-arrivee="retour"]) .carte-acces [data-carte-trac
   .ouv-accueil .surtitre { display: none; }
   .matin-media, .detail-media, .fourni-media { aspect-ratio: 16 / 10; width: 100%; }
 }
-@media (max-width: 420px) {
+@media (max-width: 370px) {
   .dormir-grille { grid-template-columns: minmax(0, 1fr); }
   .dormir-media { aspect-ratio: 16 / 9; }
   .dormir-texte { display: block; }
@@ -739,4 +739,84 @@ html:not(.js) .ouv-accueil, html:not(.js) .ouv-404 { padding-top: 32px; }
   .fpe__repere:not(.est-actif) .fpe__nom { display: none; }
   .fpe__repere.est-actif { flex: 1 1 auto; }
   .fpe__repere.est-actif .fpe__nom { overflow: visible; }
+}
+
+
+/* ==================== v2 ==================== */
+/* Accueil : invitation à défiler (trois passages puis s'arrête). */
+.defiler { position: absolute; z-index: 3; right: max(var(--gouttiere), calc((100vw - var(--largeur)) / 2)); bottom: calc(var(--barres-h) + clamp(28px, 6vh, 72px)); display: grid; justify-items: center; gap: 10px; min-width: 44px; padding: 6px; color: #fff; font-weight: 600; font-size: .9rem; text-decoration: none; }
+.defiler i { position: relative; display: block; width: 2px; height: 56px; background: rgb(255 255 255 / .35); overflow: hidden; border-radius: 2px; }
+.defiler i::after { content: ''; position: absolute; left: 0; top: -40%; width: 100%; height: 40%; background: #fff; animation: descend 1.6s ease-in-out 2.6s 4 both; }
+@keyframes descend { from { top: -40%; } to { top: 100%; } }
+@media (max-width: 760px), (max-height: 640px) { .defiler { display: none; } }
+
+/* Accueil : trouvez votre façon de dormir. */
+.choix { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 14px 28px; align-items: center; margin: 0 0 clamp(24px, 3vw, 40px); padding: clamp(18px, 2.4vw, 28px); border-radius: var(--rayon); background: var(--fond); box-shadow: var(--ombre); }
+.choix-titre { grid-row: span 3; margin: 0; max-width: 9em; font-family: var(--police-titres); font-weight: 800; font-size: clamp(1.4rem, 1.1rem + 1vw, 2rem); line-height: 1.05; letter-spacing: -.02em; color: var(--sapin); }
+.choix-ligne { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px; }
+.choix-libelle { font-weight: 600; min-width: 6.5em; }
+.choix-boutons { display: flex; flex-wrap: wrap; gap: 8px; }
+.choix .puce-bouton { display: inline-flex; align-items: center; gap: 8px; }
+.choix-icone { width: 22px; height: 22px; color: currentColor; }
+.choix-cure { position: relative; display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font-weight: 600; cursor: pointer; }
+.choix-cure input { width: 22px; height: 22px; accent-color: var(--sapin); }
+.choix-reponse { grid-column: 2; margin: 4px 0 0; padding: 12px 16px; border-radius: 12px; background: var(--herbe); font-weight: 600; min-height: 3.2em; }
+.choix-lien { display: inline-flex; align-items: center; min-height: 44px; margin-block: -12px; color: var(--accent-texte); white-space: nowrap; }
+html:not(.js) .choix, html.secours .choix { display: none; }
+.dormir-carte { transition: opacity .4s, filter .4s, box-shadow .3s; }
+.dormir-carte[data-ecartee] { opacity: .38; filter: saturate(.3); }
+.dormir-media img { transition: transform .6s cubic-bezier(.2, .7, .2, 1); }
+.dormir-carte:hover .dormir-media img { transform: scale(1.06); }
+.dormir-carte:hover .dormir-icone { transform: rotate(-8deg) scale(1.06); }
+.dormir-icone { transition: transform .35s; }
+@media (max-width: 900px) {
+  .choix { grid-template-columns: minmax(0, 1fr); }
+  .choix-titre { grid-row: auto; max-width: none; }
+  .choix-reponse { grid-column: 1; }
+  .choix-libelle { min-width: 0; width: 100%; }
+}
+
+/* Engagements : icônes tracées ; sur téléphone, une rangée qui se glisse. */
+.engagements-icone { width: 44px; height: 44px; padding: 9px; margin-bottom: 12px; border-radius: 12px; background: var(--fond); color: var(--sapin); }
+@media (max-width: 760px) {
+  .engagements-liste { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 12px; margin-inline: calc(var(--gouttiere) * -1); padding: 0 var(--gouttiere) 8px; }
+  .engagements-liste > li { flex: 0 0 82%; scroll-snap-align: start; }
+}
+
+/* Emplacements : l'emplacement dessiné en direct. */
+.pitch { margin: 0 0 6px; }
+.pitch svg { display: block; width: 100%; height: auto; }
+.pitch figcaption { margin-top: 6px; font-size: 13px; color: #cfdac6; }
+.pitch-herbe { fill: #2f5a43; }
+.pitch-bord { fill: none; stroke: rgb(245 242 232 / .35); stroke-width: 1.5; stroke-dasharray: 6 6; }
+.pitch-arbre circle { fill: #3f7356; }
+.pitch-toile { fill: var(--creme); }
+.pitch-porte { fill: #d8d2c0; }
+.pitch-voiture rect, .pitch-van > rect:first-child { fill: #f3a27f; }
+.pitch-voiture circle, .pitch-van circle { fill: #15241b; }
+.pitch-van .pitch-vitre, .pitch-voiture rect + rect { fill: #cfe0d6; }
+.pitch-borne rect { fill: #15241b; }
+.pitch-eclair { fill: #f2c230; }
+.pitch-borne text { fill: var(--creme); font: 600 13px var(--police-texte); }
+.pitch-tete, .pitch-corps { fill: var(--creme); }
+.pitch-chien { fill: #f3a27f; }
+@media (max-width: 900px) { .pitch { display: none; } }
+
+/* Locations : échange de photos et détails. */
+.fiche-echange { position: absolute; z-index: 3; right: 20px; bottom: -22px; width: 44px; height: 44px; display: grid; place-items: center; border: 0; border-radius: 50%; background: var(--sapin); color: var(--creme); box-shadow: var(--ombre); cursor: pointer; transition: transform .3s; }
+.fiche-echange:hover { transform: rotate(180deg); }
+.fiche-echange svg { width: 20px; height: 20px; }
+.fiche-media-2 { right: 74px; }
+.fiche-plus summary { display: none; }
+@media (max-width: 760px) {
+  .fiche-plus summary { display: flex; align-items: center; justify-content: space-between; min-height: 48px; margin: 4px 0 8px; padding: 0 14px; border-radius: 12px; background: var(--herbe); font-weight: 600; cursor: pointer; list-style: none; }
+  .fiche-plus summary::-webkit-details-marker { display: none; }
+  .fiche-plus summary::after { content: '+'; font-size: 1.4rem; line-height: 1; }
+  .fiche-plus[open] summary::after { content: '−'; }
+}
+
+/* Contact : le point qui arrive au camping. */
+.carte-voyageur { fill: #fff; stroke: var(--accent); stroke-width: 4; }
+@media (max-width: 760px) {
+  .dormir-corps h3 { padding-right: 0; font-size: 1rem; }
 }

@@ -1,5 +1,28 @@
 # Journal des versions
 
+## v2 · 23 novembre 2026
+
+Revue complète du site, page par page, et audit complet (13 tailles d'écran, tous les modes, toutes les pages).
+
+**Accueil**
+- Nouveau : « Trouvez votre façon de dormir ». On choisit le nombre de personnes, la toile ou un hébergement au sec, et la cure ; les cartes qui conviennent restent en avant et la réponse donne le vrai prix « dès » 2026 avec un lien vers la bonne page.
+- Invitation à défiler sur la vue aérienne (ordinateur).
+- Cartes « Quatre façons de dormir » : la photo s'approche au survol ; titres sur une ligne sur téléphone, deux colonnes gardées.
+- Services et engagements : icônes qui se dessinent au défilement ; une icône par engagement (feuille, goutte, éclair, recyclage).
+- Engagements sur téléphone : une rangée qui se glisse au doigt au lieu de quatre blocs empilés.
+- Titre des engagements : un seul mot en couleur (« à protéger »).
+
+**Emplacements**
+- Le calculateur dessine l'emplacement en direct : tente et voiture, van ou tente seule, les personnes, les enfants et l'animal, la borne électrique 6 A ou 10 A.
+
+**Locations**
+- Chaque fiche a un bouton pour échanger la grande photo et la vignette.
+- Sur téléphone, couchages et équipements se replient sous un bouton : les fiches sont deux fois plus courtes.
+
+**Contact**
+- Après le tracé de la route, un point fait le trajet du Mont-Dore jusqu'au camping.
+- Le libellé des horaires n'est plus confondu avec le téléphone de l'accueil.
+
 ## v1 · 20 novembre 2026
 
 Première version de la maquette du camping La Plage Verte (Le Mont-Dore), direction « Prairie et pouzzolane » : fond lait de prairie, vert sapin, accent pouzzolane, titres Epilogue, texte Figtree.
